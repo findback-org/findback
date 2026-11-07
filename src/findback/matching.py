@@ -16,6 +16,9 @@ def category(value: Any) -> str:
         return "headphone case"
     if "bottle" in text:
         return "bottle"
+    if text in {"book", "paperback", "paperback book", "hardback", "hardback book",
+                "hardcover", "hardcover book", "novel", "textbook"}:
+        return "book"
     return text
 
 

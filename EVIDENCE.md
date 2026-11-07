@@ -2,6 +2,18 @@
 
 Verified locally on November 7, 2026. Source and fixtures are included; no public deployment or hackathon submission is implied.
 
+## Current demo: actual Mattermost campus
+
+The primary demonstration is [Campus • Lost & Found](http://localhost:57898/switch/channels/findback-campus-4f73ef6b), with linked private conversations and staff review. It is an actual messaging-app history, not a slide reconstruction. [Showcase run](evidence/live-campus/showcase-run.json), [verification](evidence/live-campus/verification.json), and [94 actual access checks](evidence/live-campus/access-checks.json) record 12 distinct fictional human accounts, 46 human posts, four actual claims, 12 live model proposals and three saved returns. Alex remains NEEDS_INFO. All 49 public messages at story completion were checked for the identifying answers; none leaked them. All three receipts were checked against the exact handover threads.
+
+The current full automated suite has **154 passing tests**, including public-source intake isolation, exact draft/review/handover-card replies and bounded book-category aliases. Leo's word “paperback” initially yielded no coarse candidate; the alias was corrected and Mira sent a real new review request. The preserved run resumed without resetting cases or fabricating a review. Its recorded elapsed time includes the debugging pause; it is not presented as a clean timed benchmark. The earlier rehearsal completed in 143.5 seconds and has its own evidence files.
+
+The actual browser received a new message without reloading after aligning the browser with Mattermost's existing canonical localhost address. No server/CORS/Origin checks were weakened. The current local team's capacity was increased from 50 to 100 to accommodate the explicitly fictional cohorts; that was the only server configuration field changed. See [capacity proof](evidence/live-campus/setup-capacity.json) and [browser check](evidence/showcase-browser-check.json).
+
+Cosmetic formatting hid transport footers without editing human posts or domain records. The earlier checks and text playback below are historical evidence, not the current product demonstration.
+
+[Actual Mattermost walkthrough](evidence/live-campus/mattermost-demo.mp4): 70.916667 seconds, H.264/24 fps, captured from the real browser at 649×769 and padded by one pixel to 650×770 for encoding. There is no generated UI, narration or text reconstruction. Navigation gaps/loading frames were trimmed as documented in the [capture manifest](evidence/live-campus/capture-manifest.json) and [capture notes](evidence/live-campus/CAPTURE.md). This is an edited walkthrough captured during the scripted run, not a continuous recording of every event.
+
 | Behavior | Evidence | What it establishes |
 | --- | --- | --- |
 | Domain, transport, runtime and model checks | `python -m pytest -q`: **122 passed** | Atomic races, transaction rollback, current-revision approval, exact account/room authorization, replay/restart, source provenance, model input separation, safe output routing, startup cleanup, bounded posts and delivery reconciliation. Transport/model unit tests use fake providers. |

@@ -1,0 +1,9 @@
+{
+  "verified_at": "2026-11-07T14:18:53.487301+00:00",
+  "browser_url": "http://localhost:57898/switch/channels/findback-campus-2f0ae85d",
+  "account": "existing @krishna sign-in",
+  "actual_browser_post_id": "inbfgowhujg1tj8tb3pg9io65c",
+  "visible_without_reload": true,
+  "origin_fix": "Browser aligned to existing canonical SiteURL; no server, CORS or Origin security changes. Existing session preserved with the same expiry and authority.",
+  "scope": "Closing message by fictional volunteer Elena, posted through her actual account and observed in live Mattermost DOM."
+}

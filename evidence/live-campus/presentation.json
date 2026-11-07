@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-11-07T14:33:24.690833+00:00",
+  "human_posts_edited": 0,
+  "authority_records_changed": 0,
+  "bot_delivery_footers_formatted": 0,
+  "bot_posts_with_browser_links_fixed": 0,
+  "tour_queued_through_switch": true,
+  "community_url": "http://localhost:57898/switch/channels/findback-campus-4f73ef6b",
+  "start_url": "http://localhost:57898/switch/pl/3f7jay3aq38ezgdamb1cgcjznc",
+  "tour_message_key": "showcase-tour:4f73ef6b",
+  "scope": "Only presentation metadata on our six showcase bots/setup notice. All human messages and domain records preserved."
+}

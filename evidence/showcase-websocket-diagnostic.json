@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-11-07T14:08:42.587091+00:00",
+  "method": "Same enrolled nonadmin demo observer bearer token; same local websocket endpoint; only Origin differs. Connections immediately closed; no messages or configuration changed.",
+  "probes": [
+    {
+      "endpoint": "ws://127.0.0.1:57898/api/v4/websocket",
+      "origin": "http://127.0.0.1:57898",
+      "handshake_http_status": 403
+    },
+    {
+      "endpoint": "ws://127.0.0.1:57898/api/v4/websocket",
+      "origin": "http://localhost:57898",
+      "handshake_http_status": 101,
+      "first_event": "hello"
+    },
+    {
+      "endpoint": "ws://127.0.0.1:57898/api/v4/websocket",
+      "origin": null,
+      "handshake_http_status": 101,
+      "first_event": "hello"
+    }
+  ]
+}

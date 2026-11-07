@@ -1,0 +1,106 @@
+{
+  "checked_at": "2026-11-07T14:32:20.494025+00:00",
+  "public_boundary": {
+    "passed": true,
+    "actual_public_posts_checked": 49,
+    "private_identifying_answers_found": 0
+  },
+  "claims": [
+    {
+      "id": "C001",
+      "status": "RETURNED",
+      "revision": 2,
+      "evidence_revision": 1
+    },
+    {
+      "id": "C002",
+      "status": "NEEDS_INFO",
+      "revision": 1,
+      "evidence_revision": 0
+    },
+    {
+      "id": "C003",
+      "status": "RETURNED",
+      "revision": 2,
+      "evidence_revision": 1
+    },
+    {
+      "id": "C004",
+      "status": "RETURNED",
+      "revision": 2,
+      "evidence_revision": 1
+    }
+  ],
+  "receipts": [
+    {
+      "claim_id": "C001",
+      "receipt_id": "RET-5681c4dc6c904a2e"
+    },
+    {
+      "claim_id": "C003",
+      "receipt_id": "RET-63015a7806c647e5"
+    },
+    {
+      "claim_id": "C004",
+      "receipt_id": "RET-170df3a061114c72"
+    }
+  ],
+  "initial_comparisons": [
+    {
+      "claim_id": "C001",
+      "coarse_candidates": 2
+    },
+    {
+      "claim_id": "C002",
+      "coarse_candidates": 2
+    },
+    {
+      "claim_id": "C003",
+      "coarse_candidates": 1
+    },
+    {
+      "claim_id": "C004",
+      "coarse_candidates": 1
+    }
+  ],
+  "failed_inbox_events": 0,
+  "live_model_proposals": [
+    {
+      "role": "intake",
+      "n": 4
+    },
+    {
+      "role": "matcher",
+      "n": 8
+    }
+  ],
+  "actual_scripted_human_posts": 46,
+  "distinct_authenticated_speakers": 12,
+  "all_three_receipts_reply_to_handover_threads": true,
+  "elapsed_seconds_including_debugging_pause": 450.496,
+  "final_driver_session_seconds": 35.92,
+  "exception_recovery": {
+    "observed_issue": "Intake category paperback did not initially match staff inventory category book",
+    "fix": "Bounded category synonyms, then an actual Mira Review Leo again. message and a fresh real Matcher call",
+    "preserved_original_conversation": true,
+    "state_reset": false,
+    "manufactured_agent_cards": false
+  },
+  "receipt_bindings": [
+    {
+      "claim_id": "C001",
+      "receipt_id": "RET-5681c4dc6c904a2e",
+      "actual_source_thread_matches_exact_reservation_handover_card": true
+    },
+    {
+      "claim_id": "C003",
+      "receipt_id": "RET-63015a7806c647e5",
+      "actual_source_thread_matches_exact_reservation_handover_card": true
+    },
+    {
+      "claim_id": "C004",
+      "receipt_id": "RET-170df3a061114c72",
+      "actual_source_thread_matches_exact_reservation_handover_card": true
+    }
+  ]
+}

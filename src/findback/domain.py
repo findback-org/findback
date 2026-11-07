@@ -288,7 +288,9 @@ class DomainService:
                 raise Refusal("INVALID_INPUT", "Provide a description before drafting a report.")
             for sid in args["source_event_ids"]:
                 source = db.execute("SELECT * FROM source_messages WHERE source_event_id=?", (sid,)).fetchone()
-                if not source or source["actor_id"] != claim["claimant_actor_id"] or source["actor_kind"] != "human" or source["room_id"] != claim["case_room_id"]:
+                ingress = self.store.setting(db, "report_ingress_rooms", {}).get(claim_id, [])
+                allowed_rooms = [claim["case_room_id"], *ingress]
+                if not source or source["actor_id"] != claim["claimant_actor_id"] or source["actor_kind"] != "human" or source["room_id"] not in allowed_rooms:
                     raise Refusal("INVALID_INPUT", "Report sources must be actual messages from this claimant's case.")
             did = identifier("D-")
             rev = db.execute("SELECT COUNT(*) FROM drafts WHERE claim_id=?", (claim_id,)).fetchone()[0] + 1

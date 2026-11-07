@@ -1,0 +1,602 @@
+{
+  "schema": 1,
+  "community_channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+  "started_at": "2026-11-07T13:51:44.512872+00:00",
+  "steps": {
+    "sam-opening": {
+      "person": "sam",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Library desk is staffed now. Lost something? Put a broad description here and FindBack will help privately. Please keep unique marks and contents out of the group. (Today's campus is our pinned fictional demo.)",
+      "root_id": null,
+      "post_id": "3sndsqc87jnt7nd8ak1o7e5w5a",
+      "switch_event_id": "sw_cbd6ea8715e605067579ec845a38c1f4",
+      "created_at_ms": 1794059505336,
+      "recorded_elapsed_seconds": 0.841
+    },
+    "jordan-found-case": {
+      "person": "jordan",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Found a black headphone case by Library Desk A. Bringing it to the desk rather than leaving it on the table.",
+      "root_id": null,
+      "post_id": "xdstf6deeid38mjntugoqrre1o",
+      "switch_event_id": "sw_2c0cdb1a372924548557cf94472b89e4",
+      "created_at_ms": 1794059506668,
+      "recorded_elapsed_seconds": 2.168
+    },
+    "elena-thanks-finder": {
+      "person": "elena",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Thanks, Jordan. Mira is there now \u2014 she'll log it and keep the identifying details off this channel.",
+      "root_id": "xdstf6deeid38mjntugoqrre1o",
+      "post_id": "7dwm9h458ffpzrm4ccntjaupgc",
+      "switch_event_id": "sw_63308eca8297a00c1ebc0e470174c823",
+      "created_at_ms": 1794059508007,
+      "recorded_elapsed_seconds": 3.517
+    },
+    "ava-found-case": {
+      "person": "ava",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "There's another black headphone case in Study Room 2. I'll bring that over too. They look pretty similar from outside.",
+      "root_id": null,
+      "post_id": "xfcp96bmwtr4dg987g6xtmnoqe",
+      "switch_event_id": "sw_5c7ea8b091238c603a7c24ab6daf6d19",
+      "created_at_ms": 1794059509346,
+      "recorded_elapsed_seconds": 4.846
+    },
+    "noah-queue": {
+      "person": "noah",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "I'm by the bike racks and can cover the desk queue for a minute while you carry it over.",
+      "root_id": "xfcp96bmwtr4dg987g6xtmnoqe",
+      "post_id": "oqf4zcqi83gitxm5ytokasyf9o",
+      "switch_event_id": "sw_ecb51ddabdfe2e1a0e732eb2f374a0ff",
+      "created_at_ms": 1794059510679,
+      "recorded_elapsed_seconds": 6.191
+    },
+    "inventory-case-a": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Log case A: black headphone case. Found at Library Desk A. Private details: green triangle sticker under lid; short blue charging cable inside.",
+      "root_id": null,
+      "post_id": "56s5ypcw3jds7kdxs8djnast7h",
+      "switch_event_id": "sw_4c0a961942f7d6345220ca43a8f16027",
+      "created_at_ms": 1794059512015,
+      "recorded_elapsed_seconds": 7.519
+    },
+    "inventory-case-b": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Log case B: black headphone case. Found at Library Study Room 2. Private details: red thread on zipper; initials RK inside.",
+      "root_id": null,
+      "post_id": "ibcru7w3fbgb9xiq1853d6euwe",
+      "switch_event_id": "sw_35b884dd8079b34b8a93f59a400a52e8",
+      "created_at_ms": 1794059513352,
+      "recorded_elapsed_seconds": 8.85
+    },
+    "inventory-bottle": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Log bottle: blue insulated bottle. Found at Library Desk B. Private details: small star engraving under base.",
+      "root_id": null,
+      "post_id": "xysff9sqd7dg5kmtu8emmoko1w",
+      "switch_event_id": "sw_76c235c0014d8584298870e04606d759",
+      "created_at_ms": 1794059514682,
+      "recorded_elapsed_seconds": 10.179
+    },
+    "inventory-book": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Log book: red paperback. Found at cafe window. Private details: handwritten dedication For L, keep exploring on page 3.",
+      "root_id": null,
+      "post_id": "d3uhakcdqib17rqpytfs6siaay",
+      "switch_event_id": "sw_3541dca4f7d88f05ca955a6de10e6251",
+      "created_at_ms": 1794059516011,
+      "recorded_elapsed_seconds": 11.508
+    },
+    "priya-lost": {
+      "person": "priya",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "I lost my black headphone case in the library this afternoon. I'm supposed to be studying and I'm really worried I've left it behind \u2014 could one of those be mine?",
+      "root_id": null,
+      "post_id": "4596sqcx9bg9fgtje6meiyq4dc",
+      "switch_event_id": "sw_5b281967ab27588faafaeda5e8dd4843",
+      "created_at_ms": 1794059517332,
+      "recorded_elapsed_seconds": 12.832
+    },
+    "aisha-reassures-priya": {
+      "person": "aisha",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Take a breath, Priya. There are two cases, so let the desk check before anyone picks one up.",
+      "root_id": "4596sqcx9bg9fgtje6meiyq4dc",
+      "post_id": "37uz1nyrmtdnbm61a9tmqo5z1e",
+      "switch_event_id": "sw_c9cb1053c4752ea5d15f34402803e335",
+      "created_at_ms": 1794059518669,
+      "recorded_elapsed_seconds": 14.178
+    },
+    "alex-lost": {
+      "person": "alex",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "I lost a black headphone case somewhere in the library too. I don't remember any identifying marks. I'm late for my bus.",
+      "root_id": "xfcp96bmwtr4dg987g6xtmnoqe",
+      "post_id": "hmkpeaotafnt9kmwctrxtzwcre",
+      "switch_event_id": "sw_3a657bd716ddfc2e929d79b21465762c",
+      "created_at_ms": 1794059520009,
+      "recorded_elapsed_seconds": 15.521
+    },
+    "omar-found-book": {
+      "person": "omar",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Separate thing: found a red paperback by the cafe window. It's at the library desk now.",
+      "root_id": null,
+      "post_id": "kc8fka6y8p8wzrdcru1jymfise",
+      "switch_event_id": "sw_5fa0bc97f2d37bf2f48e268b9ae482d9",
+      "created_at_ms": 1794059521355,
+      "recorded_elapsed_seconds": 16.856
+    },
+    "maya-bottle-notice": {
+      "person": "maya",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "I lost my blue insulated bottle near the library this morning. Hoping that's made it to the desk as well.",
+      "root_id": null,
+      "post_id": "oxmx9sdd5j8gpxo35s54gh3pre",
+      "switch_event_id": "sw_089b5bcab7db8c2c956717dd57c2934e",
+      "created_at_ms": 1794059522690,
+      "recorded_elapsed_seconds": 18.19
+    },
+    "leo-book-notice": {
+      "person": "leo",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "I lost a red paperback at the cafe. I can describe something inside privately.",
+      "root_id": "kc8fka6y8p8wzrdcru1jymfise",
+      "post_id": "ymxn36royifa8ms9bnqpzk9r8o",
+      "switch_event_id": "sw_683ef046a2594872509500f9d1453fa9",
+      "created_at_ms": 1794059524021,
+      "recorded_elapsed_seconds": 19.537
+    },
+    "mira-community-triage": {
+      "person": "mira",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "I've logged the finds. Priya and Alex: please use your separate FindBack chats; a black case alone isn't enough to release either one. Maya and Leo, your reports have private chats too.",
+      "root_id": "4596sqcx9bg9fgtje6meiyq4dc",
+      "post_id": "qxh18ocwoifatkzkz999g1dp3w",
+      "switch_event_id": "sw_3e13186b41a7e9ba2aec27f468619aef",
+      "created_at_ms": 1794059525372,
+      "recorded_elapsed_seconds": 20.884
+    },
+    "priya-confirm": {
+      "person": "priya",
+      "channel_id": "ha8dmkenm7n9bjad1yucq3px7c",
+      "text": "Yes, that's right.",
+      "root_id": "cw5419opabyr7cgufrk7wuhkjw",
+      "post_id": "1uk1r4ayxir99pw7iu3f4qe8ny",
+      "switch_event_id": "sw_5dadcaf35593a791ae2d740bf771ad6e",
+      "created_at_ms": 1794059526722,
+      "recorded_elapsed_seconds": 22.234
+    },
+    "alex-confirm": {
+      "person": "alex",
+      "channel_id": "pxgwm5urmjrqiqnrcjfarstnuw",
+      "text": "Yes, that's right.",
+      "root_id": "qctbem9zz3ddmyf7qzthq6d78w",
+      "post_id": "pang89f9ztfttfiifywzx4n3hr",
+      "switch_event_id": "sw_737cf5c92771c8e2310409a6bac5c6ae",
+      "created_at_ms": 1794059555805,
+      "recorded_elapsed_seconds": 51.317
+    },
+    "alex-staff-needs-info": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Ask for more information. Both black cases fit the broad report; we need an independently supplied identifying detail before releasing either.",
+      "root_id": "edwo4ca3pffebp4gnbqtb169eh",
+      "post_id": "115d6ik78fn8dfi5czxsiy9aio",
+      "switch_event_id": "sw_32918247248f52fbaf6e3d973ff04f8e",
+      "created_at_ms": 1794059565295,
+      "recorded_elapsed_seconds": 60.811
+    },
+    "alex-asks-release": {
+      "person": "alex",
+      "channel_id": "pxgwm5urmjrqiqnrcjfarstnuw",
+      "text": "Can you just release it? I'm late for my bus.",
+      "root_id": null,
+      "post_id": "kjpsma4ne78bpcbek9bu7byg5r",
+      "switch_event_id": "sw_17e9ab3cf4c1ec8b1a31f3aa0ef09011",
+      "created_at_ms": 1794059566643,
+      "recorded_elapsed_seconds": 62.141
+    },
+    "elena-protects-details": {
+      "person": "elena",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Please don't post stickers, contents or photos of labels here. The owner should be able to describe those privately first.",
+      "root_id": "3sndsqc87jnt7nd8ak1o7e5w5a",
+      "post_id": "ysu4grqcdtbwjyt7ik9wc5ji4r",
+      "switch_event_id": "sw_a44c76120e0e9600d8a7ce70a831028d",
+      "created_at_ms": 1794059567978,
+      "recorded_elapsed_seconds": 63.492
+    },
+    "priya-private-evidence": {
+      "person": "priya",
+      "channel_id": "ha8dmkenm7n9bjad1yucq3px7c",
+      "text": "Mine has a green triangle sticker under the lid and a short blue charging cable inside.",
+      "root_id": null,
+      "post_id": "wmocibjndtyyjdk5ajtcoufxiy",
+      "switch_event_id": "sw_8e74c74e07ec6d90a39cb23104cecaad",
+      "created_at_ms": 1794059569320,
+      "recorded_elapsed_seconds": 64.821
+    },
+    "priya-staff-approval": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Approve case A for Priya. Priya independently described the hidden sticker and the cable. I compared her assertion with the desk observations for case A; case B has different identifying details.",
+      "root_id": "m7w6foafd7bhpduypo7d5zj1wy",
+      "post_id": "g7fkadifpfb3xe9fhdf5fhc4dc",
+      "switch_event_id": "sw_f4b6dce16742ade53818b6bed24db2ac",
+      "created_at_ms": 1794059581611,
+      "recorded_elapsed_seconds": 77.126
+    },
+    "priya-collection": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Collection: Priya can collect her reserved case from Library Desk A. Ask for Mira; we will verify the private case at the desk.",
+      "root_id": "m7w6foafd7bhpduypo7d5zj1wy",
+      "post_id": "nwr8b4bhepfxz8fdxrcmb1o4ar",
+      "switch_event_id": "sw_dd2c5ee7552c32fc6c4930d650fb2981",
+      "created_at_ms": 1794059582969,
+      "recorded_elapsed_seconds": 78.479
+    },
+    "priya-handover": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Handed over to Priya. Simulated desk handover for this fictional showcase; no physical object moved.",
+      "root_id": "m7w6foafd7bhpduypo7d5zj1wy",
+      "post_id": "mkk3c97brtfdbj7j1hu37d64fe",
+      "switch_event_id": "sw_92136cb722b847bb4e672ef99ccc502e",
+      "created_at_ms": 1794059584322,
+      "recorded_elapsed_seconds": 79.832
+    },
+    "priya-receipt": {
+      "person": "priya",
+      "channel_id": "ha8dmkenm7n9bjad1yucq3px7c",
+      "text": "I've got it back, thank you!",
+      "root_id": null,
+      "post_id": "fizihh8z17gk5dzzrcmbrd78go",
+      "switch_event_id": "sw_12d16f9a233299c9c3edde28cc5883e6",
+      "created_at_ms": 1794059585660,
+      "recorded_elapsed_seconds": 81.157
+    },
+    "priya-community-thanks": {
+      "person": "priya",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Sorted \u2014 got my case back. Thank you Jordan, Mira and everyone who helped! Glad we checked the details privately.",
+      "root_id": "4596sqcx9bg9fgtje6meiyq4dc",
+      "post_id": "aq6c1b4a8fgnuj67b7zbwp735y",
+      "switch_event_id": "sw_2e72034df51fd933a6abec46e836e79f",
+      "created_at_ms": 1794059586993,
+      "recorded_elapsed_seconds": 82.51
+    },
+    "aisha-relieved": {
+      "person": "aisha",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Good! Back to studying. Alex, hope yours turns up too.",
+      "root_id": "4596sqcx9bg9fgtje6meiyq4dc",
+      "post_id": "6i7ux76xfi845qk7pb1qwa11re",
+      "switch_event_id": "sw_24b6df4e8e193aed2ea09a35eb5cbc8c",
+      "created_at_ms": 1794059588343,
+      "recorded_elapsed_seconds": 83.856
+    },
+    "maya-confirm": {
+      "person": "maya",
+      "channel_id": "rwpbk8hhmtyyjp6qpa9cuq437r",
+      "text": "Yes, that's right.",
+      "root_id": "nu1i1i1udtguupqbq1h1rr5iso",
+      "post_id": "syn1ihorriftmfrpsdxdwuqjja",
+      "switch_event_id": "sw_0c2777fe7c55ce676f8f262eda55f194",
+      "created_at_ms": 1794059589695,
+      "recorded_elapsed_seconds": 85.206
+    },
+    "maya-private-evidence": {
+      "person": "maya",
+      "channel_id": "rwpbk8hhmtyyjp6qpa9cuq437r",
+      "text": "Mine has a small star engraving under the base.",
+      "root_id": null,
+      "post_id": "9baidgwqtpfr5jgsuhaqkz9dwh",
+      "switch_event_id": "sw_4f3c441ad6895dc1b67b204bb2be272a",
+      "created_at_ms": 1794059599465,
+      "recorded_elapsed_seconds": 94.964
+    },
+    "maya-staff-approval": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Approve bottle for Maya. Maya independently described the small engraving beneath the bottle; I checked it against the staff observation.",
+      "root_id": "49iusk3oxjfk9ng9t1rg7rnecw",
+      "post_id": "cw15udg7jfypjd6dau5iczme1w",
+      "switch_event_id": "sw_383982eb67b0cf56f1d5f4bd7ec19baa",
+      "created_at_ms": 1794059610509,
+      "recorded_elapsed_seconds": 106.022
+    },
+    "maya-collection": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Collection: Maya can collect her reserved bottle from Library Desk B; ask for Mira.",
+      "root_id": "49iusk3oxjfk9ng9t1rg7rnecw",
+      "post_id": "6mhm7w6ceffiudp45b97gw1dih",
+      "switch_event_id": "sw_40163791ae626c7a4cf400f91c54028c",
+      "created_at_ms": 1794059611864,
+      "recorded_elapsed_seconds": 107.373
+    },
+    "maya-handover": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Handed over to Maya. Simulated desk handover for this fictional showcase; no physical object moved.",
+      "root_id": "49iusk3oxjfk9ng9t1rg7rnecw",
+      "post_id": "ufyze18ci7brzda95tfgmpi85r",
+      "switch_event_id": "sw_4de23aec6389fca3dee0c7749130ee80",
+      "created_at_ms": 1794059613210,
+      "recorded_elapsed_seconds": 108.721
+    },
+    "maya-receipt": {
+      "person": "maya",
+      "channel_id": "rwpbk8hhmtyyjp6qpa9cuq437r",
+      "text": "I've got it back, thank you!",
+      "root_id": null,
+      "post_id": "jxuj95uispn4xnacmw57o9pwso",
+      "switch_event_id": "sw_b991ba4a780b634a78591e788670cbe4",
+      "created_at_ms": 1794059614546,
+      "recorded_elapsed_seconds": 110.045
+    },
+    "maya-community-thanks": {
+      "person": "maya",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Bottle reunited, thank you!",
+      "root_id": "oxmx9sdd5j8gpxo35s54gh3pre",
+      "post_id": "h7jt7j8fdfbt3gt6h8rogiutaw",
+      "switch_event_id": "sw_324748b0d8ea7ecee21a7abe3f43971e",
+      "created_at_ms": 1794059615882,
+      "recorded_elapsed_seconds": 111.389
+    },
+    "leo-confirm": {
+      "person": "leo",
+      "channel_id": "8q3iek8uajbu3ehus3xhq139mr",
+      "text": "Yes, that's right.",
+      "root_id": "unsopiefstdw98i91zg5ah3qih",
+      "post_id": "unff78asfjgpxdazpuuyuxtr3w",
+      "switch_event_id": "sw_28d17b1bb0e8b785f962a40a8a76d227",
+      "created_at_ms": 1794059617238,
+      "recorded_elapsed_seconds": 112.75
+    },
+    "leo-private-evidence": {
+      "person": "leo",
+      "channel_id": "8q3iek8uajbu3ehus3xhq139mr",
+      "text": "Mine has a handwritten dedication saying For L, keep exploring on page 3.",
+      "root_id": null,
+      "post_id": "eyfn8wofi7fa3eb84mdni79paa",
+      "switch_event_id": "sw_4707311b9693d5e366519f170d13ceda",
+      "created_at_ms": 1794059628276,
+      "recorded_elapsed_seconds": 123.774
+    },
+    "leo-staff-approval": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Approve book for Leo. Leo independently supplied the dedication and its page. I compared both with the staff-only observation.",
+      "root_id": "8dehwugrytr38goxmwr6xoozey",
+      "post_id": "oinnx7uakjd8tdgi5qq9er7gzr",
+      "switch_event_id": "sw_c35ceee5399496928ef761948ecaf84c",
+      "created_at_ms": 1794059638044,
+      "recorded_elapsed_seconds": 133.555
+    },
+    "leo-collection": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Collection: Leo can collect the reserved paperback from the library desk; ask for Mira.",
+      "root_id": "8dehwugrytr38goxmwr6xoozey",
+      "post_id": "sxb6uw5fwjgwinfwbzpuw5bubr",
+      "switch_event_id": "sw_a0e41556ac3fb83a1d125ca895d535c4",
+      "created_at_ms": 1794059639399,
+      "recorded_elapsed_seconds": 134.912
+    },
+    "leo-handover": {
+      "person": "mira",
+      "channel_id": "331miwffofbn3f66xwfd7auizy",
+      "text": "Handed over to Leo. Simulated desk handover for this fictional showcase; no physical object moved.",
+      "root_id": "8dehwugrytr38goxmwr6xoozey",
+      "post_id": "ai4dpoi7qbrqzc73k7qbfgk6bh",
+      "switch_event_id": "sw_864b74fc92293397cd2c76344b1d564d",
+      "created_at_ms": 1794059640759,
+      "recorded_elapsed_seconds": 136.271
+    },
+    "leo-receipt": {
+      "person": "leo",
+      "channel_id": "8q3iek8uajbu3ehus3xhq139mr",
+      "text": "I've got it back, thank you!",
+      "root_id": null,
+      "post_id": "u43jsefyaf86zfhf7yt9xmhzoa",
+      "switch_event_id": "sw_f1d7b4a2517968b769a7ee87b7771a5e",
+      "created_at_ms": 1794059642097,
+      "recorded_elapsed_seconds": 137.595
+    },
+    "leo-community-thanks": {
+      "person": "leo",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "That's my book back. Thanks Omar and the desk team!",
+      "root_id": "kc8fka6y8p8wzrdcru1jymfise",
+      "post_id": "wn8jeomts3yjxpj6buc14did3c",
+      "switch_event_id": "sw_33da7b27f815ad620ec8bf3f779922e0",
+      "created_at_ms": 1794059643428,
+      "recorded_elapsed_seconds": 138.937
+    },
+    "alex-community-followup": {
+      "person": "alex",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Glad you got yours, Priya. I'll look for an old photo of mine and follow up privately \u2014 better than taking the wrong one.",
+      "root_id": "4596sqcx9bg9fgtje6meiyq4dc",
+      "post_id": "kzp9usm4o3ribge85equg1pnco",
+      "switch_event_id": "sw_068ee08f2493909d95c7c2d3b0abb4e1",
+      "created_at_ms": 1794059644776,
+      "recorded_elapsed_seconds": 140.296
+    },
+    "ava-still-helping": {
+      "person": "ava",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Thanks for checking carefully. The other case is safe with the desk while its owner is being verified.",
+      "root_id": "xfcp96bmwtr4dg987g6xtmnoqe",
+      "post_id": "qrjs8w8z9p8tpbjjrga89yd63r",
+      "switch_event_id": "sw_f2995cdeecbb0e4dc169732b0ed0682b",
+      "created_at_ms": 1794059646140,
+      "recorded_elapsed_seconds": 141.661
+    },
+    "sam-close": {
+      "person": "sam",
+      "channel_id": "xfuyon8u1jdnxxo3ygpnj8xt6w",
+      "text": "Thanks, everyone. Three fictional recoveries are now recorded with staff handovers and claimant receipts. The other black case is still held safely; nobody was given the private identifying answers in this group.",
+      "root_id": "3sndsqc87jnt7nd8ak1o7e5w5a",
+      "post_id": "tw83pzg37pnkiyfuzu9j3izpyh",
+      "switch_event_id": "sw_2a09142cbe9371611cf2640487f92473",
+      "created_at_ms": 1794059647502,
+      "recorded_elapsed_seconds": 143.016
+    }
+  },
+  "disclosure": "Twelve scripted fictional people; real authenticated Mattermost posts, Switch transport and models. No physical handover.",
+  "facts": {
+    "priya:draft": "D-c4db4eb7758041d7",
+    "card:D-c4db4eb7758041d7": {
+      "message_key": "O-d1f0d0e3042b4c64",
+      "kind": "draft",
+      "claim_id": "C001",
+      "record_id": "D-c4db4eb7758041d7",
+      "remote_id": "sw_4543ee20dbfb427aa4664b7a2c44db65",
+      "mattermost_post_id": "cw5419opabyr7cgufrk7wuhkjw",
+      "mattermost_user_id": "3rug1b7oqffezpuggjjhzu1fdh",
+      "message": "### Priya, let\u2019s get your black headphone case back\n\nI\u2019ve brought your report over from the campus channel. Here\u2019s what I understood:\n\n- **Item:** headphone case\n- **Color:** black\n- **Where:** library\n- **Your description:** I lost my black headphone case in the library this afternoon. I'm supposed to be studying and I'm really worried I've left it behind \u2014 could one of those be mine?\n\n**Is that right?** Reply in this message\u2019s thread: `Yes, that's right.`\n\nI won\u2019t show you the desk\u2019s identifying details. I\u2019ll ask you to describe yours in your own words.\n\n[findback:O-d1f0d0e3042b4c64]"
+    },
+    "priya:initial-review": "R-b6e9076c6b1e44ba",
+    "card:R-b6e9076c6b1e44ba": {
+      "message_key": "sw_5dadcaf35593a791ae2d740bf771ad6e:matcher:review",
+      "kind": "review",
+      "claim_id": "C001",
+      "record_id": "R-b6e9076c6b1e44ba",
+      "remote_id": "sw_dd49fa03c89249dc821e75e65d2e2d91",
+      "mattermost_post_id": "i5z34zw47tfqzcqpychs3m5o4e",
+      "mattermost_user_id": "3ubixwpcu3g93rym9jkniwm4uy",
+      "message": "### Priya \u00b7 evidence ready for your judgment\n\n**Private staff comparison \u00b7 AI proposal, human decision**\n\nClaimant assertions match only the coarse staff observations for I-001 and I-002. Neither case can be uniquely identified from the supplied claim.\n\n**What the desk recorded**\n\n- **Case A** \u2014 green triangle sticker under lid; short blue charging cable inside\n\n- **Case B** \u2014 red thread on zipper; initials RK inside\n\n**What the claimant independently said**\n\nNo distinguishing details yet. A broad match is not ownership evidence.\n\n**Agrees:** The claimant describes a black headphone case; staff record both I-001 and I-002 as black headphone cases.; The claimant reports losing it in the library; staff record both candidates as found in library locations.\n\n**Still needed:** The claimant has not described identifying marks, contents, or accessories to compare with staff-recorded private facts.; No supporting claimant evidence is supplied.; The precise loss location and time are missing; 'this afternoon' does not establish a precise timeline.; No claimant-provided brand or model is available.\n\n**Mira: reply in this card's thread** with `Approve case A for Priya. <your reason>` or `Ask for more information. <what's missing>`.\n\nApproval reserves the reviewed item. Collection and confirmed handover come next.\n\n[findback:sw_5dadcaf35593a791ae2d740bf771ad6e:matcher:review]"
+    },
+    "alex:draft": "D-ede30115dde240d6",
+    "card:D-ede30115dde240d6": {
+      "message_key": "O-dcd04d88a9334ff5",
+      "kind": "draft",
+      "claim_id": "C002",
+      "record_id": "D-ede30115dde240d6",
+      "remote_id": "sw_ddd24a8da42c4dbba5258866b581a8fc",
+      "mattermost_post_id": "qctbem9zz3ddmyf7qzthq6d78w",
+      "mattermost_user_id": "u8iridcdxi87tp8saam6tjmcpr",
+      "message": "### Alex, let\u2019s get your black headphone case back\n\nI\u2019ve brought your report over from the campus channel. Here\u2019s what I understood:\n\n- **Item:** headphone case\n- **Color:** black\n- **Where:** library\n- **Your description:** I lost a black headphone case somewhere in the library too. I don't remember any identifying marks. I'm late for my bus.\n\n**Is that right?** Reply in this message\u2019s thread: `Yes, that's right.`\n\nI won\u2019t show you the desk\u2019s identifying details. I\u2019ll ask you to describe yours in your own words.\n\n[findback:O-dcd04d88a9334ff5]"
+    },
+    "alex:initial-review": "R-8c522e6383fc4d7c",
+    "card:R-8c522e6383fc4d7c": {
+      "message_key": "sw_737cf5c92771c8e2310409a6bac5c6ae:matcher:review",
+      "kind": "review",
+      "claim_id": "C002",
+      "record_id": "R-8c522e6383fc4d7c",
+      "remote_id": "sw_c0dc90bb3a9d4862808cdc713d725563",
+      "mattermost_post_id": "edwo4ca3pffebp4gnbqtb169eh",
+      "mattermost_user_id": "3ubixwpcu3g93rym9jkniwm4uy",
+      "message": "### Alex \u00b7 evidence ready for your judgment\n\n**Private staff comparison \u00b7 AI proposal, human decision**\n\nClaimant assertions fit both I-001 and I-002 only at a coarse level. Staff observations identify two distinct black headphone cases in the library; no claimant evidence distinguishes them.\n\n**What the desk recorded**\n\n- **Case A** \u2014 green triangle sticker under lid; short blue charging cable inside\n\n- **Case B** \u2014 red thread on zipper; initials RK inside\n\n**What the claimant independently said**\n\nNo distinguishing details yet. A broad match is not ownership evidence.\n\n**Agrees:** The claimant reports a black headphone case; staff record that category and color for both I-001 and I-002.; The claimant names the library; staff found both candidates at specific locations within the library.\n\n**Still needed:** Independent claimant details about marks, contents, or accessories to compare with staff-recorded identifying features.; A more precise loss location to distinguish Library Desk A from Library Study Room 2.; An approximate loss time to compare with staff-recorded discovery times.; No supporting evidence is supplied; the claimant says they do not remember identifying marks. Their bus urgency provides no identifying evidence.\n\n**Mira: reply in this card's thread** with `Approve case A for Alex. <your reason>` or `Ask for more information. <what's missing>`.\n\nApproval reserves the reviewed item. Collection and confirmed handover come next.\n\n[findback:sw_737cf5c92771c8e2310409a6bac5c6ae:matcher:review]"
+    },
+    "priya:ambiguous-review": "R-b6e9076c6b1e44ba",
+    "priya:evidence-review": "R-bbb8bc7f3d4b4b09",
+    "card:R-bbb8bc7f3d4b4b09": {
+      "message_key": "sw_8e74c74e07ec6d90a39cb23104cecaad:matcher:review",
+      "kind": "review",
+      "claim_id": "C001",
+      "record_id": "R-bbb8bc7f3d4b4b09",
+      "remote_id": "sw_191ad0ab673e46158eac336d91a0c252",
+      "mattermost_post_id": "m7w6foafd7bhpduypo7d5zj1wy",
+      "mattermost_user_id": "3ubixwpcu3g93rym9jkniwm4uy",
+      "message": "### Priya \u00b7 evidence ready for your judgment\n\n**Private staff comparison \u00b7 AI proposal, human decision**\n\nThe new claimant evidence specifically matches both identifying details staff recorded for I-001, supporting staff review. I-002 shares only coarse similarities. The previous review was invalidated after the evidence changed; ownership remains undetermined.\n\n**What the desk recorded**\n\n- **Case A** \u2014 green triangle sticker under lid; short blue charging cable inside\n\n- **Case B** \u2014 red thread on zipper; initials RK inside\n\n**What the claimant independently said**\n\n> Mine has a green triangle sticker under the lid and a short blue charging cable inside.\n\n**Agrees:** The claimant describes a black headphone case lost in the library; staff record I-001 and I-002 as black headphone cases found in library locations.; The claimant reports a green triangle sticker under the lid and a short blue charging cable inside; staff recorded both details for I-001.\n\n**Doesn't agree:** No direct contradiction is established for I-001.; Staff recorded red thread on the zipper and initials RK inside I-002. These do not corroborate the claimant's identifying details, but the records do not establish that the claimed sticker and cable are absent.\n\n**Still needed:** The precise loss location and time are unspecified, so the timeline and exact location cannot be confirmed.; Brand and model are unspecified.; Staff must assess the matching identifying details and determine ownership.\n\n**Mira: reply in this card's thread** with `Approve case A for Priya. <your reason>` or `Ask for more information. <what's missing>`.\n\nApproval reserves the reviewed item. Collection and confirmed handover come next.\n\n[findback:sw_8e74c74e07ec6d90a39cb23104cecaad:matcher:review]"
+    },
+    "priya:reservation": "RS-c328a79cb64146e0",
+    "priya:receipt": "RET-b71147782bd14981",
+    "maya:draft": "D-5c0232fb058f4073",
+    "card:D-5c0232fb058f4073": {
+      "message_key": "O-8288e073e68b4975",
+      "kind": "draft",
+      "claim_id": "C003",
+      "record_id": "D-5c0232fb058f4073",
+      "remote_id": "sw_e7ba7cdaffd84c0c9288bf17ef016c2a",
+      "mattermost_post_id": "nu1i1i1udtguupqbq1h1rr5iso",
+      "mattermost_user_id": "t19peubznj8yfyux59dds6i37r",
+      "message": "### Maya, let\u2019s get your blue bottle back\n\nI\u2019ve brought your report over from the campus channel. Here\u2019s what I understood:\n\n- **Item:** bottle\n- **Color:** blue\n- **Where:** near the library\n- **Your description:** I lost my blue insulated bottle near the library this morning. Hoping that's made it to the desk as well.\n\n**Is that right?** Reply in this message\u2019s thread: `Yes, that's right.`\n\nI won\u2019t show you the desk\u2019s identifying details. I\u2019ll ask you to describe yours in your own words.\n\n[findback:O-8288e073e68b4975]"
+    },
+    "maya:initial-review": "R-66f5346338014763",
+    "card:R-66f5346338014763": {
+      "message_key": "sw_0c2777fe7c55ce676f8f262eda55f194:matcher:review",
+      "kind": "review",
+      "claim_id": "C003",
+      "record_id": "R-66f5346338014763",
+      "remote_id": "sw_63ae1f61e9054759a8c482c4625e7ba7",
+      "mattermost_post_id": "eoffbfioj7yqbgwd9ndyc7bbrc",
+      "mattermost_user_id": "3ubixwpcu3g93rym9jkniwm4uy",
+      "message": "### Maya \u00b7 evidence ready for your judgment\n\n**Private staff comparison \u00b7 AI proposal, human decision**\n\nI-003 is a possible match based only on coarse similarities between claimant assertions and staff observations. Ownership is not established.\n\n**What the desk recorded**\n\n- **Bottle** \u2014 small star engraving under base\n\n**What the claimant independently said**\n\nNo distinguishing details yet. A broad match is not ownership evidence.\n\n**Agrees:** The claimant reports a blue bottle; staff record I-003 as a blue bottle.; The claimant reports losing it near the library; staff record I-003 at Library Desk B, a broadly compatible location.\n\n**Still needed:** The claimant has provided no identifying marks, contents, accessories, or other evidence to compare with the staff-recorded private identifying detail.; The claimant describes the bottle as insulated; staff observations do not confirm insulation.; The claimant says 'this morning' but provides no exact loss date or time; the recorded found timestamp alone does not establish a timing match.; Neither source specifies a brand or model.\n\n**Mira: reply in this card's thread** with `Approve bottle for Maya. <your reason>` or `Ask for more information. <what's missing>`.\n\nApproval reserves the reviewed item. Collection and confirmed handover come next.\n\n[findback:sw_0c2777fe7c55ce676f8f262eda55f194:matcher:review]"
+    },
+    "maya:evidence-review": "R-e176cd33ea664612",
+    "card:R-e176cd33ea664612": {
+      "message_key": "sw_4f3c441ad6895dc1b67b204bb2be272a:matcher:review",
+      "kind": "review",
+      "claim_id": "C003",
+      "record_id": "R-e176cd33ea664612",
+      "remote_id": "sw_d24ca95730d345f7acefaaee36342088",
+      "mattermost_post_id": "49iusk3oxjfk9ng9t1rg7rnecw",
+      "mattermost_user_id": "3ubixwpcu3g93rym9jkniwm4uy",
+      "message": "### Maya \u00b7 evidence ready for your judgment\n\n**Private staff comparison \u00b7 AI proposal, human decision**\n\nI-003 merits staff review: the claimant's newly supplied identifying mark matches the staff-recorded engraving. Ownership remains undetermined; the earlier review was invalidated after this evidence changed.\n\n**What the desk recorded**\n\n- **Bottle** \u2014 small star engraving under base\n\n**What the claimant independently said**\n\n> Mine has a small star engraving under the base.\n\n**Agrees:** The claimant describes a small star engraving under the base; staff record the same identifying mark on I-003.; The claimant reports a blue bottle; staff record I-003 as a blue bottle.; The claimant reports loss near the library; staff record I-003 at Library Desk B, a broadly compatible location.\n\n**Still needed:** Staff observations do not confirm the claimant's description of the bottle as insulated.; The claimant's 'this morning' statement lacks an explicit loss date and time; the found timestamp alone does not establish a timing match.; Neither the claimant nor staff specifies a brand or model.\n\n**Mira: reply in this card's thread** with `Approve bottle for Maya. <your reason>` or `Ask for more information. <what's missing>`.\n\nApproval reserves the reviewed item. Collection and confirmed handover come next.\n\n[findback:sw_4f3c441ad6895dc1b67b204bb2be272a:matcher:review]"
+    },
+    "maya:reservation": "RS-f59ab7b7335d4f94",
+    "maya:receipt": "RET-bd15ce5359aa417e",
+    "leo:draft": "D-915acb6af3324177",
+    "card:D-915acb6af3324177": {
+      "message_key": "O-882f7d8824c64bba",
+      "kind": "draft",
+      "claim_id": "C004",
+      "record_id": "D-915acb6af3324177",
+      "remote_id": "sw_2bc67cd1e1d94072b4d00b7a1e5c1bab",
+      "mattermost_post_id": "unsopiefstdw98i91zg5ah3qih",
+      "mattermost_user_id": "kdp5e9986fb95fwob7iqgzgg8w",
+      "message": "### Leo, let\u2019s get your red book back\n\nI\u2019ve brought your report over from the campus channel. Here\u2019s what I understood:\n\n- **Item:** book\n- **Color:** red\n- **Where:** cafe\n- **Your description:** I lost a red paperback at the cafe. I can describe something inside privately.\n\n**Is that right?** Reply in this message\u2019s thread: `Yes, that's right.`\n\nI won\u2019t show you the desk\u2019s identifying details. I\u2019ll ask you to describe yours in your own words.\n\n[findback:O-882f7d8824c64bba]"
+    },
+    "leo:initial-review": "R-387eb77302e34d90",
+    "card:R-387eb77302e34d90": {
+      "message_key": "sw_28d17b1bb0e8b785f962a40a8a76d227:matcher:review",
+      "kind": "review",
+      "claim_id": "C004",
+      "record_id": "R-387eb77302e34d90",
+      "remote_id": "sw_a736d8c8a77e42f2b1b8c5fc145ff02d",
+      "mattermost_post_id": "z8cj585eufygpyrofecikwtmuy",
+      "mattermost_user_id": "3ubixwpcu3g93rym9jkniwm4uy",
+      "message": "### Leo \u00b7 evidence ready for your judgment\n\n**Private staff comparison \u00b7 AI proposal, human decision**\n\nI-004 is a possible match based only on coarse similarities. No claimant identifying evidence has been supplied.\n\n**What the desk recorded**\n\n- **Book** \u2014 handwritten dedication For L, keep exploring on page 3\n\n**What the claimant independently said**\n\nNo distinguishing details yet. A broad match is not ownership evidence.\n\n**Agrees:** The claimant reports a red book; staff records describe I-004 as a red book.; The claimant reports losing it at a cafe; staff records place I-004 at a cafe window.\n\n**Still needed:** The claimant has not privately described the identifying contents they mention, so these cannot be compared with staff-recorded private facts.; The claimant describes a paperback; staff observations do not specify binding.; The loss time and book title or author are missing.\n\n**Mira: reply in this card's thread** with `Approve book for Leo. <your reason>` or `Ask for more information. <what's missing>`.\n\nApproval reserves the reviewed item. Collection and confirmed handover come next.\n\n[findback:sw_28d17b1bb0e8b785f962a40a8a76d227:matcher:review]"
+    },
+    "leo:evidence-review": "R-e20a31152cc844e0",
+    "card:R-e20a31152cc844e0": {
+      "message_key": "sw_4707311b9693d5e366519f170d13ceda:matcher:review",
+      "kind": "review",
+      "claim_id": "C004",
+      "record_id": "R-e20a31152cc844e0",
+      "remote_id": "sw_4e7704d0a3e34a14ae5e0eab84460d0f",
+      "mattermost_post_id": "8dehwugrytr38goxmwr6xoozey",
+      "mattermost_user_id": "3ubixwpcu3g93rym9jkniwm4uy",
+      "message": "### Leo \u00b7 evidence ready for your judgment\n\n**Private staff comparison \u00b7 AI proposal, human decision**\n\nI-004 merits staff review: the claimant\u2019s new identifying assertion matches a staff-recorded private detail, beyond the coarse similarities. Ownership remains undetermined; the earlier review was invalidated after evidence changed.\n\n**What the desk recorded**\n\n- **Book** \u2014 handwritten dedication For L, keep exploring on page 3\n\n**What the claimant independently said**\n\n> Mine has a handwritten dedication saying For L, keep exploring on page 3.\n\n**Agrees:** The claimant reports a red book lost at a cafe; staff records describe I-004 as a red book found at the cafe window.; The claimant asserts a handwritten dedication reading \u201cFor L, keep exploring\u201d on page 3; staff records independently contain the same wording, location, and handwritten form for I-004.\n\n**Still needed:** The claimant describes a paperback; staff records do not specify binding.; The claimant has not supplied the loss time or the book\u2019s title or author.\n\n**Mira: reply in this card's thread** with `Approve book for Leo. <your reason>` or `Ask for more information. <what's missing>`.\n\nApproval reserves the reviewed item. Collection and confirmed handover come next.\n\n[findback:sw_4707311b9693d5e366519f170d13ceda:matcher:review]"
+    },
+    "leo:reservation": "RS-06b1a0164c7d4ff5",
+    "leo:receipt": "RET-060fdb849a1c4a41"
+  },
+  "passed": true,
+  "finished_at": "2026-11-07T13:54:08.027434+00:00",
+  "elapsed_seconds": 143.514,
+  "actual_people_count": 12,
+  "actual_return_receipts": 3,
+  "alex_status": "NEEDS_INFO",
+  "community_url": "http://127.0.0.1:57898/switch/channels/findback-campus-2f0ae85d",
+  "case_urls": {
+    "C001": "mattermost://localhost:57898/switch/channels/findback-priya-2f0ae85d",
+    "C002": "mattermost://localhost:57898/switch/channels/findback-alex-2f0ae85d",
+    "C003": "mattermost://localhost:57898/switch/channels/findback-maya-2f0ae85d",
+    "C004": "mattermost://localhost:57898/switch/channels/findback-leo-2f0ae85d"
+  },
+  "staff_url": "mattermost://localhost:57898/switch/channels/findback-staff-2f0ae85d"
+}

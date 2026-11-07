@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-11-07T13:54:46.951303+00:00",
+  "public_boundary": {
+    "passed": true,
+    "actual_public_posts_checked": 49,
+    "private_identifying_answers_found": 0
+  },
+  "claims": [
+    {
+      "id": "C001",
+      "status": "RETURNED",
+      "revision": 2,
+      "evidence_revision": 1
+    },
+    {
+      "id": "C002",
+      "status": "NEEDS_INFO",
+      "revision": 1,
+      "evidence_revision": 0
+    },
+    {
+      "id": "C003",
+      "status": "RETURNED",
+      "revision": 2,
+      "evidence_revision": 1
+    },
+    {
+      "id": "C004",
+      "status": "RETURNED",
+      "revision": 2,
+      "evidence_revision": 1
+    }
+  ],
+  "receipts": [
+    {
+      "claim_id": "C001",
+      "receipt_id": "RET-b71147782bd14981"
+    },
+    {
+      "claim_id": "C003",
+      "receipt_id": "RET-bd15ce5359aa417e"
+    },
+    {
+      "claim_id": "C004",
+      "receipt_id": "RET-060fdb849a1c4a41"
+    }
+  ],
+  "initial_comparisons": [
+    {
+      "claim_id": "C001",
+      "coarse_candidates": 2
+    },
+    {
+      "claim_id": "C002",
+      "coarse_candidates": 2
+    },
+    {
+      "claim_id": "C003",
+      "coarse_candidates": 1
+    },
+    {
+      "claim_id": "C004",
+      "coarse_candidates": 1
+    }
+  ],
+  "failed_inbox_events": 0,
+  "live_model_proposals": [
+    {
+      "role": "intake",
+      "n": 4
+    },
+    {
+      "role": "matcher",
+      "n": 7
+    }
+  ],
+  "actual_scripted_human_posts": 45,
+  "distinct_authenticated_speakers": 12,
+  "recorded_elapsed_seconds": 143.514
+}

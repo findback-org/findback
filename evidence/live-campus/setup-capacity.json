@@ -1,0 +1,13 @@
+{
+  "applied_at": "2026-11-07T14:23:04.296369+00:00",
+  "reason": "Allow the authorized fresh twelve-person fictional showcase while preserving previous cohorts.",
+  "operation": "PUT /api/v4/config/patch",
+  "changed_path": "TeamSettings.MaxUsersPerTeam",
+  "previous_value": 50,
+  "effective_value": 100,
+  "observed_config_differences": [
+    "TeamSettings.MaxUsersPerTeam"
+  ],
+  "verified_no_other_configuration_differences": true,
+  "roles_or_security_settings_changed": false
+}

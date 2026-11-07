@@ -1,0 +1,570 @@
+{
+  "verified_at": "2026-11-07T13:48:38.397791+00:00",
+  "behavior": "Live HTTP read-only credential checks; no WebSocket claims, messages, models or case mutations.",
+  "gateway_owner_checks_requested": true,
+  "passed": true,
+  "checks": [
+    {
+      "name": "service_reads_staff",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "matcher_reads_staff",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "service_reads_C001",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "own_intake_reads_C001",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "intake_C001_denied_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "matcher_denied_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C001_denied_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C001_denied_C003",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C001_denied_C004",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "service_reads_C002",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "own_intake_reads_C002",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "intake_C002_denied_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "matcher_denied_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C002_denied_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C002_denied_C003",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C002_denied_C004",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "service_reads_C003",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "own_intake_reads_C003",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "intake_C003_denied_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "matcher_denied_C003",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C003_denied_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C003_denied_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C003_denied_C004",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "service_reads_C004",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "own_intake_reads_C004",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "intake_C004_denied_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "matcher_denied_C004",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C004_denied_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C004_denied_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C004_denied_C003",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "changed_url_path_does_not_grant_matcher_scope",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_staff_immutable_account",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_staff_nonadmin",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_staff_reads_staff",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "human_staff_reads_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_staff_reads_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_staff_reads_C003",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_staff_reads_C004",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C001_immutable_account",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C001_nonadmin",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C001_reads_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C001_reads_C001",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "human_C001_reads_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C001_reads_C003",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C001_reads_C004",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C002_immutable_account",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C002_nonadmin",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C002_reads_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C002_reads_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C002_reads_C002",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "human_C002_reads_C003",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C002_reads_C004",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C003_immutable_account",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C003_nonadmin",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C003_reads_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C003_reads_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C003_reads_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C003_reads_C003",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "human_C003_reads_C004",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C004_immutable_account",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C004_nonadmin",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C004_reads_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C004_reads_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C004_reads_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C004_reads_C003",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C004_reads_C004",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "intake_owner_denied_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "matcher_owner_denied_claimant",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "service_owner_denied_claimant_gateway",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "service_community",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "C001_intake_not_community",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "C002_intake_not_community",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "C003_intake_not_community",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "C004_intake_not_community",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "priya_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "alex_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "mira_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "jordan_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "elena_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "omar_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "maya_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "noah_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "aisha_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "leo_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "ava_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "sam_community_member",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "observer_nonadmin",
+      "passed": true
+    },
+    {
+      "name": "observer_community",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "observer_staff",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "observer_C001",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "observer_C002",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "observer_C003",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "observer_C004",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "twelve_distinct_immutable_humans",
+      "passed": true
+    }
+  ],
+  "limitations": "This measures configured token/room access, not physical returns, user demand, deployment security or addressing behavior.",
+  "showcase_observer_disclosure": "Separate nonadmin observer and explicitly enrolled existing viewer can read fictional private rooms; ordinary claimants remain scoped."
+}

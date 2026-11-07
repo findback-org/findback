@@ -52,6 +52,9 @@ class RuntimeJournal:
               id TEXT PRIMARY KEY, room_id TEXT NOT NULL, speaker TEXT NOT NULL,
               body TEXT NOT NULL, state TEXT NOT NULL DEFAULT 'PENDING', remote_id TEXT);
             """)
+            columns = {row[1] for row in db.execute("PRAGMA table_info(runtime_messages)")}
+            if "thread_id" not in columns:
+                db.execute("ALTER TABLE runtime_messages ADD COLUMN thread_id TEXT")
 
     def capture(self, client_id: str, frame: dict, primary: bool) -> None:
         encoded = dumps(frame)
@@ -72,10 +75,10 @@ class RuntimeJournal:
             db.execute("UPDATE inbox SET state=?,error=?,updated_at=? WHERE event_id=?",
                        ("FAILED" if error else "DONE", error, datetime.now(timezone.utc).isoformat(), event_id))
 
-    def queue(self, key: str, room: str, body: str, speaker: str = "service") -> None:
+    def queue(self, key: str, room: str, body: str, speaker: str = "service", thread_id: str | None = None) -> None:
         with self.store.transaction() as db:
-            db.execute("INSERT OR IGNORE INTO runtime_messages(id,room_id,speaker,body) VALUES (?,?,?,?)",
-                       (key, room, speaker, body))
+            db.execute("INSERT OR IGNORE INTO runtime_messages(id,room_id,speaker,body,thread_id) VALUES (?,?,?,?,?)",
+                       (key, room, speaker, body, thread_id))
 
 
 class FindBackRuntime:
@@ -123,7 +126,7 @@ class FindBackRuntime:
         self.stack = AsyncExitStack()
         await self.stack.__aenter__()
         self.stack.callback(self._process_lock.close)
-        rooms = [self.staff_room, *self.rooms_to_cases]
+        rooms = [self.staff_room, *self.rooms_to_cases, *self.config.get("additional_service_rooms", [])]
         specs = {"service": (self.config["agents"]["service"], rooms),
                  "matcher": (self.config["agents"]["matcher"], [self.staff_room])}
         specs.update({f"intake-{cid}": (case["intake_agent"], [case["room_id"]]) for cid, case in self.cases.items()})
@@ -376,7 +379,7 @@ class FindBackRuntime:
                 body += "\n```json\n" + json.dumps(compact, indent=2, ensure_ascii=False) + "\n```"
             self.journal.queue(ctx.source_event_id + ":result", ctx.room_id, body)
 
-    async def _send_once(self, key: str, room: str, body: str, speaker: str) -> str:
+    async def _send_once(self, key: str, room: str, body: str, speaker: str, thread_id: str | None = None) -> str:
         marker = f"[findback:{key}]"
         client = self.clients[speaker]
         expected_sender = (self.config["agents"][speaker]["actor_id"] if speaker in self.config["agents"]
@@ -420,7 +423,13 @@ class FindBackRuntime:
         encoded = body.encode("utf-8")
         if len(encoded) > 12000:
             body = encoded[:11500].decode("utf-8", errors="ignore") + "\n\n[Excerpt: full record retained in FindBack's local audit.]"
-        result = await client.post_message(room, body + "\n\n" + marker)
+        # A zero-width Markdown link title keeps delivery metadata out of the
+        # conversation while retaining the exact marker in the stored message.
+        suffix = f'\n\n[\u2060](# "{marker}")' if self.config.get("compact_delivery_markers") else "\n\n" + marker
+        if thread_id is None:
+            result = await client.post_message(room, body + suffix)
+        else:
+            result = await client.post_message(room, body + suffix, thread_id=thread_id)
         return str(result.get("event_id", result.get("message_id", result.get("id", "posted")))) if isinstance(result, dict) else "posted"
 
     async def _deliver(self):
@@ -437,7 +446,7 @@ class FindBackRuntime:
                 rows = [dict(r) for r in db.execute("SELECT * FROM runtime_messages WHERE state='PENDING' ORDER BY rowid")]
             for row in rows:
                 try:
-                    remote = await self._send_once(row["id"], row["room_id"], row["body"], row["speaker"])
+                    remote = await self._send_once(row["id"], row["room_id"], row["body"], row["speaker"], row.get("thread_id"))
                     with self.store.transaction() as db:
                         db.execute("UPDATE runtime_messages SET state='SENT',remote_id=? WHERE id=?", (remote, row["id"]))
                 except Exception:

@@ -2,9 +2,23 @@
 
 Recover a lost possession through private Switch rooms. Intake helps a claimant describe it, Matcher compares evidence for staff, and an enrolled custodian decides. The service closes a return only after **staff handover and that claimant's receipt**.
 
+**Start with the actual messaging-app demo:** [Campus • Lost & Found](http://localhost:57898/switch/channels/findback-campus-4f73ef6b). It contains 12 distinct fictional people, four claims, six real Switch agent identities, and the complete conversations. The local `@krishna` account is already enrolled as a demo viewer across the community, private cases and review desk.
+
+The current campus conversation contains **46 authenticated human-account posts and 12 live Codex calls**. Priya, Maya and Leo have recorded returns; Alex is still gathering evidence. Each fictional participant posts from a distinct account. [Run and access evidence](evidence/live-campus/verification.json) distinguish the simulation from the live transport and AI. The genuine paperback/book exception and Mira's fresh review are retained in the history.
+
+[Watch the actual Mattermost screens](evidence/live-campus/mattermost-demo.mp4) — a 71-second edited screen-captured walkthrough. It uses unchanged browser captures, with navigation/loading gaps trimmed. [Capture details](evidence/live-campus/CAPTURE.md) record the edits and source hashes.
+
+To watch a **fresh** campus conversation unfold, use one command and open the printed Mattermost link:
+
+```sh
+.venv/bin/python -m findback.showcase --viewer-username krishna --pace 0.7
+```
+
+This creates a separate session and leaves its real agents listening after the story. It preserves previous conversations and receipts. Natural confirmation, staff decisions and receipt replies bind to their exact message cards; participants do not copy database IDs into chat.
+
 The demo uses fictional people and inventory. A `RETURNED` database record in this demo does not establish that a physical object moved.
 
-Verified: **122 automated tests**, **31 live access checks**, a complete live Switch/Codex scenario, actual threaded messages and agent-approval refusal, and a service restart. See [the evidence](EVIDENCE.md) and [the 2:32 recorded playback](evidence/findback-demo.mp4). The playback reconstructs captured messages; it is not a screen recording.
+Verified: **154 automated tests**, **94 campus access checks**, the live multi-person campus story, actual threaded messages and agent-approval refusal, and service restart. See [the evidence](EVIDENCE.md). The older text-only playback is retained as a historical artifact; the primary demo is now the actual Mattermost conversation above.
 
 ## Run locally
 
@@ -27,7 +41,9 @@ Private setup credentials and runtime state live in `.findback/` (directory 0700
 
 ## Use the chat rooms
 
-Open the local [Mattermost server](http://127.0.0.1:57898). The private config has each fictional user's username/password and room URL. Use separate browser sessions for Priya, Alex and the custodian, or sign out between roles. These are distinct authenticated accounts, not display-name roles.
+Open the local [Mattermost server](http://localhost:57898). The private config has each fictional user's username/password and room URL. Use separate browser sessions for Priya, Alex and the custodian, or sign out between roles. These are distinct authenticated accounts, not display-name roles.
+
+The campus showcase uses the natural phrases and reply threads shown in its conversations. The command reference below belongs to the original three-room developer fixture.
 
 Every command starts at the beginning of a message with `findback`. Quoted commands, prose describing a command, and attachments are not commands.
 
