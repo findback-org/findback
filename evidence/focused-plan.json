@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-11-07T16:59:56.100533+00:00",
+  "read_only": true,
+  "recommendation": "Reuse Alex and Ava: the actual claim already replies directly beneath the actual found-case post. Continue only to reservation and private collection notice.",
+  "found_post": {
+    "id": "5xjoudotutgiip8dhh4gh9fify",
+    "url": "http://localhost:57898/switch/pl/5xjoudotutgiip8dhh4gh9fify",
+    "text": "There's another black headphone case in Study Room 2. I'll bring that over too. They look pretty similar from outside.",
+    "actual_author_matches_ava": true
+  },
+  "claim_reply": {
+    "id": "mytx6wj77tyk9ffs3891j415jy",
+    "url": "http://localhost:57898/switch/pl/mytx6wj77tyk9ffs3891j415jy",
+    "text": "I lost a black headphone case somewhere in the library too. I don't remember any identifying marks. I'm late for my bus.",
+    "root_id": "5xjoudotutgiip8dhh4gh9fify",
+    "actual_author_matches_alex": true,
+    "direct_reply_to_found_post": true
+  },
+  "concierge_reply": {
+    "id": "rrfww9h17ty3zesjc35xb7fgbe",
+    "url": "http://localhost:57898/switch/pl/rrfww9h17ty3zesjc35xb7fgbe",
+    "text": "Alex, I can help. I\u2019ve opened [your private recovery chat](http://localhost:57898/switch/channels/findback-alex-4f73ef6b). I\u2019ll ask you there, so the identifying details stay between you and the library desk. Everyone else can keep posting here.\n\n[\u2060](# \"[findback:sw_02dc408938a1b44977b92fe14e494c4e:welcome]\")"
+  },
+  "case_room_url": "http://localhost:57898/switch/channels/findback-alex-4f73ef6b",
+  "staff_room_url": "http://localhost:57898/switch/channels/findback-staff-4f73ef6b",
+  "proposed_next_steps": [
+    "Alex independently supplies previously undisclosed red zipper thread and RK initials in his own private case.",
+    "Real Matcher proposes a fresh current comparison to the private staff room.",
+    "Mira replies to that exact review card to approve case B for Alex.",
+    "Mira sends Collection instructions in the same exact review thread.",
+    "FindBack privately notifies Alex of the reservation and collection instructions."
+  ],
+  "stop_condition": "C002 APPROVED, I-002 RESERVED, collection instructions delivered; no staff handover and no claimant receipt.",
+  "new_posts_sent": 0,
+  "state_mutations": 0,
+  "proposed_input_disclosure": "Future participant messages remain scripted fictional roleplay, with real transport/models/domain actions."
+}

@@ -118,7 +118,7 @@ def encode(args) -> dict:
         subprocess.run([
             "ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-safe", "0",
             "-f", "concat", "-i", str(listing), "-an", "-vf",
-            "pad=ceil(iw/2)*2:ceil(ih/2)*2:0:0:black,setsar=1",
+            f"pad=ceil(iw/2)*2:ceil(ih/2)*2:0:0:black,setsar=1,fps={args.fps}",
             "-r", str(args.fps), "-fps_mode", "cfr", "-t", f"{cursor:.6f}",
             "-c:v", "libx264", "-preset", "medium", "-crf", "18",
             "-pix_fmt", "yuv420p", "-movflags", "+faststart",

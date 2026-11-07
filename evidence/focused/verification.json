@@ -1,0 +1,94 @@
+{
+  "verified_at": "2026-11-07T17:52:25.915558+00:00",
+  "method": "Read-only actual Mattermost GETs plus SQLite source/review/approval/reservation joins. No new posts or case actions.",
+  "passed": true,
+  "checks": {
+    "original_found_claim_direct_reply": true,
+    "evidence_actual_author_channel_body_and_thread": true,
+    "approval_actual_author_channel_body_and_thread": true,
+    "collection_actual_author_channel_body_and_thread": true,
+    "review_bound_to_exact_private_assertion": true,
+    "real_matcher_proposal_for_that_source": true,
+    "approval_exact_review_item_and_author": true,
+    "evidence_trusted_switch_source": true,
+    "approval_trusted_switch_source": true,
+    "approval_source_thread_is_exact_review_card": true,
+    "collection_trusted_switch_source": true,
+    "collection_source_thread_is_exact_review_card": true,
+    "reservation_active_for_exact_item": true,
+    "exact_collection_instructions_stored": true,
+    "no_handover_or_receipt": true,
+    "actual_collection_notice_is_exact_service_bot": true,
+    "claim_approved_item_reserved": true,
+    "no_public_identifying_answer_leak": true,
+    "completed_showcase_journal_preserved": true
+  },
+  "actual_new_scripted_human_posts": 3,
+  "actual_posts": {
+    "evidence": {
+      "post_id": "bbiifuharprkzyj16hgpubhqty",
+      "url": "http://localhost:57898/switch/pl/bbiifuharprkzyj16hgpubhqty",
+      "root_id": null,
+      "created_at_ms": 1794073507893
+    },
+    "approval": {
+      "post_id": "untir6ijrprc5g6jadti7ko44w",
+      "url": "http://localhost:57898/switch/pl/untir6ijrprc5g6jadti7ko44w",
+      "root_id": "af6yjgecdf8hxyaj3jc75itcgy",
+      "created_at_ms": 1794073707141
+    },
+    "collection": {
+      "post_id": "bexqa7uz5tnmdrrbch3qc7oner",
+      "url": "http://localhost:57898/switch/pl/bexqa7uz5tnmdrrbch3qc7oner",
+      "root_id": "af6yjgecdf8hxyaj3jc75itcgy",
+      "created_at_ms": 1794073844241
+    }
+  },
+  "real_matcher_metrics": {
+    "behavior": "live Codex inference; no action authority",
+    "role": "matcher",
+    "seconds": 13.249,
+    "startup_diagnostics": 1,
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 10112,
+      "input_tokens": 12620,
+      "output_tokens": 276,
+      "reasoning_output_tokens": 0
+    }
+  },
+  "review": {
+    "id": "R-b7b4769f41204854",
+    "claim_id": "C002",
+    "claim_revision": 2,
+    "evidence_revision": 1,
+    "source_event_id": "sw_9bbfafdbceb8789b57a21bddd1a80a87:matcher"
+  },
+  "reservation": {
+    "id": "RS-ab980c86a9a84b23",
+    "claim_id": "C002",
+    "item_id": "I-002",
+    "status": "ACTIVE",
+    "collection_instructions": "Your headphone case is reserved at the library desk. Please ask for Mira and show this private recovery chat."
+  },
+  "private_collection_notice": {
+    "id": "wf1q8hnwytn6pbbprohra8zwgc",
+    "url": "http://localhost:57898/switch/pl/wf1q8hnwytn6pbbprohra8zwgc",
+    "text": "**Collection arranged**\n\nYour headphone case is reserved at the library desk. Please ask for Mira and show this private recovery chat.\n\nMira will record handover, then I\u2019ll ask you to confirm you actually received it.\n\n[\u2060](# \"[findback:O-27a082578489464f]\")",
+    "created_at_ms": 1794073844703,
+    "root_id": null,
+    "message_key": "O-27a082578489464f"
+  },
+  "public_boundary": {
+    "passed": true,
+    "actual_public_posts_checked": 50,
+    "private_identifying_answers_found": 0
+  },
+  "ending": {
+    "claim": "APPROVED",
+    "item": "RESERVED",
+    "handover_records": 0,
+    "receipt_records": 0
+  },
+  "disclosure": "Three new scripted fictional participant messages; actual existing found/claim thread, Switch transport, model comparison, human staff approval and private agent notification."
+}

@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-11-07T17:44:25.018650+00:00",
+  "read_only": true,
+  "found_post": {
+    "id": "5xjoudotutgiip8dhh4gh9fify",
+    "url": "http://localhost:57898/switch/pl/5xjoudotutgiip8dhh4gh9fify",
+    "author": "ava",
+    "text": "There's another black headphone case in Study Room 2. I'll bring that over too. They look pretty similar from outside.",
+    "root_id": null,
+    "created_at_ms": 1794061464268
+  },
+  "claim_reply": {
+    "id": "mytx6wj77tyk9ffs3891j415jy",
+    "url": "http://localhost:57898/switch/pl/mytx6wj77tyk9ffs3891j415jy",
+    "author": "alex",
+    "text": "I lost a black headphone case somewhere in the library too. I don't remember any identifying marks. I'm late for my bus.",
+    "root_id": "5xjoudotutgiip8dhh4gh9fify",
+    "created_at_ms": 1794061475047
+  },
+  "claim_is_direct_reply_to_found_post": true,
+  "concierge_reply": {
+    "id": "rrfww9h17ty3zesjc35xb7fgbe",
+    "url": "http://localhost:57898/switch/pl/rrfww9h17ty3zesjc35xb7fgbe",
+    "text": "Alex, I can help. I\u2019ve opened [your private recovery chat](http://localhost:57898/switch/channels/findback-alex-4f73ef6b). I\u2019ll ask you there, so the identifying details stay between you and the library desk. Everyone else can keep posting here.\n\n[\u2060](# \"[findback:sw_02dc408938a1b44977b92fe14e494c4e:welcome]\")",
+    "created_at_ms": 1794061481279,
+    "root_id": "5xjoudotutgiip8dhh4gh9fify",
+    "message_key": "sw_02dc408938a1b44977b92fe14e494c4e:welcome"
+  },
+  "private_information_request": {
+    "id": "txh6ds3w878k5x6bes4oyqm1sa",
+    "url": "http://localhost:57898/switch/pl/txh6ds3w878k5x6bes4oyqm1sa",
+    "text": "Mira needs a little more detail before releasing anything. What marks, contents, or accessories would help staff identify yours? Please describe them in your own words. Your claim stays open.\n\n[\u2060](# \"[findback:O-7ce7dd7b08d54d3e]\")",
+    "created_at_ms": 1794061527161,
+    "root_id": null,
+    "message_key": "O-7ce7dd7b08d54d3e"
+  },
+  "private_case_url": "http://localhost:57898/switch/channels/findback-alex-4f73ef6b",
+  "staff_room_url": "http://localhost:57898/switch/channels/findback-staff-4f73ef6b",
+  "state": {
+    "claim": {
+      "id": "C002",
+      "status": "NEEDS_INFO",
+      "revision": 1,
+      "evidence_revision": 0,
+      "selected_item_id": null
+    },
+    "item": {
+      "id": "I-002",
+      "status": "AVAILABLE",
+      "revision": 1
+    },
+    "reservation": null,
+    "handover_or_receipt": null
+  },
+  "completed_focus_stages": [],
+  "completed_showcase_journal_sha256": "719905083628519c6f57921f7e3d5afbbc79af1b7e429e3bbacb4609c6445944",
+  "intended_stop": "APPROVED claim, RESERVED item, private collection instructions delivered; no handover and no receipt.",
+  "new_posts_sent_by_inspection": 0,
+  "domain_mutations_by_inspection": 0
+}

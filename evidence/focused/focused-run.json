@@ -1,0 +1,187 @@
+{
+  "schema": 1,
+  "kind": "focused-alex",
+  "claim_id": "C002",
+  "item_id": "I-002",
+  "community_channel_id": "987er1q8h3nwjr9gpubdz997ye",
+  "started_at": "2026-11-07T17:45:07.028921+00:00",
+  "steps": {
+    "focused-alex-evidence-v1": {
+      "person": "alex",
+      "channel_id": "a19sqqzdrbfwb8gksuzo5s93co",
+      "text": "I remember now. Mine has a red thread on the zipper and the initials RK on the inside label.",
+      "root_id": null,
+      "post_id": "bbiifuharprkzyj16hgpubhqty",
+      "switch_event_id": "sw_9bbfafdbceb8789b57a21bddd1a80a87",
+      "created_at_ms": 1794073507893,
+      "recorded_elapsed_seconds": 0.864
+    },
+    "focused-alex-approval-v1": {
+      "person": "mira",
+      "channel_id": "wtxntj1tp38xubno6d86ysxmgc",
+      "text": "Approve case B for Alex. Alex independently described the red thread on the zipper and the initials RK on the inside label. I checked both against the desk observations for case B.",
+      "root_id": "af6yjgecdf8hxyaj3jc75itcgy",
+      "post_id": "untir6ijrprc5g6jadti7ko44w",
+      "switch_event_id": "sw_4342a487a2330fc2d2cf05f4abf0c945",
+      "created_at_ms": 1794073707141,
+      "recorded_elapsed_seconds": 200.112
+    },
+    "focused-alex-collection-v1": {
+      "person": "mira",
+      "channel_id": "wtxntj1tp38xubno6d86ysxmgc",
+      "text": "Collection: Your headphone case is reserved at the library desk. Please ask for Mira and show this private recovery chat.",
+      "root_id": "af6yjgecdf8hxyaj3jc75itcgy",
+      "post_id": "bexqa7uz5tnmdrrbch3qc7oner",
+      "switch_event_id": "sw_e47d1478d8c3461776aee2d4d2b6f5f4",
+      "created_at_ms": 1794073844241,
+      "recorded_elapsed_seconds": 337.212
+    }
+  },
+  "facts": {
+    "focused-alex-evidence-review": "R-b7b4769f41204854",
+    "card:R-b7b4769f41204854": {
+      "message_key": "sw_9bbfafdbceb8789b57a21bddd1a80a87:matcher:review",
+      "kind": "review",
+      "claim_id": "C002",
+      "record_id": "R-b7b4769f41204854",
+      "remote_id": "sw_a470844c75ab498bac8994e42b13b5d7",
+      "mattermost_post_id": "af6yjgecdf8hxyaj3jc75itcgy",
+      "mattermost_user_id": "doybaxodef8ajrtb6ycjpb8n1a",
+      "message": "### Alex \u00b7 evidence ready for your judgment\n\n**Private staff comparison \u00b7 AI proposal, human decision**\n\nClaimant C002\u2019s new identifying assertions match two staff-recorded details for available item I-002, supporting staff review. Ownership remains undetermined. The earlier review was invalidated after this evidence arrived.\n\n**What the desk recorded**\n\n- **Case B** \u2014 red thread on zipper; initials RK inside\n\n**What the claimant independently said**\n\n> I remember now. Mine has a red thread on the zipper and the initials RK on the inside label.\n\n**Agrees:** The claimant describes a black headphone case lost in the library; staff record I-002 as a black headphone case found in Library Study Room 2.; The claimant now recalls red thread on the zipper and initials RK on the inside label. Staff observations for I-002 independently record red thread on the zipper and initials RK inside.\n\n**Doesn't agree:** No direct contradiction is established for I-002. The claimant\u2019s earlier inability to remember marks and later recollection represent a change in recall, not proof that the marks were absent.; I-003 and I-004 have categories and colors inconsistent with the claim. I-001 shares coarse attributes but has different recorded distinguishing details; those differences alone do not establish a contradiction, and its current status is RETURNED.\n\n**Still needed:** Approximate loss date/time and a more precise loss location remain unspecified.; Staff confirmation that the initials are on the inside label, as the claimant specifically asserts; the inventory records only 'inside'.; No attachment or additional ownership evidence is supplied. The matching assertions require staff assessment. \n\n**Mira: reply in this card's thread.** If the evidence is incomplete, use `Ask for more information. <what's missing>`. If you judge it sufficient, use `Approve case b for Alex. <your reason>`.\n\nApproval reserves the reviewed item. Collection and confirmed handover come next.\n\n[\u2060](# \"[findback:sw_9bbfafdbceb8789b57a21bddd1a80a87:matcher:review]\")"
+    }
+  },
+  "stages": {
+    "evidence": {
+      "completed_at": "2026-11-07T17:45:21.965191+00:00",
+      "assertion_post_id": "bbiifuharprkzyj16hgpubhqty",
+      "assertion_url": "http://localhost:57898/switch/pl/bbiifuharprkzyj16hgpubhqty",
+      "source_event_id": "sw_9bbfafdbceb8789b57a21bddd1a80a87",
+      "review_id": "R-b7b4769f41204854",
+      "review_post_id": "af6yjgecdf8hxyaj3jc75itcgy",
+      "review_url": "http://localhost:57898/switch/pl/af6yjgecdf8hxyaj3jc75itcgy"
+    },
+    "approval": {
+      "completed_at": "2026-11-07T17:48:27.697422+00:00",
+      "approval_post_id": "untir6ijrprc5g6jadti7ko44w",
+      "approval_url": "http://localhost:57898/switch/pl/untir6ijrprc5g6jadti7ko44w",
+      "reservation_id": "RS-ab980c86a9a84b23",
+      "review_id": "R-b7b4769f41204854",
+      "private_reservation_notice": {
+        "id": "esg6hxmk9bffmnw6rmh8y1t1zy",
+        "url": "http://localhost:57898/switch/pl/esg6hxmk9bffmnw6rmh8y1t1zy",
+        "text": "**Mira approved a possible match and reserved it for you.**\nYour black headphone case is waiting at the desk. I\u2019ll send collection details next; this is not marked returned yet.\n\n[\u2060](# \"[findback:O-e9714e705df34b92]\")",
+        "created_at_ms": 1794073707625,
+        "root_id": null,
+        "message_key": "O-e9714e705df34b92"
+      }
+    },
+    "collection": {
+      "completed_at": "2026-11-07T17:50:44.816877+00:00",
+      "collection_post_id": "bexqa7uz5tnmdrrbch3qc7oner",
+      "collection_url": "http://localhost:57898/switch/pl/bexqa7uz5tnmdrrbch3qc7oner",
+      "reservation_id": "RS-ab980c86a9a84b23",
+      "review_id": "R-b7b4769f41204854",
+      "private_collection_notice": {
+        "id": "wf1q8hnwytn6pbbprohra8zwgc",
+        "url": "http://localhost:57898/switch/pl/wf1q8hnwytn6pbbprohra8zwgc",
+        "text": "**Collection arranged**\n\nYour headphone case is reserved at the library desk. Please ask for Mira and show this private recovery chat.\n\nMira will record handover, then I\u2019ll ask you to confirm you actually received it.\n\n[\u2060](# \"[findback:O-27a082578489464f]\")",
+        "created_at_ms": 1794073844703,
+        "root_id": null,
+        "message_key": "O-27a082578489464f"
+      },
+      "public_boundary": {
+        "passed": true,
+        "actual_public_posts_checked": 50,
+        "private_identifying_answers_found": 0
+      },
+      "claim_status": "APPROVED",
+      "item_status": "RESERVED",
+      "handover_recorded": false,
+      "receipt_recorded": false
+    }
+  },
+  "disclosure": "Reuses actual found/claim posts. Any continuation is scripted fictional input through distinct authenticated accounts, with real Switch/model/domain results. Stops before handover or receipt.",
+  "source_inspection": {
+    "checked_at": "2026-11-07T17:45:07.065989+00:00",
+    "read_only": true,
+    "found_post": {
+      "id": "5xjoudotutgiip8dhh4gh9fify",
+      "url": "http://localhost:57898/switch/pl/5xjoudotutgiip8dhh4gh9fify",
+      "author": "ava",
+      "text": "There's another black headphone case in Study Room 2. I'll bring that over too. They look pretty similar from outside.",
+      "root_id": null,
+      "created_at_ms": 1794061464268
+    },
+    "claim_reply": {
+      "id": "mytx6wj77tyk9ffs3891j415jy",
+      "url": "http://localhost:57898/switch/pl/mytx6wj77tyk9ffs3891j415jy",
+      "author": "alex",
+      "text": "I lost a black headphone case somewhere in the library too. I don't remember any identifying marks. I'm late for my bus.",
+      "root_id": "5xjoudotutgiip8dhh4gh9fify",
+      "created_at_ms": 1794061475047
+    },
+    "claim_is_direct_reply_to_found_post": true,
+    "concierge_reply": {
+      "id": "rrfww9h17ty3zesjc35xb7fgbe",
+      "url": "http://localhost:57898/switch/pl/rrfww9h17ty3zesjc35xb7fgbe",
+      "text": "Alex, I can help. I\u2019ve opened [your private recovery chat](http://localhost:57898/switch/channels/findback-alex-4f73ef6b). I\u2019ll ask you there, so the identifying details stay between you and the library desk. Everyone else can keep posting here.\n\n[\u2060](# \"[findback:sw_02dc408938a1b44977b92fe14e494c4e:welcome]\")",
+      "created_at_ms": 1794061481279,
+      "root_id": "5xjoudotutgiip8dhh4gh9fify",
+      "message_key": "sw_02dc408938a1b44977b92fe14e494c4e:welcome"
+    },
+    "private_information_request": {
+      "id": "txh6ds3w878k5x6bes4oyqm1sa",
+      "url": "http://localhost:57898/switch/pl/txh6ds3w878k5x6bes4oyqm1sa",
+      "text": "Mira needs a little more detail before releasing anything. What marks, contents, or accessories would help staff identify yours? Please describe them in your own words. Your claim stays open.\n\n[\u2060](# \"[findback:O-7ce7dd7b08d54d3e]\")",
+      "created_at_ms": 1794061527161,
+      "root_id": null,
+      "message_key": "O-7ce7dd7b08d54d3e"
+    },
+    "private_case_url": "http://localhost:57898/switch/channels/findback-alex-4f73ef6b",
+    "staff_room_url": "http://localhost:57898/switch/channels/findback-staff-4f73ef6b",
+    "state": {
+      "claim": {
+        "id": "C002",
+        "status": "NEEDS_INFO",
+        "revision": 1,
+        "evidence_revision": 0,
+        "selected_item_id": null
+      },
+      "item": {
+        "id": "I-002",
+        "status": "AVAILABLE",
+        "revision": 1
+      },
+      "reservation": null,
+      "handover_or_receipt": null
+    },
+    "completed_focus_stages": [],
+    "completed_showcase_journal_sha256": "719905083628519c6f57921f7e3d5afbbc79af1b7e429e3bbacb4609c6445944",
+    "intended_stop": "APPROVED claim, RESERVED item, private collection instructions delivered; no handover and no receipt.",
+    "new_posts_sent_by_inspection": 0,
+    "domain_mutations_by_inspection": 0
+  },
+  "current_state": {
+    "claim": {
+      "id": "C002",
+      "status": "APPROVED",
+      "revision": 2,
+      "evidence_revision": 1,
+      "selected_item_id": "I-002"
+    },
+    "item": {
+      "id": "I-002",
+      "status": "RESERVED",
+      "revision": 1
+    },
+    "reservation": {
+      "id": "RS-ab980c86a9a84b23",
+      "status": "ACTIVE",
+      "item_id": "I-002",
+      "approval_id": "AP-f9c0547fcc5842a2",
+      "collection_instructions": "Your headphone case is reserved at the library desk. Please ask for Mira and show this private recovery chat."
+    },
+    "handover_or_receipt": null
+  },
+  "completed_showcase_journal_unchanged": true
+}

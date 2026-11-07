@@ -8,3 +8,11 @@ __pycache__/
 *.db-shm
 *.db-wal
 .findback-video-*/
+.DS_Store
+.env.*
+!.env.example
+# Keep the final submission film; omit duplicate rendered working media.
+demo/**/*.mp4
+demo/**/*.wav
+demo/**/*.mp3
+demo/**/*.zip
