@@ -1,6 +1,6 @@
 # FindBack
 
-[Technical verification](EVIDENCE.md) · [CI workflow and current status](https://github.com/Krishna3451/findback/actions/workflows/ci.yml)
+[Watch the demo](https://youtu.be/CwU4WdZB-Sk) · [Run locally](#run-locally) · [Fresh-stack verification](docs/FRESH_STACK_E2E.md) · [Evaluation results](evals/v1/RESULTS.md)
 
 ### Lost something? Start a conversation.
 
@@ -9,6 +9,16 @@ A black headphone case arrives at the campus library. Two students think it migh
 FindBack helps carry that conversation through: private identifying questions, a clear comparison for the librarian, and a return recorded only after handover and receipt. Built with **Switch, Codex, and Mattermost** for the **Flip the Switch Hackathon · Best Personal or Creative Workflow**.
 
 **[Watch the demo · 3:09](https://youtu.be/CwU4WdZB-Sk)** · **[Visit the landing page](https://krishna3451.github.io/findback/)** · **[Implementation evidence](EVIDENCE.md)** · **[Developer guide](DEVELOPER_GUIDE.md)**
+
+## Verified implementation
+
+| Check | Recorded result | Inspect the proof |
+| --- | --- | --- |
+| Clean installation and automated suite | **318 tests passed in each environment:** macOS/Python 3.12 and local Linux arm64/Python 3.11 and 3.12. Offline, installed-wheel and development-fixture checks also passed. | [Verification manifest](evidence/phase2-verification.json) · [Linux runs](evidence/phase2-linux-checks.json) |
+| Fresh Switch + Mattermost + PostgreSQL | **22 scenario checks + 28 access checks** passed in each of the two passing fresh-stack runs. The real-Codex run made **6 successful model calls**; the controlled run made zero AI calls. Both verified replay and teardown. | [Real-Codex report](evidence/fresh-stack-codex.json) · [Controlled-model report](evidence/fresh-stack-fixture-retry.json) |
+| First held-out evidence evaluation | **18/18 provider calls completed; 17/18 cases passed every declared check, totaling 97/98 probes.** The scorer and prompts were frozen before the scorer author inspected held-out cases; the miss is retained. | [Results and limits](evals/v1/RESULTS.md) · [Raw first report](evidence/eval-v1-held-out-first.json) |
+
+These are local verification results with fictional people, items and handovers. Chat transport, access checks and the labelled Codex calls ran for real. Evidence probes do not establish ownership accuracy. Hosted CI is [reported separately](#verification); no hosted pass is claimed.
 
 ![The actual Campus Lost and Found conversation in Mattermost](docs/assets/campus-chat.jpg)
 
@@ -115,7 +125,13 @@ Run the entire workflow on new disposable services, using real chat transport an
 uv run python -m findback.e2e_stack --model fixture --output .findback/local-fresh-stack.json
 ```
 
-Use `--model codex` and a new output filename for actual host-side Codex inference. Each invocation creates fresh accounts, rooms, databases and volumes, checks access refusals, drives the recovery lifecycle, verifies replay and tears down only its owned Docker project. The people, provider-failure injection and handover are scripted. [Fresh-stack guide and recorded results](docs/FRESH_STACK_E2E.md).
+For actual model inference, authenticate the host Codex CLI and run a second independent stack:
+
+```sh
+uv run python -m findback.e2e_stack --model codex --output .findback/local-fresh-stack-codex.json
+```
+
+Each invocation creates fresh accounts, rooms, databases and volumes, checks access refusals, drives the recovery lifecycle, verifies replay and tears down only its owned Docker project. No existing Switch/Mattermost setup or its credentials are reused; Codex authentication stays on the host. The people, provider-failure injection and handover are scripted. [Fresh-stack guide and recorded results](docs/FRESH_STACK_E2E.md).
 
 To use the existing native macOS Switch Console server instead:
 
@@ -141,21 +157,33 @@ Use your existing local Mattermost username. The command prints the actual room 
 uv run pytest -q
 ```
 
-The [CI workflow](.github/workflows/ci.yml) is configured to install the locked dependencies on Linux (Python 3.11 and 3.12) and macOS (Python 3.12), run the behavioral suite and offline workflow, build a wheel, then install and exercise that wheel outside the source checkout. It needs no Switch server, model credentials or production secrets. The native macOS bootstrap and live integration checks are separate.
+Two workflows are configured:
 
-At the earlier November 8 publication check, GitHub did not start the hosted runners. **No hosted CI pass is claimed.** That earlier source passed all **247 tests** in clean macOS and Linux environments; [its dated evidence](evidence/hardening-linux-checks.json) is preserved. Check the Actions page for later hosted results.
+- [Unit, evaluation-fixture and installed-wheel checks](.github/workflows/ci.yml) on Linux/Python 3.11 and 3.12 and macOS/Python 3.12. No model credentials or running Switch instance are needed.
+- [Fresh-stack E2E](.github/workflows/fresh-stack-e2e.yml) on actual disposable Core/Mattermost/PostgreSQL services, with controlled proposals and only a redacted JSON artifact.
 
-The verification extension passed **318 tests in each clean environment**: macOS/Python 3.12 and local Linux arm64/Python 3.11 and 3.12. Each also passed the offline workflow, installed-wheel smoke and frozen development-fixture evaluation. [Current Linux evidence](evidence/phase2-linux-checks.json) records exact image/source hashes and distinguishes these local Debian checks from hosted Ubuntu runners.
+GitHub did not start the hosted runners at the November 8 publication check. **No hosted CI pass is claimed.** The table above links the completed clean local runs; [GitHub Actions](https://github.com/Krishna3451/findback/actions) shows current hosted status. Earlier run counts remain dated in [EVIDENCE.md](EVIDENCE.md).
 
-Both fresh-stack runs passed **22 scenario checks plus 28 live access checks**: one with six explicitly controlled proposals, the other with **six actual Codex calls**. Each recorded exactly one fictional return and verified teardown. [Reports and the retained first harness failure](docs/FRESH_STACK_E2E.md#recorded-runs) preserve what happened. The [fresh-stack CI job](.github/workflows/fresh-stack-e2e.yml) uses actual isolated services with controlled proposals and uploads only its redacted report.
-
-The first independently held-out model evaluation completed **18/18 provider calls**, with **17/18 cases** satisfying every declared probe (**97/98 probes**). These are narrow fictional evidence checks, not ownership accuracy. [First results and the retained miss](evals/v1/RESULTS.md) explain the contradiction-category boundary. To rerun the frozen v1 evaluation without overwriting that baseline:
+The [fresh-stack reports](docs/FRESH_STACK_E2E.md#recorded-runs) retain the first replay-harness failure as well as both passing runs. The [evaluation results](evals/v1/RESULTS.md) retain the original misses and their reviewed contradiction-category boundary. To check the frozen scorer using handwritten development outputs, without calling a provider:
 
 ```sh
-uv run python -m findback.evaluation run --dataset evals/v1/held-out.jsonl --freeze evals/v1/scorer-freeze.json --corpus-manifest evals/v1/held-out-manifest.json --mode live_codex --output .findback/local-held-out-evaluation.json
+uv run python -m findback.evaluation run \
+  --dataset evals/v1/development.jsonl \
+  --freeze evals/v1/scorer-freeze.json --mode fixture_replay \
+  --replay evals/v1/development-outputs.json \
+  --output .findback/local-development-fixture.json
 ```
 
-The set is now public; later runs are replications, not newly unseen trials. Prompt/scorer changes require a new evaluation version. The [evaluation guide](docs/EVIDENCE_EVALUATION.md) describes the split, seals, raw outputs and limits.
+To replicate the original held-out experiment with actual model calls and a new result file:
+
+```sh
+uv run python -m findback.evaluation run \
+  --dataset evals/v1/held-out.jsonl --freeze evals/v1/scorer-freeze.json \
+  --corpus-manifest evals/v1/held-out-manifest.json --mode live_codex \
+  --output .findback/local-held-out-evaluation.json
+```
+
+The evaluator refuses to overwrite an existing result. The set is now public; later runs are replications, not newly unseen trials. Prompt/scorer changes require a new evaluation version. The [evaluation guide](docs/EVIDENCE_EVALUATION.md) describes the split, seals, raw outputs and limits.
 
 Preserved campus evidence includes **94 live access checks**, **12 live Codex calls**, and four fictional claims. Those are local demonstration results, not campus adoption or accuracy measurements. Check the dated [evidence log](EVIDENCE.md) and Actions results for verification of a particular commit.
 
