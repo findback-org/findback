@@ -60,8 +60,8 @@ def runtime(scenario):
     def request_handler(request):
         assert request.url.host == "mattermost.test"
         channel = request.url.path.split("/")[-2]
-        return httpx.Response(200, json={"posts": {p["id"]: p for p in posts.values()
-                                                  if p["channel_id"] == channel}})
+        selected = {p["id"]: p for p in posts.values() if p["channel_id"] == channel}
+        return httpx.Response(200, json={"order": list(selected), "posts": selected})
 
     asyncio.run(instance.http.aclose())
     instance.http = httpx.AsyncClient(transport=httpx.MockTransport(request_handler))

@@ -1,0 +1,60 @@
+name: Verify FindBack
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.11'
+          - os: ubuntu-latest
+            python: '3.12'
+          - os: macos-latest
+            python: '3.12'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install pinned uv and Python
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: '0.12.1'
+          python-version: ${{ matrix.python }}
+          enable-cache: true
+      - name: Install locked dependencies
+        run: uv sync --locked --extra dev
+      - name: Run behavioral, authorization, transport and recovery tests
+        run: uv run --no-sync pytest -q
+      - name: Exercise the domain workflow without Switch or model credentials
+        run: |
+          uv run --no-sync findback --state-dir "$RUNNER_TEMP/findback-offline" offline-demo > "$RUNNER_TEMP/findback-offline.json"
+          uv run --no-sync python -c 'import json, os; from pathlib import Path; result = json.loads((Path(os.environ["RUNNER_TEMP"]) / "findback-offline.json").read_text()); assert result["passed"], result; assert result["totals"]["returns"] == 1, result'
+      - name: Build the distributable wheel
+        run: uv build --wheel
+      - name: Install and run the wheel outside the checkout
+        shell: bash
+        run: |
+          uv venv "$RUNNER_TEMP/findback-wheel" --python '${{ matrix.python }}'
+          uv export --locked --no-dev --no-extra dev --no-emit-project > "$RUNNER_TEMP/findback-requirements.txt"
+          uv pip install --python "$RUNNER_TEMP/findback-wheel/bin/python" --require-hashes -r "$RUNNER_TEMP/findback-requirements.txt"
+          uv pip install --python "$RUNNER_TEMP/findback-wheel/bin/python" --no-deps dist/*.whl
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/findback-wheel/bin/findback" --state-dir "$RUNNER_TEMP/findback-wheel-state" offline-demo > "$RUNNER_TEMP/findback-wheel-result.json"
+          "$RUNNER_TEMP/findback-wheel/bin/python" -c 'import json; from pathlib import Path; result = json.loads(Path("findback-wheel-result.json").read_text()); assert result["passed"], result'

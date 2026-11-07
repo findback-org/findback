@@ -39,8 +39,8 @@ def showcase(runtime, scenario):
 
     def request_handler(request):
         channel = request.url.path.split("/")[-2]
-        return httpx.Response(200, json={"posts": {key: post for key, post in instance._test_posts.items()
-                                                  if post["channel_id"] == channel}})
+        selected = {key: post for key, post in instance._test_posts.items() if post["channel_id"] == channel}
+        return httpx.Response(200, json={"order": list(selected), "posts": selected})
 
     asyncio.run(instance.http.aclose())
     instance.http = httpx.AsyncClient(transport=httpx.MockTransport(request_handler))
@@ -274,3 +274,52 @@ def test_arrival_and_polite_acknowledgment_do_not_close_a_collection(showcase, s
     scenario.reserve()
     asyncio.run(showcase.handle(private_frame(showcase, "C001", "I'm here at the desk, thank you.")))
     assert scenario.view()["claim"]["status"] == "APPROVED"
+
+
+def test_private_intake_working_notice_exists_during_real_proposal_wait(showcase):
+    async def exercise():
+        started, release = asyncio.Event(), asyncio.Event()
+        class WaitingModel(RecordingModel):
+            async def draft(self, text):
+                started.set()
+                await release.wait()
+                return await super().draft(text)
+        showcase.model = WaitingModel()
+        task = asyncio.create_task(showcase.handle(public_frame(showcase, 'priya', 'I lost my black headphone case at the library.')))
+        await asyncio.wait_for(started.wait(), 1)
+        working = [row for row in messages(showcase, 'priya-room') if row['id'].endswith(':intake-working')]
+        assert len(working) == 1 and working[0]['speaker'] == 'intake-C001'
+        assert 'preparing a private draft' in working[0]['body']
+        with showcase.store.connection() as db:
+            assert db.execute('SELECT COUNT(*) FROM drafts').fetchone()[0] == 0
+            assert db.execute('SELECT COUNT(*) FROM reservations').fetchone()[0] == 0
+        release.set()
+        await task
+    asyncio.run(exercise())
+
+
+def test_matcher_working_notice_precedes_result_and_is_not_reemitted_for_cached_job(showcase, scenario):
+    scenario.report()
+    scenario.evidence()
+    source = scenario.ctx('staff')
+    async def exercise():
+        started, release = asyncio.Event(), asyncio.Event()
+        class WaitingModel(RecordingModel):
+            async def compare(self, data):
+                started.set()
+                await release.wait()
+                return await super().compare(data)
+        showcase.model = WaitingModel()
+        task = asyncio.create_task(showcase._review(source, 'C001'))
+        await asyncio.wait_for(started.wait(), 1)
+        working = [row for row in messages(showcase, 'staff-room') if row['id'].endswith(':matcher:working')]
+        assert len(working) == 1 and working[0]['speaker'] == 'matcher'
+        assert 'Mira makes the decision' in working[0]['body']
+        with showcase.store.connection() as db:
+            assert db.execute('SELECT COUNT(*) FROM reviews').fetchone()[0] == 0
+        release.set()
+        assert (await task)['ok']
+        assert (await showcase._review(source, 'C001'))['ok']
+        assert len(showcase.model.comparisons) == 1
+        assert len([row for row in messages(showcase, 'staff-room') if row['id'].endswith(':matcher:working')]) == 1
+    asyncio.run(exercise())

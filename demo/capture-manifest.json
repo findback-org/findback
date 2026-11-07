@@ -1,0 +1,4396 @@
+{
+  "created_at": "2026-11-07T20:06:45.152972+00:00",
+  "kind": "fresh full landscape interactive recording with smooth crossdissolves",
+  "fictional_participants_and_items": true,
+  "source_dimensions": [
+    1600,
+    900
+  ],
+  "output_dimensions": [
+    1920,
+    1080
+  ],
+  "pixel_transform": "Verified complete1600x900 viewport uniformly scaled1.2x to1920x1080 with Lanczos; no crop or padding.",
+  "source_root": ".findback/interactive-capture",
+  "previous_take_frames_used": false,
+  "transitions": [
+    {
+      "start_seconds": 2.3333333333333335,
+      "center_seconds": 2.541666666666667,
+      "end_seconds": 2.75,
+      "next_window": 1
+    },
+    {
+      "start_seconds": 7.541666666666667,
+      "center_seconds": 7.75,
+      "end_seconds": 7.958333333333334,
+      "next_window": 2
+    },
+    {
+      "start_seconds": 13.083333333333334,
+      "center_seconds": 13.291666666666668,
+      "end_seconds": 13.5,
+      "next_window": 3
+    },
+    {
+      "start_seconds": 24.291666666666668,
+      "center_seconds": 24.5,
+      "end_seconds": 24.708333333333336,
+      "next_window": 4
+    },
+    {
+      "start_seconds": 35.541666666666664,
+      "center_seconds": 35.75,
+      "end_seconds": 35.95833333333333,
+      "next_window": 5
+    },
+    {
+      "start_seconds": 47.666666666666664,
+      "center_seconds": 47.875,
+      "end_seconds": 48.08333333333333,
+      "next_window": 6
+    },
+    {
+      "start_seconds": 61.333333333333336,
+      "center_seconds": 61.54166666666667,
+      "end_seconds": 61.75,
+      "next_window": 7
+    },
+    {
+      "start_seconds": 69.83333333333333,
+      "center_seconds": 70.04166666666666,
+      "end_seconds": 70.25,
+      "next_window": 8
+    },
+    {
+      "start_seconds": 74.33333333333333,
+      "center_seconds": 74.54166666666666,
+      "end_seconds": 74.75,
+      "next_window": 9
+    },
+    {
+      "start_seconds": 87.75,
+      "center_seconds": 87.95833333333333,
+      "end_seconds": 88.16666666666667,
+      "next_window": 10
+    },
+    {
+      "start_seconds": 91.41666666666667,
+      "center_seconds": 91.625,
+      "end_seconds": 91.83333333333334,
+      "next_window": 11
+    },
+    {
+      "start_seconds": 97.08333333333333,
+      "center_seconds": 97.29166666666666,
+      "end_seconds": 97.5,
+      "next_window": 12
+    },
+    {
+      "start_seconds": 104.125,
+      "center_seconds": 104.33333333333333,
+      "end_seconds": 104.54166666666667,
+      "next_window": 13
+    },
+    {
+      "start_seconds": 112.625,
+      "center_seconds": 112.83333333333333,
+      "end_seconds": 113.04166666666667,
+      "next_window": 14
+    },
+    {
+      "start_seconds": 119.33333333333333,
+      "center_seconds": 119.54166666666666,
+      "end_seconds": 119.75,
+      "next_window": 15
+    },
+    {
+      "start_seconds": 126.95833333333333,
+      "center_seconds": 127.16666666666666,
+      "end_seconds": 127.375,
+      "next_window": 16
+    },
+    {
+      "start_seconds": 133.0,
+      "center_seconds": 133.20833333333334,
+      "end_seconds": 133.41666666666666,
+      "next_window": 17
+    },
+    {
+      "start_seconds": 138.70833333333334,
+      "center_seconds": 138.91666666666669,
+      "end_seconds": 139.125,
+      "next_window": 18
+    },
+    {
+      "start_seconds": 149.33333333333334,
+      "center_seconds": 149.54166666666669,
+      "end_seconds": 149.75,
+      "next_window": 19
+    },
+    {
+      "start_seconds": 159.04166666666666,
+      "center_seconds": 159.25,
+      "end_seconds": 159.45833333333331,
+      "next_window": 20
+    },
+    {
+      "start_seconds": 163.58333333333334,
+      "center_seconds": 163.79166666666669,
+      "end_seconds": 164.0,
+      "next_window": 21
+    },
+    {
+      "start_seconds": 170.83333333333334,
+      "center_seconds": 171.04166666666669,
+      "end_seconds": 171.25,
+      "next_window": 22
+    },
+    {
+      "start_seconds": 178.20833333333334,
+      "center_seconds": 178.41666666666669,
+      "end_seconds": 178.625,
+      "next_window": 23
+    },
+    {
+      "start_seconds": 183.625,
+      "center_seconds": 183.83333333333334,
+      "end_seconds": 184.04166666666666,
+      "next_window": 24
+    }
+  ],
+  "transition_frames": 10,
+  "transition_seconds": 0.4166666666666667,
+  "intermediate_encoding": "Lossless H.264 windows; only final output uses CRF 18, avoiding repeated lossy text compression.",
+  "transition_handles": "Five cloned real frames per side; actual arrival windows keep original cadence and full opacity.",
+  "audio_stream_copied_bit_for_bit": true,
+  "aac_adts_sha256": "346bac85f174c8419ebbf1349f4d0abf92525097aea389b1f1a70c085dc56459",
+  "voice_tempo": 1.0,
+  "narration_beat_count": 14,
+  "narration_duration_seconds": 188.9175625,
+  "narration_manifest_sha256": "d260f016d2e06057c8bc33cb60c697e3227480442ca3cb9e6f9b85db1345af2d",
+  "narration_audio_file": "narration.m4a",
+  "voice_name": "Miles - Confident, Upbeat and Smooth",
+  "voice_id": "vSjOBQp24DUB2COr2xI9",
+  "script_sha256": "aa8ee48ead87fb72f8cff6d6315327688eb89cc78c01f5457340e951f3fe727d",
+  "video_file": "FindBack-Miles-story-demo.mp4",
+  "video_sha256": "44d2745b97befa333efc35e63d3f17a1c06f704a8ce6928c8e0ad1040b099473",
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1"
+      },
+      {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 1,
+        "avg_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "188.917563",
+      "size": "17398981"
+    }
+  },
+  "plan_sha256": "9a78295f3e6dbb658d6189a3050e509d3f6edc5db0f984b366300fb43431a30f",
+  "capture_manifest_sha256": {
+    "alex": "7cf7c17a77dbe7937ec055c9686d9930702a7a349d325f5c1ea52dc2ab267171",
+    "campus": "d00c50a1ba43313446b349644cb1eae705e3c4c5bd54c93bd7d54d51014300b3",
+    "staff": "8dc7443372e89de1a8c1afecb28a8aa431541945c484a50e9279801a150f5dc1"
+  },
+  "sources": {
+    "campus/frame-000023.jpg": {
+      "at": 1794077251806,
+      "sha256": "4955b1a7029acae7e19c02bc045ec024d307ec7485aa57ed3770368ad1b85d58",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000024.jpg": {
+      "at": 1794077251976,
+      "sha256": "eac91dae2e0e4186d3871851dccca9031268bac9b43e55938ce50812c30adcdf",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000025.jpg": {
+      "at": 1794077252159,
+      "sha256": "afb57252f07f8542bf0ee5857257661d422d301ec7788af014d0b309ddd2421b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000026.jpg": {
+      "at": 1794077252365,
+      "sha256": "afb57252f07f8542bf0ee5857257661d422d301ec7788af014d0b309ddd2421b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000027.jpg": {
+      "at": 1794077252549,
+      "sha256": "eac91dae2e0e4186d3871851dccca9031268bac9b43e55938ce50812c30adcdf",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000028.jpg": {
+      "at": 1794077252731,
+      "sha256": "eac91dae2e0e4186d3871851dccca9031268bac9b43e55938ce50812c30adcdf",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000029.jpg": {
+      "at": 1794077252910,
+      "sha256": "eac91dae2e0e4186d3871851dccca9031268bac9b43e55938ce50812c30adcdf",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000030.jpg": {
+      "at": 1794077253108,
+      "sha256": "1769ce840f27de23a8ad463c4df97c564ba21ab3524302d7edf2b2d81a5864be",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000031.jpg": {
+      "at": 1794077253281,
+      "sha256": "1769ce840f27de23a8ad463c4df97c564ba21ab3524302d7edf2b2d81a5864be",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000032.jpg": {
+      "at": 1794077253475,
+      "sha256": "1769ce840f27de23a8ad463c4df97c564ba21ab3524302d7edf2b2d81a5864be",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000033.jpg": {
+      "at": 1794077253640,
+      "sha256": "1c5506b431dc84f9e40f133b007621ff739bb245e4964419047c0e76088bec9a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000034.jpg": {
+      "at": 1794077253826,
+      "sha256": "ac7e54ad30104f432f2aeb308bad000ea1735e69f68e55a1f67009ad4e262d74",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000035.jpg": {
+      "at": 1794077253977,
+      "sha256": "ac7e54ad30104f432f2aeb308bad000ea1735e69f68e55a1f67009ad4e262d74",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000036.jpg": {
+      "at": 1794077254159,
+      "sha256": "f4a0d7c15f2aed558f8cef528a43d29ba142518323f8a224407ade223f715160",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000055.jpg": {
+      "at": 1794077257608,
+      "sha256": "83064ae8d8b7054b0d05057f52b4bad3cfe4f8085651257da5ecf90a18a7a0d7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000056.jpg": {
+      "at": 1794077257799,
+      "sha256": "83064ae8d8b7054b0d05057f52b4bad3cfe4f8085651257da5ecf90a18a7a0d7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000057.jpg": {
+      "at": 1794077257967,
+      "sha256": "83064ae8d8b7054b0d05057f52b4bad3cfe4f8085651257da5ecf90a18a7a0d7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000058.jpg": {
+      "at": 1794077258149,
+      "sha256": "7c0639f2edc445b0d9ddafafa9264f07de0fb06243acc018a407400a118fbddb",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000059.jpg": {
+      "at": 1794077258326,
+      "sha256": "7c0639f2edc445b0d9ddafafa9264f07de0fb06243acc018a407400a118fbddb",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000060.jpg": {
+      "at": 1794077258508,
+      "sha256": "7c0639f2edc445b0d9ddafafa9264f07de0fb06243acc018a407400a118fbddb",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000061.jpg": {
+      "at": 1794077258718,
+      "sha256": "2b72715a10b29817b94795f061fba5a386087145e6e83e2d35098432cc7d5ae1",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000062.jpg": {
+      "at": 1794077258899,
+      "sha256": "2b72715a10b29817b94795f061fba5a386087145e6e83e2d35098432cc7d5ae1",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000063.jpg": {
+      "at": 1794077259066,
+      "sha256": "38868e15db1b256e10dbcab4ac73e0c7282d6f2ba694f0216ac11a7ebe3a35f5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000064.jpg": {
+      "at": 1794077259241,
+      "sha256": "7f3591125a76808924eabd44fb7ab5a86013a6100903a6334b20c1d8e6eaf49b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000065.jpg": {
+      "at": 1794077259441,
+      "sha256": "97e6d0f1f3585d2a241cfb67930dfd6d84244d9f7d7a802484dcc7dda53c12f5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000066.jpg": {
+      "at": 1794077259595,
+      "sha256": "8c1c635810e27a96bed7977b6b4976ea39062d6c514477ed340b60f6a82fd430",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000067.jpg": {
+      "at": 1794077259768,
+      "sha256": "8c1c635810e27a96bed7977b6b4976ea39062d6c514477ed340b60f6a82fd430",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000068.jpg": {
+      "at": 1794077259966,
+      "sha256": "8c1c635810e27a96bed7977b6b4976ea39062d6c514477ed340b60f6a82fd430",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000069.jpg": {
+      "at": 1794077260128,
+      "sha256": "97e6d0f1f3585d2a241cfb67930dfd6d84244d9f7d7a802484dcc7dda53c12f5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000070.jpg": {
+      "at": 1794077260336,
+      "sha256": "97e6d0f1f3585d2a241cfb67930dfd6d84244d9f7d7a802484dcc7dda53c12f5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000071.jpg": {
+      "at": 1794077260492,
+      "sha256": "97e6d0f1f3585d2a241cfb67930dfd6d84244d9f7d7a802484dcc7dda53c12f5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000072.jpg": {
+      "at": 1794077260704,
+      "sha256": "292da8a689bc188fa0ad0f0f85793221efd7c4b3123207715c65fe5126e9c182",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000073.jpg": {
+      "at": 1794077260894,
+      "sha256": "292da8a689bc188fa0ad0f0f85793221efd7c4b3123207715c65fe5126e9c182",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000074.jpg": {
+      "at": 1794077261050,
+      "sha256": "bc239a64f3c8a47233afdad42919d70efbaf90596ce793ce1043a0fd2eb420ff",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000075.jpg": {
+      "at": 1794077261249,
+      "sha256": "2e8b2cfb717a9bee48201602a1d17d3595052dbffd2f4c88f0e345fb83495ac4",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000076.jpg": {
+      "at": 1794077261393,
+      "sha256": "e208f50011b914566fc344a8e81b6369aa6a7af7358d478bf4827ecffcb50df6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000077.jpg": {
+      "at": 1794077261607,
+      "sha256": "46a30f7e31500c832722939a306d4dd4ca1bffcac536811260c14e0e7fb9b31a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000078.jpg": {
+      "at": 1794077261769,
+      "sha256": "46a30f7e31500c832722939a306d4dd4ca1bffcac536811260c14e0e7fb9b31a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000079.jpg": {
+      "at": 1794077261964,
+      "sha256": "46a30f7e31500c832722939a306d4dd4ca1bffcac536811260c14e0e7fb9b31a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000080.jpg": {
+      "at": 1794077262151,
+      "sha256": "e208f50011b914566fc344a8e81b6369aa6a7af7358d478bf4827ecffcb50df6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000081.jpg": {
+      "at": 1794077262317,
+      "sha256": "e208f50011b914566fc344a8e81b6369aa6a7af7358d478bf4827ecffcb50df6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000082.jpg": {
+      "at": 1794077262496,
+      "sha256": "e208f50011b914566fc344a8e81b6369aa6a7af7358d478bf4827ecffcb50df6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000083.jpg": {
+      "at": 1794077262683,
+      "sha256": "46a30f7e31500c832722939a306d4dd4ca1bffcac536811260c14e0e7fb9b31a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000084.jpg": {
+      "at": 1794077262844,
+      "sha256": "46a30f7e31500c832722939a306d4dd4ca1bffcac536811260c14e0e7fb9b31a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000085.jpg": {
+      "at": 1794077263052,
+      "sha256": "e208f50011b914566fc344a8e81b6369aa6a7af7358d478bf4827ecffcb50df6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000124.jpg": {
+      "at": 1794077281766,
+      "sha256": "46a30f7e31500c832722939a306d4dd4ca1bffcac536811260c14e0e7fb9b31a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000125.jpg": {
+      "at": 1794077281920,
+      "sha256": "46a30f7e31500c832722939a306d4dd4ca1bffcac536811260c14e0e7fb9b31a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000126.jpg": {
+      "at": 1794077282091,
+      "sha256": "0b3d0e0820744fa1d328cb509f57ab7e081d7fd36887cfde45e37aeeba14b556",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000127.jpg": {
+      "at": 1794077282276,
+      "sha256": "0b3d0e0820744fa1d328cb509f57ab7e081d7fd36887cfde45e37aeeba14b556",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000128.jpg": {
+      "at": 1794077282487,
+      "sha256": "0b3d0e0820744fa1d328cb509f57ab7e081d7fd36887cfde45e37aeeba14b556",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000129.jpg": {
+      "at": 1794077282641,
+      "sha256": "09970d5fee141a34edcb77e62b283ca2dbfd54cffd9a816b131690f9509c820b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000130.jpg": {
+      "at": 1794077285776,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000131.jpg": {
+      "at": 1794077285846,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000132.jpg": {
+      "at": 1794077286050,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000133.jpg": {
+      "at": 1794077286216,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000134.jpg": {
+      "at": 1794077286399,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000135.jpg": {
+      "at": 1794077286557,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000136.jpg": {
+      "at": 1794077286749,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000137.jpg": {
+      "at": 1794077286952,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000138.jpg": {
+      "at": 1794077287114,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000139.jpg": {
+      "at": 1794077287287,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000140.jpg": {
+      "at": 1794077287483,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000141.jpg": {
+      "at": 1794077287641,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000142.jpg": {
+      "at": 1794077287849,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000143.jpg": {
+      "at": 1794077288009,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000144.jpg": {
+      "at": 1794077288216,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000145.jpg": {
+      "at": 1794077288398,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000146.jpg": {
+      "at": 1794077288561,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000147.jpg": {
+      "at": 1794077288764,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000148.jpg": {
+      "at": 1794077288922,
+      "sha256": "2f71651ab1b57ab69174ef405a8cc9b06dfd384d4414c55b47c73f8ecc65ffc5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000149.jpg": {
+      "at": 1794077289115,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000150.jpg": {
+      "at": 1794077289275,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000151.jpg": {
+      "at": 1794077289461,
+      "sha256": "f4b292a3ae624bb6ca98a92892952caea798d93a83281895651ff46d0cf6270f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000179.jpg": {
+      "at": 1794077352966,
+      "sha256": "425bb9c06f86c8e4fc7877d346735d32b9d72b4310c4d1799cda42ebd30be6d0",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000180.jpg": {
+      "at": 1794077353110,
+      "sha256": "425bb9c06f86c8e4fc7877d346735d32b9d72b4310c4d1799cda42ebd30be6d0",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000181.jpg": {
+      "at": 1794077353293,
+      "sha256": "473619fd117d4c33773d578f12ad41bc0159149511d62ff02b13a0f281247e80",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000182.jpg": {
+      "at": 1794077353507,
+      "sha256": "473619fd117d4c33773d578f12ad41bc0159149511d62ff02b13a0f281247e80",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000183.jpg": {
+      "at": 1794077353685,
+      "sha256": "473619fd117d4c33773d578f12ad41bc0159149511d62ff02b13a0f281247e80",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000184.jpg": {
+      "at": 1794077353842,
+      "sha256": "473619fd117d4c33773d578f12ad41bc0159149511d62ff02b13a0f281247e80",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000185.jpg": {
+      "at": 1794077354043,
+      "sha256": "473619fd117d4c33773d578f12ad41bc0159149511d62ff02b13a0f281247e80",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000186.jpg": {
+      "at": 1794077354227,
+      "sha256": "473619fd117d4c33773d578f12ad41bc0159149511d62ff02b13a0f281247e80",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000187.jpg": {
+      "at": 1794077354410,
+      "sha256": "79c36e9eaf8b870c29c00c139df251b3e26974ab870d2ca717d474c9fa46a6a1",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000188.jpg": {
+      "at": 1794077354591,
+      "sha256": "3d7a868efdba31641dd957fdbb96c169c1ffe1ce1b7a6f43468134dda0d6d946",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000189.jpg": {
+      "at": 1794077354742,
+      "sha256": "3d7a868efdba31641dd957fdbb96c169c1ffe1ce1b7a6f43468134dda0d6d946",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000190.jpg": {
+      "at": 1794077354945,
+      "sha256": "3d7a868efdba31641dd957fdbb96c169c1ffe1ce1b7a6f43468134dda0d6d946",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000191.jpg": {
+      "at": 1794077355140,
+      "sha256": "06b491a9b86f6bd3352bbe794db426cf8371bca77500d59fc318ffb5fb723708",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000192.jpg": {
+      "at": 1794077355292,
+      "sha256": "06b491a9b86f6bd3352bbe794db426cf8371bca77500d59fc318ffb5fb723708",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000193.jpg": {
+      "at": 1794077355479,
+      "sha256": "06b491a9b86f6bd3352bbe794db426cf8371bca77500d59fc318ffb5fb723708",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000194.jpg": {
+      "at": 1794077355661,
+      "sha256": "06b491a9b86f6bd3352bbe794db426cf8371bca77500d59fc318ffb5fb723708",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000195.jpg": {
+      "at": 1794077355868,
+      "sha256": "06b491a9b86f6bd3352bbe794db426cf8371bca77500d59fc318ffb5fb723708",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000196.jpg": {
+      "at": 1794077356031,
+      "sha256": "06b491a9b86f6bd3352bbe794db426cf8371bca77500d59fc318ffb5fb723708",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000197.jpg": {
+      "at": 1794077356226,
+      "sha256": "06b491a9b86f6bd3352bbe794db426cf8371bca77500d59fc318ffb5fb723708",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000198.jpg": {
+      "at": 1794077356445,
+      "sha256": "7b00453fcca655cb849cbd0215ae747757acb34834a87f6a0df5b9295579e0be",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000199.jpg": {
+      "at": 1794077356558,
+      "sha256": "7b00453fcca655cb849cbd0215ae747757acb34834a87f6a0df5b9295579e0be",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000200.jpg": {
+      "at": 1794077356745,
+      "sha256": "7b00453fcca655cb849cbd0215ae747757acb34834a87f6a0df5b9295579e0be",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000201.jpg": {
+      "at": 1794077356962,
+      "sha256": "7b00453fcca655cb849cbd0215ae747757acb34834a87f6a0df5b9295579e0be",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000202.jpg": {
+      "at": 1794077357126,
+      "sha256": "085cfc20627bd0f2236525816498f954eaf684e6e36cea942ec5e2baa52522c3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000203.jpg": {
+      "at": 1794077357281,
+      "sha256": "085cfc20627bd0f2236525816498f954eaf684e6e36cea942ec5e2baa52522c3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000204.jpg": {
+      "at": 1794077357459,
+      "sha256": "085cfc20627bd0f2236525816498f954eaf684e6e36cea942ec5e2baa52522c3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000205.jpg": {
+      "at": 1794077357669,
+      "sha256": "085cfc20627bd0f2236525816498f954eaf684e6e36cea942ec5e2baa52522c3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000206.jpg": {
+      "at": 1794077357857,
+      "sha256": "085cfc20627bd0f2236525816498f954eaf684e6e36cea942ec5e2baa52522c3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000207.jpg": {
+      "at": 1794077358007,
+      "sha256": "085cfc20627bd0f2236525816498f954eaf684e6e36cea942ec5e2baa52522c3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000208.jpg": {
+      "at": 1794077358232,
+      "sha256": "6af03d8d10c7fa41786b99c6542a109b453467a0fbcf923d1a32b717256cc72b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000209.jpg": {
+      "at": 1794077358389,
+      "sha256": "6af03d8d10c7fa41786b99c6542a109b453467a0fbcf923d1a32b717256cc72b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000210.jpg": {
+      "at": 1794077358581,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000211.jpg": {
+      "at": 1794077358748,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000212.jpg": {
+      "at": 1794077358919,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000213.jpg": {
+      "at": 1794077359102,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000214.jpg": {
+      "at": 1794077359280,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000215.jpg": {
+      "at": 1794077359459,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000216.jpg": {
+      "at": 1794077359658,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000217.jpg": {
+      "at": 1794077359851,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000218.jpg": {
+      "at": 1794077360029,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000219.jpg": {
+      "at": 1794077360178,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000220.jpg": {
+      "at": 1794077360376,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000221.jpg": {
+      "at": 1794077360543,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000222.jpg": {
+      "at": 1794077360742,
+      "sha256": "65dacab13a0d45eea38d1d4e55d9611761df436b2b73e4672433d519c25a1ac9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000204.jpg": {
+      "at": 1794077357480,
+      "sha256": "cd8cf2758ce3bcebe58296fab0911d1553fbd337fac0ea24eb21b9e8c86db099",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000205.jpg": {
+      "at": 1794077357644,
+      "sha256": "cd8cf2758ce3bcebe58296fab0911d1553fbd337fac0ea24eb21b9e8c86db099",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000206.jpg": {
+      "at": 1794077357850,
+      "sha256": "cd8cf2758ce3bcebe58296fab0911d1553fbd337fac0ea24eb21b9e8c86db099",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000207.jpg": {
+      "at": 1794077358031,
+      "sha256": "9c9c5047c057d67515d74fd5247ccd0e6cc657a9e07bdb06068de784bc3bd756",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000208.jpg": {
+      "at": 1794077358202,
+      "sha256": "9c9c5047c057d67515d74fd5247ccd0e6cc657a9e07bdb06068de784bc3bd756",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000209.jpg": {
+      "at": 1794077358362,
+      "sha256": "cd8cf2758ce3bcebe58296fab0911d1553fbd337fac0ea24eb21b9e8c86db099",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000210.jpg": {
+      "at": 1794077358604,
+      "sha256": "36531b9c62aa9fcac74aa51bf4c628b86f2cf6af5a72a49aae3ac9b9f000a503",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000211.jpg": {
+      "at": 1794077358746,
+      "sha256": "36531b9c62aa9fcac74aa51bf4c628b86f2cf6af5a72a49aae3ac9b9f000a503",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000212.jpg": {
+      "at": 1794077358940,
+      "sha256": "7775b3164635aa9cb89b64b0c983094b13047f75f0183f0574ec960595285e3d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000213.jpg": {
+      "at": 1794077359102,
+      "sha256": "703a15c42bbba8c489594b84472bb5cb909d7807c62c433a8afc153b50f024b0",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000214.jpg": {
+      "at": 1794077359288,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000215.jpg": {
+      "at": 1794077359481,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000216.jpg": {
+      "at": 1794077359636,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000217.jpg": {
+      "at": 1794077359824,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000218.jpg": {
+      "at": 1794077360018,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000219.jpg": {
+      "at": 1794077360198,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000220.jpg": {
+      "at": 1794077360375,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000221.jpg": {
+      "at": 1794077360564,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000222.jpg": {
+      "at": 1794077360741,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000223.jpg": {
+      "at": 1794077360909,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000224.jpg": {
+      "at": 1794077361091,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000225.jpg": {
+      "at": 1794077361268,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000226.jpg": {
+      "at": 1794077361464,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000227.jpg": {
+      "at": 1794077361632,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000228.jpg": {
+      "at": 1794077361808,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000229.jpg": {
+      "at": 1794077362015,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000230.jpg": {
+      "at": 1794077362200,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000231.jpg": {
+      "at": 1794077362367,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000232.jpg": {
+      "at": 1794077362548,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000233.jpg": {
+      "at": 1794077362732,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000234.jpg": {
+      "at": 1794077362924,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000235.jpg": {
+      "at": 1794077363077,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000236.jpg": {
+      "at": 1794077363257,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000237.jpg": {
+      "at": 1794077363442,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000238.jpg": {
+      "at": 1794077363630,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000239.jpg": {
+      "at": 1794077363814,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000240.jpg": {
+      "at": 1794077363997,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000241.jpg": {
+      "at": 1794077364183,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000242.jpg": {
+      "at": 1794077364342,
+      "sha256": "5807504d0ed8650d44e991837ee2b1afd4fb6fabf7304b716561dea06a41a0a6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000243.jpg": {
+      "at": 1794077364548,
+      "sha256": "4d6d9d101b3366d803b7e3625f7c1e1c90ee3e4e2135ec2ce5b515aa980759ea",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000244.jpg": {
+      "at": 1794077364713,
+      "sha256": "8cd59e0ec1c16a2465e44720589ac816d72777bba1ee68ea17905d60cc715286",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000245.jpg": {
+      "at": 1794077364873,
+      "sha256": "d84f893976d5e884a2640d71785f02a283c11266f6ed1cd89fc9dd6fdf7ad3b7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000246.jpg": {
+      "at": 1794077365058,
+      "sha256": "d84f893976d5e884a2640d71785f02a283c11266f6ed1cd89fc9dd6fdf7ad3b7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000247.jpg": {
+      "at": 1794077365264,
+      "sha256": "2b1167656bce0393b6fdcd96f160dafdab94e0ac155cd3ff91b350d107d13071",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000248.jpg": {
+      "at": 1794077365457,
+      "sha256": "0693f1c1ea39da37342ac626f47ee6e3b0c52ed45c75678a7699dd307a17bc3a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000249.jpg": {
+      "at": 1794077365632,
+      "sha256": "0693f1c1ea39da37342ac626f47ee6e3b0c52ed45c75678a7699dd307a17bc3a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000250.jpg": {
+      "at": 1794077365800,
+      "sha256": "0693f1c1ea39da37342ac626f47ee6e3b0c52ed45c75678a7699dd307a17bc3a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000251.jpg": {
+      "at": 1794077365997,
+      "sha256": "94d261981a1b02b6b98fada2d0235f3e4ba0c3fe7f0674fbfaad0e5f0a5f3ce3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000252.jpg": {
+      "at": 1794077366176,
+      "sha256": "94d261981a1b02b6b98fada2d0235f3e4ba0c3fe7f0674fbfaad0e5f0a5f3ce3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000253.jpg": {
+      "at": 1794077366351,
+      "sha256": "94d261981a1b02b6b98fada2d0235f3e4ba0c3fe7f0674fbfaad0e5f0a5f3ce3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000254.jpg": {
+      "at": 1794077366524,
+      "sha256": "0693f1c1ea39da37342ac626f47ee6e3b0c52ed45c75678a7699dd307a17bc3a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000255.jpg": {
+      "at": 1794077366715,
+      "sha256": "0693f1c1ea39da37342ac626f47ee6e3b0c52ed45c75678a7699dd307a17bc3a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000256.jpg": {
+      "at": 1794077366878,
+      "sha256": "94d261981a1b02b6b98fada2d0235f3e4ba0c3fe7f0674fbfaad0e5f0a5f3ce3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000257.jpg": {
+      "at": 1794077367080,
+      "sha256": "94d261981a1b02b6b98fada2d0235f3e4ba0c3fe7f0674fbfaad0e5f0a5f3ce3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000258.jpg": {
+      "at": 1794077367264,
+      "sha256": "94d261981a1b02b6b98fada2d0235f3e4ba0c3fe7f0674fbfaad0e5f0a5f3ce3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000259.jpg": {
+      "at": 1794077367455,
+      "sha256": "0693f1c1ea39da37342ac626f47ee6e3b0c52ed45c75678a7699dd307a17bc3a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000260.jpg": {
+      "at": 1794077367633,
+      "sha256": "0693f1c1ea39da37342ac626f47ee6e3b0c52ed45c75678a7699dd307a17bc3a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000295.jpg": {
+      "at": 1794077395967,
+      "sha256": "c5c24eb2e6d4bff38c6a6b61afd97dbcb35cab4af2646373903ecd12cebf8a85",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000296.jpg": {
+      "at": 1794077396164,
+      "sha256": "c5c24eb2e6d4bff38c6a6b61afd97dbcb35cab4af2646373903ecd12cebf8a85",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000297.jpg": {
+      "at": 1794077396333,
+      "sha256": "ed91bc680e955a24f718b67c5594d769df65accd75c4f157860def612fca626e",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000298.jpg": {
+      "at": 1794077396516,
+      "sha256": "ed91bc680e955a24f718b67c5594d769df65accd75c4f157860def612fca626e",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000299.jpg": {
+      "at": 1794077396701,
+      "sha256": "ed91bc680e955a24f718b67c5594d769df65accd75c4f157860def612fca626e",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000300.jpg": {
+      "at": 1794077396861,
+      "sha256": "c5c24eb2e6d4bff38c6a6b61afd97dbcb35cab4af2646373903ecd12cebf8a85",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000301.jpg": {
+      "at": 1794077397066,
+      "sha256": "17316a6de9e87d586b0dc034e3559320674afe9c77566f11edab1bc303570a33",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000302.jpg": {
+      "at": 1794077397232,
+      "sha256": "17316a6de9e87d586b0dc034e3559320674afe9c77566f11edab1bc303570a33",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000303.jpg": {
+      "at": 1794077397415,
+      "sha256": "094ae0bf19b109c3b6113c1dc8c668e7c83bd6d189b7d4feb3836d49cd474a59",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000304.jpg": {
+      "at": 1794077397585,
+      "sha256": "955ae3ee1ea95f564e1c5559944ee4042374fbd38cbde81f74d7dd4685033a98",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000305.jpg": {
+      "at": 1794077397771,
+      "sha256": "955ae3ee1ea95f564e1c5559944ee4042374fbd38cbde81f74d7dd4685033a98",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000306.jpg": {
+      "at": 1794077397976,
+      "sha256": "ad0619d67bb9fefe94f07fa27754c81e1068728f3f8228b5f0d8d79b5f988eb9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000307.jpg": {
+      "at": 1794077398180,
+      "sha256": "72036901ce1026a82702f52b4e7bfdd9202ab36f4097a46bc82ed2268664b8f6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000308.jpg": {
+      "at": 1794077398334,
+      "sha256": "00df3e0e03ceabbd8f67ebd1a80f18789a4061ae2808b84d93c7e7388a31ea8f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000309.jpg": {
+      "at": 1794077398517,
+      "sha256": "00df3e0e03ceabbd8f67ebd1a80f18789a4061ae2808b84d93c7e7388a31ea8f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000310.jpg": {
+      "at": 1794077398702,
+      "sha256": "00df3e0e03ceabbd8f67ebd1a80f18789a4061ae2808b84d93c7e7388a31ea8f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000311.jpg": {
+      "at": 1794077398869,
+      "sha256": "72036901ce1026a82702f52b4e7bfdd9202ab36f4097a46bc82ed2268664b8f6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000312.jpg": {
+      "at": 1794077399031,
+      "sha256": "72036901ce1026a82702f52b4e7bfdd9202ab36f4097a46bc82ed2268664b8f6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000313.jpg": {
+      "at": 1794077399209,
+      "sha256": "72036901ce1026a82702f52b4e7bfdd9202ab36f4097a46bc82ed2268664b8f6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000314.jpg": {
+      "at": 1794077399394,
+      "sha256": "00df3e0e03ceabbd8f67ebd1a80f18789a4061ae2808b84d93c7e7388a31ea8f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000315.jpg": {
+      "at": 1794077399604,
+      "sha256": "00df3e0e03ceabbd8f67ebd1a80f18789a4061ae2808b84d93c7e7388a31ea8f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000316.jpg": {
+      "at": 1794077399771,
+      "sha256": "00df3e0e03ceabbd8f67ebd1a80f18789a4061ae2808b84d93c7e7388a31ea8f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000317.jpg": {
+      "at": 1794077399968,
+      "sha256": "72036901ce1026a82702f52b4e7bfdd9202ab36f4097a46bc82ed2268664b8f6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000318.jpg": {
+      "at": 1794077400127,
+      "sha256": "72036901ce1026a82702f52b4e7bfdd9202ab36f4097a46bc82ed2268664b8f6",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000319.jpg": {
+      "at": 1794077400332,
+      "sha256": "00df3e0e03ceabbd8f67ebd1a80f18789a4061ae2808b84d93c7e7388a31ea8f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000320.jpg": {
+      "at": 1794077400492,
+      "sha256": "00df3e0e03ceabbd8f67ebd1a80f18789a4061ae2808b84d93c7e7388a31ea8f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000321.jpg": {
+      "at": 1794077400678,
+      "sha256": "00df3e0e03ceabbd8f67ebd1a80f18789a4061ae2808b84d93c7e7388a31ea8f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000348.jpg": {
+      "at": 1794077405588,
+      "sha256": "8f48c645032b6f2838abdda8838df77fa1b6f31114b3fd3b05874ae30d65cc89",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000349.jpg": {
+      "at": 1794077405791,
+      "sha256": "5a9148365821580fe166791492ade2f30a7f79c45b8bdb59c070f45ef4d6fe70",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000350.jpg": {
+      "at": 1794077405946,
+      "sha256": "5a9148365821580fe166791492ade2f30a7f79c45b8bdb59c070f45ef4d6fe70",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000351.jpg": {
+      "at": 1794077406156,
+      "sha256": "5a9148365821580fe166791492ade2f30a7f79c45b8bdb59c070f45ef4d6fe70",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000352.jpg": {
+      "at": 1794077406336,
+      "sha256": "8f48c645032b6f2838abdda8838df77fa1b6f31114b3fd3b05874ae30d65cc89",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000353.jpg": {
+      "at": 1794077406519,
+      "sha256": "8f48c645032b6f2838abdda8838df77fa1b6f31114b3fd3b05874ae30d65cc89",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000354.jpg": {
+      "at": 1794077406704,
+      "sha256": "8f48c645032b6f2838abdda8838df77fa1b6f31114b3fd3b05874ae30d65cc89",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000355.jpg": {
+      "at": 1794077406886,
+      "sha256": "470d76472600842f0d750b4b0543d85b085925fef174ada4b4a466bd6ae869ac",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000356.jpg": {
+      "at": 1794077407052,
+      "sha256": "470d76472600842f0d750b4b0543d85b085925fef174ada4b4a466bd6ae869ac",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000357.jpg": {
+      "at": 1794077407229,
+      "sha256": "6ce343c126a0518ed4e4044a17cbc8a93ec18f723f836af3390d84a4065f0687",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000358.jpg": {
+      "at": 1794077407431,
+      "sha256": "edab843817cdec6b2c979a2a520ebb1479f164b02236d9934b603f1511d24551",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000359.jpg": {
+      "at": 1794077407619,
+      "sha256": "2bc845fdc38e3d5beffb163639e872c0a2786407c2ce8c0cac07799c5157ea2d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000360.jpg": {
+      "at": 1794077407793,
+      "sha256": "3c7c17be6a52cf6d62a1f81f3c6c327ce37e2d1730d49ae68831d4ca31698e5b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000361.jpg": {
+      "at": 1794077407968,
+      "sha256": "3c7c17be6a52cf6d62a1f81f3c6c327ce37e2d1730d49ae68831d4ca31698e5b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000362.jpg": {
+      "at": 1794077408150,
+      "sha256": "9fbef3b5391a7e5332c83ad3852ec746669cc5eff05edf96f40f5dc971a46155",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000363.jpg": {
+      "at": 1794077408355,
+      "sha256": "2bc845fdc38e3d5beffb163639e872c0a2786407c2ce8c0cac07799c5157ea2d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000364.jpg": {
+      "at": 1794077408535,
+      "sha256": "2bc845fdc38e3d5beffb163639e872c0a2786407c2ce8c0cac07799c5157ea2d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000365.jpg": {
+      "at": 1794077408694,
+      "sha256": "2bc845fdc38e3d5beffb163639e872c0a2786407c2ce8c0cac07799c5157ea2d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000366.jpg": {
+      "at": 1794077408885,
+      "sha256": "3c7c17be6a52cf6d62a1f81f3c6c327ce37e2d1730d49ae68831d4ca31698e5b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000367.jpg": {
+      "at": 1794077409063,
+      "sha256": "3c7c17be6a52cf6d62a1f81f3c6c327ce37e2d1730d49ae68831d4ca31698e5b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000368.jpg": {
+      "at": 1794077409242,
+      "sha256": "2bc845fdc38e3d5beffb163639e872c0a2786407c2ce8c0cac07799c5157ea2d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000369.jpg": {
+      "at": 1794077409418,
+      "sha256": "2bc845fdc38e3d5beffb163639e872c0a2786407c2ce8c0cac07799c5157ea2d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000370.jpg": {
+      "at": 1794077409580,
+      "sha256": "2bc845fdc38e3d5beffb163639e872c0a2786407c2ce8c0cac07799c5157ea2d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000371.jpg": {
+      "at": 1794077409792,
+      "sha256": "3c7c17be6a52cf6d62a1f81f3c6c327ce37e2d1730d49ae68831d4ca31698e5b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000372.jpg": {
+      "at": 1794077409971,
+      "sha256": "3c7c17be6a52cf6d62a1f81f3c6c327ce37e2d1730d49ae68831d4ca31698e5b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000356.jpg": {
+      "at": 1794077407052,
+      "sha256": "3895dc35bbe53bd319f602f1166fdf48ce07a064d333ee0e287d9a00305c5331",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000357.jpg": {
+      "at": 1794077407252,
+      "sha256": "3895dc35bbe53bd319f602f1166fdf48ce07a064d333ee0e287d9a00305c5331",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000358.jpg": {
+      "at": 1794077407430,
+      "sha256": "e6d0dad59e25658befeaa599f9b60c2508334daa8a399b68c32f70e5cc84aabe",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000359.jpg": {
+      "at": 1794077407619,
+      "sha256": "e6d0dad59e25658befeaa599f9b60c2508334daa8a399b68c32f70e5cc84aabe",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000360.jpg": {
+      "at": 1794077407770,
+      "sha256": "e6d0dad59e25658befeaa599f9b60c2508334daa8a399b68c32f70e5cc84aabe",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000361.jpg": {
+      "at": 1794077407968,
+      "sha256": "3895dc35bbe53bd319f602f1166fdf48ce07a064d333ee0e287d9a00305c5331",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000362.jpg": {
+      "at": 1794077408174,
+      "sha256": "bf86df897281f9ffbc750d9d7c33d6048cdd86dfff2e13dea676c2614da53f1a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000363.jpg": {
+      "at": 1794077408310,
+      "sha256": "bf86df897281f9ffbc750d9d7c33d6048cdd86dfff2e13dea676c2614da53f1a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000364.jpg": {
+      "at": 1794077408535,
+      "sha256": "c3158a593428a2a14a8cc3308ddc83433aaa72bda5a669ee472d43a2c08be3f5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000365.jpg": {
+      "at": 1794077408693,
+      "sha256": "c3158a593428a2a14a8cc3308ddc83433aaa72bda5a669ee472d43a2c08be3f5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000366.jpg": {
+      "at": 1794077408885,
+      "sha256": "67bea87a66818aabd43c5c54418eda08efe2999b291460b910ca9e723350fd8c",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000367.jpg": {
+      "at": 1794077409062,
+      "sha256": "e111e7ec1e1783417fa512642e534ccafd9b8e0fb5c3ab4e80a5ea10c21c58c7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000368.jpg": {
+      "at": 1794077409220,
+      "sha256": "dc5a5618f5f058dc2333ef932fa1eacbee05a274a69b05aa2a28c0da8d4c2563",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000369.jpg": {
+      "at": 1794077409394,
+      "sha256": "33c976dfc5cbc98bc4d45b069fcd748e23a6952c87c240c8fba9d991878114af",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000370.jpg": {
+      "at": 1794077409608,
+      "sha256": "33c976dfc5cbc98bc4d45b069fcd748e23a6952c87c240c8fba9d991878114af",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000371.jpg": {
+      "at": 1794077409770,
+      "sha256": "33c976dfc5cbc98bc4d45b069fcd748e23a6952c87c240c8fba9d991878114af",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000372.jpg": {
+      "at": 1794077409970,
+      "sha256": "dc5a5618f5f058dc2333ef932fa1eacbee05a274a69b05aa2a28c0da8d4c2563",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000373.jpg": {
+      "at": 1794077410127,
+      "sha256": "dc5a5618f5f058dc2333ef932fa1eacbee05a274a69b05aa2a28c0da8d4c2563",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000374.jpg": {
+      "at": 1794077410338,
+      "sha256": "33c976dfc5cbc98bc4d45b069fcd748e23a6952c87c240c8fba9d991878114af",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000375.jpg": {
+      "at": 1794077410495,
+      "sha256": "8dae7fd0071c5f5260c51e56160536a26a2d82c10fd9dc080be5239281f7fb32",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000376.jpg": {
+      "at": 1794077410698,
+      "sha256": "8dae7fd0071c5f5260c51e56160536a26a2d82c10fd9dc080be5239281f7fb32",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000377.jpg": {
+      "at": 1794077410871,
+      "sha256": "d5775a011fd2f84347816aeac3c4cdff28e9656701b5613122c33a02cc747e6b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000378.jpg": {
+      "at": 1794077411084,
+      "sha256": "d5775a011fd2f84347816aeac3c4cdff28e9656701b5613122c33a02cc747e6b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000379.jpg": {
+      "at": 1794077411250,
+      "sha256": "d5775a011fd2f84347816aeac3c4cdff28e9656701b5613122c33a02cc747e6b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000380.jpg": {
+      "at": 1794077411398,
+      "sha256": "8dae7fd0071c5f5260c51e56160536a26a2d82c10fd9dc080be5239281f7fb32",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000381.jpg": {
+      "at": 1794077411600,
+      "sha256": "8dae7fd0071c5f5260c51e56160536a26a2d82c10fd9dc080be5239281f7fb32",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000382.jpg": {
+      "at": 1794077411774,
+      "sha256": "8dae7fd0071c5f5260c51e56160536a26a2d82c10fd9dc080be5239281f7fb32",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000417.jpg": {
+      "at": 1794077459568,
+      "sha256": "cde3ce205fb055cf4a0eb85fea6f2db9bb87ddd8c5c7b4aca72f6391433a0394",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000418.jpg": {
+      "at": 1794077459760,
+      "sha256": "0df3f3878b31c5d6033e043a1d8816911bdd82372eb2e824072f75fa25c9c54e",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000419.jpg": {
+      "at": 1794077459968,
+      "sha256": "0df3f3878b31c5d6033e043a1d8816911bdd82372eb2e824072f75fa25c9c54e",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000420.jpg": {
+      "at": 1794077460135,
+      "sha256": "0df3f3878b31c5d6033e043a1d8816911bdd82372eb2e824072f75fa25c9c54e",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000421.jpg": {
+      "at": 1794077460315,
+      "sha256": "cde3ce205fb055cf4a0eb85fea6f2db9bb87ddd8c5c7b4aca72f6391433a0394",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000422.jpg": {
+      "at": 1794077460500,
+      "sha256": "a70d94b4499348da51d3e561edec7fae914a079c973ad8dae2fd4db810c6b925",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000423.jpg": {
+      "at": 1794077460659,
+      "sha256": "a70d94b4499348da51d3e561edec7fae914a079c973ad8dae2fd4db810c6b925",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000424.jpg": {
+      "at": 1794077460869,
+      "sha256": "c5a931d301b46fcd9763740a484ad935ef58c2259bf85b70756e4a03ea826772",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000425.jpg": {
+      "at": 1794077461052,
+      "sha256": "c5a931d301b46fcd9763740a484ad935ef58c2259bf85b70756e4a03ea826772",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000426.jpg": {
+      "at": 1794077461234,
+      "sha256": "f23d7b94251d407f07fcae5b41e4b4281ca037836889709a90e5b90286d0e50f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000427.jpg": {
+      "at": 1794077461406,
+      "sha256": "f5b700d338161eae95fd9f02e3f05250c5896bd5064fb0255674cd69fded4311",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000428.jpg": {
+      "at": 1794077461603,
+      "sha256": "79d44e4d20f5eaf00da6167a149e604f11f61637dc25842d1bfab7beabbedbec",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000429.jpg": {
+      "at": 1794077461769,
+      "sha256": "990e04a08613317b0f687e50f1888ad2c05302de1e52ac45262704a64be88c75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000430.jpg": {
+      "at": 1794077461943,
+      "sha256": "990e04a08613317b0f687e50f1888ad2c05302de1e52ac45262704a64be88c75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000431.jpg": {
+      "at": 1794077462133,
+      "sha256": "990e04a08613317b0f687e50f1888ad2c05302de1e52ac45262704a64be88c75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000432.jpg": {
+      "at": 1794077462291,
+      "sha256": "79d44e4d20f5eaf00da6167a149e604f11f61637dc25842d1bfab7beabbedbec",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000433.jpg": {
+      "at": 1794077462503,
+      "sha256": "79d44e4d20f5eaf00da6167a149e604f11f61637dc25842d1bfab7beabbedbec",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000434.jpg": {
+      "at": 1794077462660,
+      "sha256": "79d44e4d20f5eaf00da6167a149e604f11f61637dc25842d1bfab7beabbedbec",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000435.jpg": {
+      "at": 1794077462865,
+      "sha256": "990e04a08613317b0f687e50f1888ad2c05302de1e52ac45262704a64be88c75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000436.jpg": {
+      "at": 1794077463070,
+      "sha256": "990e04a08613317b0f687e50f1888ad2c05302de1e52ac45262704a64be88c75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000437.jpg": {
+      "at": 1794077463228,
+      "sha256": "990e04a08613317b0f687e50f1888ad2c05302de1e52ac45262704a64be88c75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000438.jpg": {
+      "at": 1794077463419,
+      "sha256": "79d44e4d20f5eaf00da6167a149e604f11f61637dc25842d1bfab7beabbedbec",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000439.jpg": {
+      "at": 1794077463601,
+      "sha256": "79d44e4d20f5eaf00da6167a149e604f11f61637dc25842d1bfab7beabbedbec",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000440.jpg": {
+      "at": 1794077463742,
+      "sha256": "990e04a08613317b0f687e50f1888ad2c05302de1e52ac45262704a64be88c75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000418.jpg": {
+      "at": 1794077459786,
+      "sha256": "3c7c17be6a52cf6d62a1f81f3c6c327ce37e2d1730d49ae68831d4ca31698e5b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000419.jpg": {
+      "at": 1794077459947,
+      "sha256": "3c7c17be6a52cf6d62a1f81f3c6c327ce37e2d1730d49ae68831d4ca31698e5b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000420.jpg": {
+      "at": 1794077460135,
+      "sha256": "3c7c17be6a52cf6d62a1f81f3c6c327ce37e2d1730d49ae68831d4ca31698e5b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000421.jpg": {
+      "at": 1794077460316,
+      "sha256": "2bc845fdc38e3d5beffb163639e872c0a2786407c2ce8c0cac07799c5157ea2d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000422.jpg": {
+      "at": 1794077460500,
+      "sha256": "2bc845fdc38e3d5beffb163639e872c0a2786407c2ce8c0cac07799c5157ea2d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000423.jpg": {
+      "at": 1794077460701,
+      "sha256": "2bc845fdc38e3d5beffb163639e872c0a2786407c2ce8c0cac07799c5157ea2d",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000424.jpg": {
+      "at": 1794077460894,
+      "sha256": "f5cfd26752549ce50116e3b1dd8b8f113fd9868bd1f42b215a4264b442023355",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000425.jpg": {
+      "at": 1794077461052,
+      "sha256": "b6e8d7aa13d78d0af36c4601546e573bd53e82fdfbc1f67cbe287fdf13828f12",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000426.jpg": {
+      "at": 1794077461234,
+      "sha256": "324877e64d88a0f288529536e8132285a64373d7aee52bc1fccffe5aaff46a9f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000427.jpg": {
+      "at": 1794077461387,
+      "sha256": "324877e64d88a0f288529536e8132285a64373d7aee52bc1fccffe5aaff46a9f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000428.jpg": {
+      "at": 1794077461603,
+      "sha256": "646233c585dfbe32b5946edbfe4de5ea32dc508a3b8bd24183f2536629da3f9f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000429.jpg": {
+      "at": 1794077461778,
+      "sha256": "d0a12a95b1728da0d735a390e0538ffa5d6b4e6cfd7cec81e5ed79567594b3e5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000430.jpg": {
+      "at": 1794077461969,
+      "sha256": "d0a12a95b1728da0d735a390e0538ffa5d6b4e6cfd7cec81e5ed79567594b3e5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000431.jpg": {
+      "at": 1794077462133,
+      "sha256": "d0a12a95b1728da0d735a390e0538ffa5d6b4e6cfd7cec81e5ed79567594b3e5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000432.jpg": {
+      "at": 1794077462317,
+      "sha256": "f9b0768282ce9df2584c0a458551b02893f6c287f6371c1d45e9293d45c86fc7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000433.jpg": {
+      "at": 1794077462482,
+      "sha256": "f9b0768282ce9df2584c0a458551b02893f6c287f6371c1d45e9293d45c86fc7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000434.jpg": {
+      "at": 1794077462691,
+      "sha256": "f9b0768282ce9df2584c0a458551b02893f6c287f6371c1d45e9293d45c86fc7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000435.jpg": {
+      "at": 1794077462866,
+      "sha256": "d0a12a95b1728da0d735a390e0538ffa5d6b4e6cfd7cec81e5ed79567594b3e5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000436.jpg": {
+      "at": 1794077463070,
+      "sha256": "d0a12a95b1728da0d735a390e0538ffa5d6b4e6cfd7cec81e5ed79567594b3e5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000437.jpg": {
+      "at": 1794077463230,
+      "sha256": "f9b0768282ce9df2584c0a458551b02893f6c287f6371c1d45e9293d45c86fc7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000472.jpg": {
+      "at": 1794077469596,
+      "sha256": "f9b0768282ce9df2584c0a458551b02893f6c287f6371c1d45e9293d45c86fc7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000473.jpg": {
+      "at": 1794077469768,
+      "sha256": "d0a12a95b1728da0d735a390e0538ffa5d6b4e6cfd7cec81e5ed79567594b3e5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000474.jpg": {
+      "at": 1794077469960,
+      "sha256": "d0a12a95b1728da0d735a390e0538ffa5d6b4e6cfd7cec81e5ed79567594b3e5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000475.jpg": {
+      "at": 1794077470139,
+      "sha256": "d0a12a95b1728da0d735a390e0538ffa5d6b4e6cfd7cec81e5ed79567594b3e5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000476.jpg": {
+      "at": 1794077470316,
+      "sha256": "f9b0768282ce9df2584c0a458551b02893f6c287f6371c1d45e9293d45c86fc7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000477.jpg": {
+      "at": 1794077470497,
+      "sha256": "f9b0768282ce9df2584c0a458551b02893f6c287f6371c1d45e9293d45c86fc7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000478.jpg": {
+      "at": 1794077470708,
+      "sha256": "4ca3c653f0c12198e32b04666acb1700fc312e9ae1e982819a0885b60bb5b8a0",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000479.jpg": {
+      "at": 1794077470869,
+      "sha256": "1ab9e9e8176fce0e90be91f3e58c59b7f8b47f8a083da6e893f0974d6c588a1f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000480.jpg": {
+      "at": 1794077471047,
+      "sha256": "1ab9e9e8176fce0e90be91f3e58c59b7f8b47f8a083da6e893f0974d6c588a1f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000481.jpg": {
+      "at": 1794077471218,
+      "sha256": "8fbde5946dd9ed3cbd1bd6b7349d5fd8d40b48597d641a0c3eac5faf349f0326",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000482.jpg": {
+      "at": 1794077471412,
+      "sha256": "2d25287904e2a87995c860196b71c3e5042dd1539416cd1a1693a4636ca71728",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000483.jpg": {
+      "at": 1794077471584,
+      "sha256": "2d25287904e2a87995c860196b71c3e5042dd1539416cd1a1693a4636ca71728",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000484.jpg": {
+      "at": 1794077471768,
+      "sha256": "b46389b4f12c75c4f8f4e127283afef086a67b05989e8fc0bf0dabddd46c497a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000485.jpg": {
+      "at": 1794077471932,
+      "sha256": "b46389b4f12c75c4f8f4e127283afef086a67b05989e8fc0bf0dabddd46c497a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000486.jpg": {
+      "at": 1794077472134,
+      "sha256": "b46389b4f12c75c4f8f4e127283afef086a67b05989e8fc0bf0dabddd46c497a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000487.jpg": {
+      "at": 1794077472320,
+      "sha256": "2d25287904e2a87995c860196b71c3e5042dd1539416cd1a1693a4636ca71728",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000488.jpg": {
+      "at": 1794077472520,
+      "sha256": "2d25287904e2a87995c860196b71c3e5042dd1539416cd1a1693a4636ca71728",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000489.jpg": {
+      "at": 1794077472684,
+      "sha256": "2d25287904e2a87995c860196b71c3e5042dd1539416cd1a1693a4636ca71728",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000490.jpg": {
+      "at": 1794077472836,
+      "sha256": "b46389b4f12c75c4f8f4e127283afef086a67b05989e8fc0bf0dabddd46c497a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000491.jpg": {
+      "at": 1794077473028,
+      "sha256": "b46389b4f12c75c4f8f4e127283afef086a67b05989e8fc0bf0dabddd46c497a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000492.jpg": {
+      "at": 1794077473218,
+      "sha256": "b46389b4f12c75c4f8f4e127283afef086a67b05989e8fc0bf0dabddd46c497a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000493.jpg": {
+      "at": 1794077473401,
+      "sha256": "2d25287904e2a87995c860196b71c3e5042dd1539416cd1a1693a4636ca71728",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000494.jpg": {
+      "at": 1794077473585,
+      "sha256": "2d25287904e2a87995c860196b71c3e5042dd1539416cd1a1693a4636ca71728",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000495.jpg": {
+      "at": 1794077473769,
+      "sha256": "b46389b4f12c75c4f8f4e127283afef086a67b05989e8fc0bf0dabddd46c497a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000496.jpg": {
+      "at": 1794077473964,
+      "sha256": "b46389b4f12c75c4f8f4e127283afef086a67b05989e8fc0bf0dabddd46c497a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000530.jpg": {
+      "at": 1794077533360,
+      "sha256": "5f56e4ef93a274c88b139a3a224314fcad036211a13a1fc298298b97d9ff0aa7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000531.jpg": {
+      "at": 1794077533546,
+      "sha256": "5f56e4ef93a274c88b139a3a224314fcad036211a13a1fc298298b97d9ff0aa7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000532.jpg": {
+      "at": 1794077533715,
+      "sha256": "7df4d91a9e45396fdb9ee520b69f62dbb8249a3b9ff7d43b817988401b7a726f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000533.jpg": {
+      "at": 1794077533901,
+      "sha256": "7df4d91a9e45396fdb9ee520b69f62dbb8249a3b9ff7d43b817988401b7a726f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000534.jpg": {
+      "at": 1794077534086,
+      "sha256": "7df4d91a9e45396fdb9ee520b69f62dbb8249a3b9ff7d43b817988401b7a726f",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000535.jpg": {
+      "at": 1794077534277,
+      "sha256": "5f56e4ef93a274c88b139a3a224314fcad036211a13a1fc298298b97d9ff0aa7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000536.jpg": {
+      "at": 1794077534456,
+      "sha256": "5e7ea3b8529392297d6cd6572ecfb486c71ccafb291d5be08862f9fd753fdd24",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000537.jpg": {
+      "at": 1794077534611,
+      "sha256": "5e7ea3b8529392297d6cd6572ecfb486c71ccafb291d5be08862f9fd753fdd24",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000538.jpg": {
+      "at": 1794077534823,
+      "sha256": "8ace7ec2f44bb328418a1a2ef5df42102b1ae25b1453bc9dd35e0a8de8c98555",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000539.jpg": {
+      "at": 1794077534992,
+      "sha256": "cae87bcfe87c2e9e48d0413022711f82c0dc4fd6a13750e2d80aaa19359d6a00",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000540.jpg": {
+      "at": 1794077535179,
+      "sha256": "ac153079d95442e73b3be3d51b69835ced36d8582f81aacc8e9511d10b9c4d8a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000541.jpg": {
+      "at": 1794077535329,
+      "sha256": "ac153079d95442e73b3be3d51b69835ced36d8582f81aacc8e9511d10b9c4d8a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000542.jpg": {
+      "at": 1794077535546,
+      "sha256": "d16e72979f7a70c10a21ff2d72637550fb3929f05b8f213bed83545bb665197c",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000543.jpg": {
+      "at": 1794077535731,
+      "sha256": "50ca98dcead29de48c8def53e6b164436dd529a9a7723bf18f232a5551734551",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000544.jpg": {
+      "at": 1794077535906,
+      "sha256": "50ca98dcead29de48c8def53e6b164436dd529a9a7723bf18f232a5551734551",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000545.jpg": {
+      "at": 1794077536085,
+      "sha256": "50ca98dcead29de48c8def53e6b164436dd529a9a7723bf18f232a5551734551",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000546.jpg": {
+      "at": 1794077536270,
+      "sha256": "272cb5c75a729b218a8f69d07a361f62022db5693b5c996eea57665d0d553f22",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000547.jpg": {
+      "at": 1794077536458,
+      "sha256": "272cb5c75a729b218a8f69d07a361f62022db5693b5c996eea57665d0d553f22",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000532.jpg": {
+      "at": 1794077533732,
+      "sha256": "990e04a08613317b0f687e50f1888ad2c05302de1e52ac45262704a64be88c75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000533.jpg": {
+      "at": 1794077533900,
+      "sha256": "990e04a08613317b0f687e50f1888ad2c05302de1e52ac45262704a64be88c75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000534.jpg": {
+      "at": 1794077534057,
+      "sha256": "990e04a08613317b0f687e50f1888ad2c05302de1e52ac45262704a64be88c75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000535.jpg": {
+      "at": 1794077534253,
+      "sha256": "79d44e4d20f5eaf00da6167a149e604f11f61637dc25842d1bfab7beabbedbec",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000536.jpg": {
+      "at": 1794077534455,
+      "sha256": "79d44e4d20f5eaf00da6167a149e604f11f61637dc25842d1bfab7beabbedbec",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000537.jpg": {
+      "at": 1794077534635,
+      "sha256": "79d44e4d20f5eaf00da6167a149e604f11f61637dc25842d1bfab7beabbedbec",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000538.jpg": {
+      "at": 1794077534822,
+      "sha256": "8207885b7e8b91cb9d77378c1e7f1bbd453a55111bb8164260623c299de315c0",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000539.jpg": {
+      "at": 1794077534981,
+      "sha256": "a58104617217b171decbe9b3621fb8fc1f8bd1d8b5e1c443c192e33999d39de4",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000540.jpg": {
+      "at": 1794077535145,
+      "sha256": "a58104617217b171decbe9b3621fb8fc1f8bd1d8b5e1c443c192e33999d39de4",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000541.jpg": {
+      "at": 1794077535351,
+      "sha256": "336961bcdf50e92df461ab9be4e67eecf5a1f82831810a471fe5bab039c3c4f5",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000542.jpg": {
+      "at": 1794077535544,
+      "sha256": "50697bea33a4c198ee8b4ccc76be7952c06d640275fdca15109d3a0842bbcf77",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000543.jpg": {
+      "at": 1794077535718,
+      "sha256": "eb0dd1f9545b0ac0e941427e0e01276ce0068ccefa63ae6a57a7785127dc82c9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000544.jpg": {
+      "at": 1794077535876,
+      "sha256": "fb7e453534d0ff0c218b16f5bfbc9523d3996d3ecc035f9a2859b7bbf7848707",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000545.jpg": {
+      "at": 1794077536084,
+      "sha256": "fb7e453534d0ff0c218b16f5bfbc9523d3996d3ecc035f9a2859b7bbf7848707",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000546.jpg": {
+      "at": 1794077536270,
+      "sha256": "eb0dd1f9545b0ac0e941427e0e01276ce0068ccefa63ae6a57a7785127dc82c9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000547.jpg": {
+      "at": 1794077536457,
+      "sha256": "eb0dd1f9545b0ac0e941427e0e01276ce0068ccefa63ae6a57a7785127dc82c9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000548.jpg": {
+      "at": 1794077536617,
+      "sha256": "eb0dd1f9545b0ac0e941427e0e01276ce0068ccefa63ae6a57a7785127dc82c9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000549.jpg": {
+      "at": 1794077536793,
+      "sha256": "fb7e453534d0ff0c218b16f5bfbc9523d3996d3ecc035f9a2859b7bbf7848707",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000550.jpg": {
+      "at": 1794077536985,
+      "sha256": "fb7e453534d0ff0c218b16f5bfbc9523d3996d3ecc035f9a2859b7bbf7848707",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000551.jpg": {
+      "at": 1794077537165,
+      "sha256": "fb7e453534d0ff0c218b16f5bfbc9523d3996d3ecc035f9a2859b7bbf7848707",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000552.jpg": {
+      "at": 1794077537349,
+      "sha256": "eb0dd1f9545b0ac0e941427e0e01276ce0068ccefa63ae6a57a7785127dc82c9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000553.jpg": {
+      "at": 1794077537536,
+      "sha256": "eb0dd1f9545b0ac0e941427e0e01276ce0068ccefa63ae6a57a7785127dc82c9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000554.jpg": {
+      "at": 1794077537733,
+      "sha256": "fb7e453534d0ff0c218b16f5bfbc9523d3996d3ecc035f9a2859b7bbf7848707",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000590.jpg": {
+      "at": 1794077547913,
+      "sha256": "8cb493957481f995127cb6b1b424ae8c8aa1b3de00d40e76840c498a9662e736",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000591.jpg": {
+      "at": 1794077548071,
+      "sha256": "8cb493957481f995127cb6b1b424ae8c8aa1b3de00d40e76840c498a9662e736",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000592.jpg": {
+      "at": 1794077548269,
+      "sha256": "8812227fb15afdd05f7c985380304bb78d745d0a6a009c26e00a5aaf641ce33c",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000593.jpg": {
+      "at": 1794077548451,
+      "sha256": "8812227fb15afdd05f7c985380304bb78d745d0a6a009c26e00a5aaf641ce33c",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000594.jpg": {
+      "at": 1794077548637,
+      "sha256": "8812227fb15afdd05f7c985380304bb78d745d0a6a009c26e00a5aaf641ce33c",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000595.jpg": {
+      "at": 1794077548817,
+      "sha256": "8cb493957481f995127cb6b1b424ae8c8aa1b3de00d40e76840c498a9662e736",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000596.jpg": {
+      "at": 1794077548998,
+      "sha256": "271402207df2d9d991d2544c203b60ca6ac42e394885cbc25cd80eb121b1c455",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000597.jpg": {
+      "at": 1794077549182,
+      "sha256": "271402207df2d9d991d2544c203b60ca6ac42e394885cbc25cd80eb121b1c455",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000598.jpg": {
+      "at": 1794077549368,
+      "sha256": "e2d24e41559b8cb6ba045af27daebb91f031c85874f27d280c3001b0276bdfa1",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000599.jpg": {
+      "at": 1794077549559,
+      "sha256": "10d5881d5480f059343ecda323f10c2662128dd9d9b223e90a456f35a0a1c906",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000600.jpg": {
+      "at": 1794077549711,
+      "sha256": "cad4233f696ceb3dc2044c4bdabf5ec77302e5baaa2417377594379da334189c",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000601.jpg": {
+      "at": 1794077549913,
+      "sha256": "cad4233f696ceb3dc2044c4bdabf5ec77302e5baaa2417377594379da334189c",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000602.jpg": {
+      "at": 1794077550083,
+      "sha256": "620088f727890b88194796222f1dc03938493308d48313824d204d87282d0c0a",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000603.jpg": {
+      "at": 1794077550263,
+      "sha256": "1804288c464cc97029ded4e63fe826eeefa6d01b9d5cf455ea33b90e5e400de4",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000604.jpg": {
+      "at": 1794077550453,
+      "sha256": "6d45a977f56ccddce9761f7b7076b23eeae36aa58fb17c5d0057090df2951904",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000605.jpg": {
+      "at": 1794077550637,
+      "sha256": "6d45a977f56ccddce9761f7b7076b23eeae36aa58fb17c5d0057090df2951904",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "staff/frame-000606.jpg": {
+      "at": 1794077550835,
+      "sha256": "6b0787f54db12beb629c6cdbfe1e8047a1d09c793f9f0e20b2d62f4cf4afa94e",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000592.jpg": {
+      "at": 1794077548242,
+      "sha256": "eb0dd1f9545b0ac0e941427e0e01276ce0068ccefa63ae6a57a7785127dc82c9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000593.jpg": {
+      "at": 1794077548451,
+      "sha256": "eb0dd1f9545b0ac0e941427e0e01276ce0068ccefa63ae6a57a7785127dc82c9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000594.jpg": {
+      "at": 1794077548636,
+      "sha256": "eb0dd1f9545b0ac0e941427e0e01276ce0068ccefa63ae6a57a7785127dc82c9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000595.jpg": {
+      "at": 1794077548816,
+      "sha256": "fb7e453534d0ff0c218b16f5bfbc9523d3996d3ecc035f9a2859b7bbf7848707",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000596.jpg": {
+      "at": 1794077548998,
+      "sha256": "fb7e453534d0ff0c218b16f5bfbc9523d3996d3ecc035f9a2859b7bbf7848707",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000597.jpg": {
+      "at": 1794077549181,
+      "sha256": "fb7e453534d0ff0c218b16f5bfbc9523d3996d3ecc035f9a2859b7bbf7848707",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000598.jpg": {
+      "at": 1794077549342,
+      "sha256": "eb0dd1f9545b0ac0e941427e0e01276ce0068ccefa63ae6a57a7785127dc82c9",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000599.jpg": {
+      "at": 1794077549542,
+      "sha256": "6a4f7bcac286acb2b63d578c02810f029eafe66dd2a1d0352437b29f150c08ca",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000600.jpg": {
+      "at": 1794077549732,
+      "sha256": "69115e47f559e8eea8aadee13eeb5c5e696cf3af778766511c69fd0ccc60f9fa",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000601.jpg": {
+      "at": 1794077549902,
+      "sha256": "69115e47f559e8eea8aadee13eeb5c5e696cf3af778766511c69fd0ccc60f9fa",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000602.jpg": {
+      "at": 1794077550083,
+      "sha256": "d5d0fb47c6f44e47852111be05a2f4cb4d2d6fde2783f7a6aa290c40ae905f5c",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000603.jpg": {
+      "at": 1794077550282,
+      "sha256": "2741742053d4e7f67f3a4554b55c29b2b0d4b24075d4445e509be6416432fcd7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000604.jpg": {
+      "at": 1794077550451,
+      "sha256": "2741742053d4e7f67f3a4554b55c29b2b0d4b24075d4445e509be6416432fcd7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000605.jpg": {
+      "at": 1794077550636,
+      "sha256": "2741742053d4e7f67f3a4554b55c29b2b0d4b24075d4445e509be6416432fcd7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000606.jpg": {
+      "at": 1794077550804,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000607.jpg": {
+      "at": 1794077551001,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000608.jpg": {
+      "at": 1794077551183,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000609.jpg": {
+      "at": 1794077551366,
+      "sha256": "2741742053d4e7f67f3a4554b55c29b2b0d4b24075d4445e509be6416432fcd7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000610.jpg": {
+      "at": 1794077551543,
+      "sha256": "2741742053d4e7f67f3a4554b55c29b2b0d4b24075d4445e509be6416432fcd7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000611.jpg": {
+      "at": 1794077551735,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000612.jpg": {
+      "at": 1794077551892,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000613.jpg": {
+      "at": 1794077552083,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000614.jpg": {
+      "at": 1794077552252,
+      "sha256": "2741742053d4e7f67f3a4554b55c29b2b0d4b24075d4445e509be6416432fcd7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000601.jpg": {
+      "at": 1794077549902,
+      "sha256": "20dc7f578608307b7dd04ea969c39aefaee981d41dacc032db585c3fecadcb41",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000602.jpg": {
+      "at": 1794077550060,
+      "sha256": "20dc7f578608307b7dd04ea969c39aefaee981d41dacc032db585c3fecadcb41",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000603.jpg": {
+      "at": 1794077550283,
+      "sha256": "20dc7f578608307b7dd04ea969c39aefaee981d41dacc032db585c3fecadcb41",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000604.jpg": {
+      "at": 1794077550427,
+      "sha256": "20dc7f578608307b7dd04ea969c39aefaee981d41dacc032db585c3fecadcb41",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000605.jpg": {
+      "at": 1794077550614,
+      "sha256": "20dc7f578608307b7dd04ea969c39aefaee981d41dacc032db585c3fecadcb41",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000606.jpg": {
+      "at": 1794077550835,
+      "sha256": "66a18714c23268daf617125ae19822059a51a4bb19079e0d51906dacea0751d3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000607.jpg": {
+      "at": 1794077550976,
+      "sha256": "66a18714c23268daf617125ae19822059a51a4bb19079e0d51906dacea0751d3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000608.jpg": {
+      "at": 1794077551160,
+      "sha256": "66a18714c23268daf617125ae19822059a51a4bb19079e0d51906dacea0751d3",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000609.jpg": {
+      "at": 1794077551346,
+      "sha256": "b52a0e115cf49e11c81c6d17e7e9ea4b7ffedfbee9b24134880ff27bcf80d75b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000610.jpg": {
+      "at": 1794077551546,
+      "sha256": "46c3843df1eb02a3f7077e2eaa44f7ffa38c3d1be47b85e3ca20a86ea81a51fb",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000611.jpg": {
+      "at": 1794077551735,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000612.jpg": {
+      "at": 1794077551908,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000613.jpg": {
+      "at": 1794077552061,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000614.jpg": {
+      "at": 1794077552253,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000615.jpg": {
+      "at": 1794077552471,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000616.jpg": {
+      "at": 1794077552639,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000617.jpg": {
+      "at": 1794077552793,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000618.jpg": {
+      "at": 1794077552977,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000619.jpg": {
+      "at": 1794077553183,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000620.jpg": {
+      "at": 1794077553352,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000621.jpg": {
+      "at": 1794077553546,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000622.jpg": {
+      "at": 1794077553734,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "campus/frame-000623.jpg": {
+      "at": 1794077553909,
+      "sha256": "5c0fc0df7715f45254195a37aa34424f0d72b0aa2c7190a1fc16fcc783ac89cc",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000628.jpg": {
+      "at": 1794077554793,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000629.jpg": {
+      "at": 1794077554976,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000630.jpg": {
+      "at": 1794077555167,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000631.jpg": {
+      "at": 1794077555352,
+      "sha256": "2741742053d4e7f67f3a4554b55c29b2b0d4b24075d4445e509be6416432fcd7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000632.jpg": {
+      "at": 1794077555509,
+      "sha256": "2741742053d4e7f67f3a4554b55c29b2b0d4b24075d4445e509be6416432fcd7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000633.jpg": {
+      "at": 1794077555735,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000634.jpg": {
+      "at": 1794077555887,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000635.jpg": {
+      "at": 1794077556082,
+      "sha256": "714cca8252a40b259dcc4239cebc562c674623e1f0710302e2ac420bc5e18e0b",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    "alex/frame-000636.jpg": {
+      "at": 1794077556267,
+      "sha256": "2741742053d4e7f67f3a4554b55c29b2b0d4b24075d4445e509be6416432fcd7",
+      "dimensions": [
+        1600,
+        900
+      ]
+    }
+  },
+  "windows": [
+    {
+      "chapter": 1,
+      "stream": "campus",
+      "cue": null,
+      "purpose": "Pre-story baseline, real disclosure and Alex initial worry; Elena has not replied yet.",
+      "nominal_start_frame": 0,
+      "nominal_frames": 61,
+      "native_seconds": 2.5359999999999996,
+      "reading_hold_seconds": 0.005666666666666931,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077251806,
+      "source_last_at_ms": 1794077254159,
+      "arrival_at_ms": [
+        1794077253108,
+        1794077258718
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 0,
+      "tail_handle_frames": 5,
+      "render_frames": 66,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077253108,
+          "estimated_output_seconds": 1.302,
+          "opaque_seconds_before_arrival": 1.302,
+          "opaque_seconds_after_arrival": 1.031333333333333
+        }
+      ]
+    },
+    {
+      "chapter": 1,
+      "stream": "campus",
+      "cue": null,
+      "purpose": "Pre-story baseline, real disclosure and Alex initial worry; Elena has not replied yet.",
+      "nominal_start_frame": 61,
+      "nominal_frames": 125,
+      "native_seconds": 2.3429999999999995,
+      "reading_hold_seconds": 2.8653333333333335,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077257608,
+      "source_last_at_ms": 1794077259768,
+      "arrival_at_ms": [
+        1794077253108,
+        1794077258718
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 135,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077258718,
+          "estimated_output_seconds": 3.6516666666666664,
+          "opaque_seconds_before_arrival": 0.9016666666666667,
+          "opaque_seconds_after_arrival": 3.8899999999999997
+        }
+      ]
+    },
+    {
+      "chapter": 1,
+      "stream": "campus",
+      "cue": "Elena replies",
+      "purpose": "Actual Elena reply aligns with her spoken introduction.",
+      "nominal_start_frame": 186,
+      "nominal_frames": 133,
+      "native_seconds": 3.6399999999999992,
+      "reading_hold_seconds": 1.9016666666666677,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077259595,
+      "source_last_at_ms": 1794077263052,
+      "arrival_at_ms": [
+        1794077260704
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 143,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077260704,
+          "estimated_output_seconds": 8.859,
+          "opaque_seconds_before_arrival": 0.9006666666666666,
+          "opaque_seconds_after_arrival": 4.224333333333334
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "stream": "campus",
+      "cue": null,
+      "purpose": "Actual Ava found post arrives once; preserve reviewed native slow screenshot interval.",
+      "nominal_start_frame": 319,
+      "nominal_frames": 269,
+      "native_seconds": 7.878000000000002,
+      "reading_hold_seconds": 3.330333333333332,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077281766,
+      "source_last_at_ms": 1794077289461,
+      "arrival_at_ms": [
+        1794077285776
+      ],
+      "allow_native_gaps": true,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 279,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077285776,
+          "estimated_output_seconds": 17.301666666666666,
+          "opaque_seconds_before_arrival": 3.8016666666666663,
+          "opaque_seconds_after_arrival": 6.99
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "stream": "campus",
+      "cue": null,
+      "purpose": "Read the existing automatic FindBack reply in Ava thread BEFORE Alex tentative comment appears.",
+      "nominal_start_frame": 588,
+      "nominal_frames": 270,
+      "native_seconds": 1.444,
+      "reading_hold_seconds": 9.806000000000001,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077352966,
+      "source_last_at_ms": 1794077354227,
+      "arrival_at_ms": [],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 280,
+      "arrival_opacity_checks": []
+    },
+    {
+      "chapter": 4,
+      "stream": "campus",
+      "cue": null,
+      "purpose": "Actual tentative Alex reply, before Noah.",
+      "nominal_start_frame": 858,
+      "nominal_frames": 291,
+      "native_seconds": 2.552,
+      "reading_hold_seconds": 9.573,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077353110,
+      "source_last_at_ms": 1794077355479,
+      "arrival_at_ms": [
+        1794077354410
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 301,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077354410,
+          "estimated_output_seconds": 37.05,
+          "opaque_seconds_before_arrival": 1.0916666666666668,
+          "opaque_seconds_after_arrival": 10.616666666666665
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "stream": "campus",
+      "cue": null,
+      "purpose": "Actual Noah warning gets its own beat; he makes no competing claim.",
+      "nominal_start_frame": 1149,
+      "nominal_frames": 328,
+      "native_seconds": 2.56,
+      "reading_hold_seconds": 11.106666666666666,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077355292,
+      "source_last_at_ms": 1794077357669,
+      "arrival_at_ms": [
+        1794077356445
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 338,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077356445,
+          "estimated_output_seconds": 49.028,
+          "opaque_seconds_before_arrival": 0.9446666666666667,
+          "opaque_seconds_after_arrival": 12.305333333333332
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "stream": "campus",
+      "cue": null,
+      "purpose": "Alex actual fuller report appears; hold before bot invitation.",
+      "nominal_start_frame": 1477,
+      "nominal_frames": 204,
+      "native_seconds": 1.446,
+      "reading_hold_seconds": 7.054,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077357126,
+      "source_last_at_ms": 1794077358389,
+      "arrival_at_ms": [
+        1794077358232
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 214,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077358232,
+          "estimated_output_seconds": 62.647666666666666,
+          "opaque_seconds_before_arrival": 0.8976666666666667,
+          "opaque_seconds_after_arrival": 7.185666666666666
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "stream": "campus",
+      "cue": "FindBack responds",
+      "purpose": "Actual automatic private invitation follows the human report, on its spoken clause.",
+      "nominal_start_frame": 1681,
+      "nominal_frames": 108,
+      "native_seconds": 2.5359999999999996,
+      "reading_hold_seconds": 1.1640000000000004,
+      "leading_hold_seconds": 0.8,
+      "source_first_at_ms": 1794077358389,
+      "source_last_at_ms": 1794077360742,
+      "arrival_at_ms": [
+        1794077358581
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 118,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077358581,
+          "estimated_output_seconds": 71.03366666666668,
+          "opaque_seconds_before_arrival": 0.7836666666666666,
+          "opaque_seconds_after_arrival": 3.299666666666667
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "stream": "alex",
+      "cue": null,
+      "purpose": "Continuous actual Intake working through completed draft, with original model wait retained.",
+      "nominal_start_frame": 1789,
+      "nominal_frames": 322,
+      "native_seconds": 10.336,
+      "reading_hold_seconds": 3.0806666666666658,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077357480,
+      "source_last_at_ms": 1794077367633,
+      "arrival_at_ms": [
+        1794077358604,
+        1794077364713
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 332,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077358604,
+          "estimated_output_seconds": 75.66566666666667,
+          "opaque_seconds_before_arrival": 0.9156666666666667,
+          "opaque_seconds_after_arrival": 12.084333333333332
+        },
+        {
+          "first_visible_at_ms": 1794077364713,
+          "estimated_output_seconds": 81.77466666666668,
+          "opaque_seconds_before_arrival": 7.024666666666667,
+          "opaque_seconds_after_arrival": 5.9753333333333325
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "stream": "alex",
+      "cue": null,
+      "purpose": "Actual Yes reply fully readable in draft RHS.",
+      "nominal_start_frame": 2111,
+      "nominal_frames": 88,
+      "native_seconds": 1.448,
+      "reading_hold_seconds": 2.2186666666666666,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077395967,
+      "source_last_at_ms": 1794077397232,
+      "arrival_at_ms": [
+        1794077397066
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 98,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077397066,
+          "estimated_output_seconds": 89.05733333333333,
+          "opaque_seconds_before_arrival": 0.8906666666666666,
+          "opaque_seconds_after_arrival": 2.359333333333333
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "stream": "alex",
+      "cue": "Intake asks",
+      "purpose": "Actual open identifying question follows Yes on its spoken clause.",
+      "nominal_start_frame": 2199,
+      "nominal_frames": 136,
+      "native_seconds": 3.6289999999999996,
+      "reading_hold_seconds": 1.2376666666666674,
+      "leading_hold_seconds": 0.8,
+      "source_first_at_ms": 1794077397232,
+      "source_last_at_ms": 1794077400678,
+      "arrival_at_ms": [
+        1794077397415
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 146,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077397415,
+          "estimated_output_seconds": 92.608,
+          "opaque_seconds_before_arrival": 0.7746666666666667,
+          "opaque_seconds_after_arrival": 4.475333333333333
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "stream": "staff",
+      "cue": "The desk also gets",
+      "purpose": "INITIAL comparison visibly arrives BEFORE Alex bus-pressure message.",
+      "nominal_start_frame": 2335,
+      "nominal_frames": 169,
+      "native_seconds": 4.565,
+      "reading_hold_seconds": 2.4766666666666666,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077405588,
+      "source_last_at_ms": 1794077409971,
+      "arrival_at_ms": [
+        1794077406886
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 179,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077406886,
+          "estimated_output_seconds": 98.58966666666667,
+          "opaque_seconds_before_arrival": 1.0896666666666668,
+          "opaque_seconds_after_arrival": 5.535333333333334
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "stream": "alex",
+      "cue": null,
+      "purpose": "Actual worried Alex request; keep the response absent until Intake clause.",
+      "nominal_start_frame": 2504,
+      "nominal_frames": 204,
+      "native_seconds": 1.441,
+      "reading_hold_seconds": 7.059,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077407052,
+      "source_last_at_ms": 1794077408310,
+      "arrival_at_ms": [
+        1794077408310
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 214,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077408310,
+          "estimated_output_seconds": 105.59133333333332,
+          "opaque_seconds_before_arrival": 1.0496666666666667,
+          "opaque_seconds_after_arrival": 7.033666666666666
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "stream": "alex",
+      "cue": "Intake explains",
+      "purpose": "Actual Intake explanation about color and insufficient evidence.",
+      "nominal_start_frame": 2708,
+      "nominal_frames": 161,
+      "native_seconds": 3.647,
+      "reading_hold_seconds": 2.261333333333333,
+      "leading_hold_seconds": 0.8,
+      "source_first_at_ms": 1794077408310,
+      "source_last_at_ms": 1794077411774,
+      "arrival_at_ms": [
+        1794077408535
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 171,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077408535,
+          "estimated_output_seconds": 113.85833333333333,
+          "opaque_seconds_before_arrival": 0.8166666666666668,
+          "opaque_seconds_after_arrival": 5.475
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "stream": "alex",
+      "cue": null,
+      "purpose": "Actual identifying assertion, before Intake acknowledgment.",
+      "nominal_start_frame": 2869,
+      "nominal_frames": 183,
+      "native_seconds": 1.2740000000000002,
+      "reading_hold_seconds": 6.351,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077459568,
+      "source_last_at_ms": 1794077460659,
+      "arrival_at_ms": [
+        1794077460500
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 193,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077460500,
+          "estimated_output_seconds": 120.47366666666667,
+          "opaque_seconds_before_arrival": 0.7236666666666667,
+          "opaque_seconds_after_arrival": 6.484666666666667
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "stream": "alex",
+      "cue": "Intake saves",
+      "purpose": "Actual acknowledgment saves his exact words and requests fresh comparison.",
+      "nominal_start_frame": 3052,
+      "nominal_frames": 145,
+      "native_seconds": 3.265999999999999,
+      "reading_hold_seconds": 1.9756666666666678,
+      "leading_hold_seconds": 0.8,
+      "source_first_at_ms": 1794077460659,
+      "source_last_at_ms": 1794077463742,
+      "arrival_at_ms": [
+        1794077460869
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 155,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077460869,
+          "estimated_output_seconds": 128.17666666666668,
+          "opaque_seconds_before_arrival": 0.8016666666666666,
+          "opaque_seconds_after_arrival": 4.823333333333334
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "stream": "staff",
+      "cue": null,
+      "purpose": "Actual refreshed Matcher working notice.",
+      "nominal_start_frame": 3197,
+      "nominal_frames": 137,
+      "native_seconds": 3.6260000000000003,
+      "reading_hold_seconds": 2.0823333333333327,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077459786,
+      "source_last_at_ms": 1794077463230,
+      "arrival_at_ms": [
+        1794077461052
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 147,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077461052,
+          "estimated_output_seconds": 134.47433333333333,
+          "opaque_seconds_before_arrival": 1.0576666666666668,
+          "opaque_seconds_after_arrival": 4.234
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "stream": "staff",
+      "cue": "Then the updated",
+      "purpose": "Actual UPDATED comparison, clearly two desk cases and red-thread/RK match for B; still proposal.",
+      "nominal_start_frame": 3334,
+      "nominal_frames": 255,
+      "native_seconds": 4.550000000000002,
+      "reading_hold_seconds": 6.074999999999998,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077469596,
+      "source_last_at_ms": 1794077473964,
+      "arrival_at_ms": [
+        1794077470708
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 265,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077470708,
+          "estimated_output_seconds": 140.02866666666665,
+          "opaque_seconds_before_arrival": 0.9036666666666667,
+          "opaque_seconds_after_arrival": 9.304666666666666
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "stream": "staff",
+      "cue": null,
+      "purpose": "Actual Mira approval in exact reviewed thread, then staff acknowledgment.",
+      "nominal_start_frame": 3589,
+      "nominal_frames": 233,
+      "native_seconds": 3.28,
+      "reading_hold_seconds": 6.428333333333335,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077533360,
+      "source_last_at_ms": 1794077536458,
+      "arrival_at_ms": [
+        1794077534456,
+        1794077534992
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 243,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077534456,
+          "estimated_output_seconds": 150.63766666666666,
+          "opaque_seconds_before_arrival": 0.8876666666666667,
+          "opaque_seconds_after_arrival": 8.404
+        },
+        {
+          "first_visible_at_ms": 1794077534992,
+          "estimated_output_seconds": 151.17366666666666,
+          "opaque_seconds_before_arrival": 1.4236666666666666,
+          "opaque_seconds_after_arrival": 7.868
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "stream": "alex",
+      "cue": "FindBack reserves",
+      "purpose": "Actual private reservation notification; no handover or receipt.",
+      "nominal_start_frame": 3822,
+      "nominal_frames": 109,
+      "native_seconds": 4.184,
+      "reading_hold_seconds": 0.3576666666666668,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077533732,
+      "source_last_at_ms": 1794077537733,
+      "arrival_at_ms": [
+        1794077534981
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 119,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077534981,
+          "estimated_output_seconds": 160.499,
+          "opaque_seconds_before_arrival": 1.0406666666666669,
+          "opaque_seconds_after_arrival": 3.084333333333334
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "stream": "staff",
+      "cue": null,
+      "purpose": "Actual Mira collection instructions, before private notification is shown.",
+      "nominal_start_frame": 3931,
+      "nominal_frames": 174,
+      "native_seconds": 3.104,
+      "reading_hold_seconds": 4.146,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077547913,
+      "source_last_at_ms": 1794077550835,
+      "arrival_at_ms": [
+        1794077548998
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 184,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077548998,
+          "estimated_output_seconds": 164.87666666666667,
+          "opaque_seconds_before_arrival": 0.8766666666666666,
+          "opaque_seconds_after_arrival": 5.956666666666667
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "stream": "alex",
+      "cue": "FindBack delivers",
+      "purpose": "Actual complete private collection instructions.",
+      "nominal_start_frame": 4105,
+      "nominal_frames": 177,
+      "native_seconds": 4.193,
+      "reading_hold_seconds": 3.1820000000000004,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077548242,
+      "source_last_at_ms": 1794077552252,
+      "arrival_at_ms": [
+        1794077549542
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 187,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077549542,
+          "estimated_output_seconds": 172.34166666666667,
+          "opaque_seconds_before_arrival": 1.0916666666666668,
+          "opaque_seconds_after_arrival": 5.866666666666667
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "stream": "campus",
+      "cue": null,
+      "purpose": "ACTUAL Alex public thank-you arrives once in original Ava thread.",
+      "nominal_start_frame": 4282,
+      "nominal_frames": 130,
+      "native_seconds": 4.19,
+      "reading_hold_seconds": 1.2266666666666666,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077549902,
+      "source_last_at_ms": 1794077553909,
+      "arrival_at_ms": [
+        1794077550976
+      ],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 5,
+      "render_frames": 140,
+      "arrival_opacity_checks": [
+        {
+          "first_visible_at_ms": 1794077550976,
+          "estimated_output_seconds": 179.49066666666667,
+          "opaque_seconds_before_arrival": 0.8656666666666667,
+          "opaque_seconds_after_arrival": 4.134333333333334
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "stream": "alex",
+      "cue": "His case is reserved",
+      "purpose": "Current complete pickup instructions and pending handover; human ending, no architecture montage.",
+      "nominal_start_frame": 4412,
+      "nominal_frames": 122,
+      "native_seconds": 1.657,
+      "reading_hold_seconds": 3.426333333333333,
+      "leading_hold_seconds": 0.0,
+      "source_first_at_ms": 1794077554793,
+      "source_last_at_ms": 1794077556267,
+      "arrival_at_ms": [],
+      "allow_native_gaps": false,
+      "head_handle_frames": 5,
+      "tail_handle_frames": 0,
+      "render_frames": 127,
+      "arrival_opacity_checks": []
+    }
+  ],
+  "summary": {
+    "selected_windows": 25,
+    "source_frames": 435,
+    "nominal_seconds": 188.91666666666666,
+    "native_capture_seconds": 85.32499999999997,
+    "crossdissolve_seconds": 0.4166666666666667
+  },
+  "first_story_post_at_ms": 1794077252973
+}

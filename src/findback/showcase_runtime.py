@@ -8,14 +8,13 @@ from __future__ import annotations
 import argparse
 import asyncio
 from datetime import datetime, timezone
-import hashlib
 import json
 from pathlib import Path
 import re
 
-from .domain import ActorContext
 from .runtime import FindBackRuntime, GENERIC_QUESTION
 from .storage import dumps, loads
+from .provenance import verify_human_post
 
 
 ITEMS = {
@@ -91,25 +90,18 @@ class ShowcaseRuntime(FindBackRuntime):
         human = next((p for p in self.people.values() if p["actor_id"] == payload.get("sender")), None)
         if human is None:
             return None
-        response = await self.http.get(self.config["mattermost_url"] + f"/api/v4/channels/{self.community['channel_id']}/posts",
-                                       params={"per_page": 200}, headers={"Authorization": "Bearer " + human["token"]})
-        if response.status_code != 200:
-            return None
-        for post in response.json().get("posts", {}).values():
-            material = "\x1f".join([human["client_id"], self.config["bridge_id"], self.community["channel_id"], post["id"], "0"])
-            expected = "sw_" + hashlib.sha256(material.encode()).hexdigest()[:32]
-            if expected != payload.get("message_id"):
-                continue
-            if post["user_id"] != human["id"] or post["channel_id"] != self.community["channel_id"] or post["message"] != payload.get("body"):
-                return None
-            if post.get("type") or post.get("props", {}).get("from_webhook") or post.get("props", {}).get("from_bot"):
-                return None
-            return ActorContext(human["actor_id"], "human", self.community["id"], expected, post["message"],
-                                datetime.fromtimestamp(post["create_at"] / 1000, timezone.utc).isoformat(),
-                                "switch", payload.get("thread_id"))
-        return None
+        return await verify_human_post(self.http, base_url=self.config["mattermost_url"],
+            bridge_id=self.config["bridge_id"], channel_id=self.community["channel_id"],
+            human=human, actor_id=human["actor_id"], room_id=self.community["id"], payload=payload)
 
     async def _review(self, source, claim_id):
+        job = source.source_event_id + ':matcher'
+        with self.store.connection() as db:
+            cached = db.execute('SELECT 1 FROM model_proposals WHERE job_id=?', (job,)).fetchone()
+        if cached is None:
+            self.journal.queue(job + ':working', self.staff_room,
+                f"I’m comparing {CASE_NAMES[claim_id]}’s report with the desk record now. I’ll separate broad similarities from identifying evidence; Mira makes the decision.",
+                'matcher')
         result = await super()._review(source, claim_id)
         if not result["ok"] or "review_id" not in result["data"]:
             return result
@@ -159,6 +151,9 @@ class ShowcaseRuntime(FindBackRuntime):
                 name = CASE_NAMES[cid]
                 self.public_update(ctx.source_event_id + ":welcome", cid,
                     f"{name}, I can help. I’ve opened [your private recovery chat]({self.cases[cid]['url']}). I’ll ask you there, so the identifying details stay between you and the library desk. Everyone else can keep posting here.")
+                self.journal.queue(ctx.source_event_id + ':intake-working', self.cases[cid]['room_id'],
+                    f"{name}, I’m reading your report and preparing a private draft now. I’ll ask you to check it before anything is treated as confirmed.",
+                    'intake-' + cid)
                 report = await self._proposal(ctx.source_event_id + ":draft", "intake", {"text": text})
                 actor = self._agent_context(cid, ctx, self.cases[cid]["room_id"])
                 self.domain.save_report_draft(actor, claim_id=cid, report=report, source_event_ids=[ctx.source_event_id])
@@ -333,32 +328,7 @@ class ShowcaseRuntime(FindBackRuntime):
         return payload.get("text", "Your case was updated."), speaker
 
     async def _deliver(self):
-        while not self._stop.is_set():
-            for row in self.store.pending_outbox():
-                try:
-                    if row["topic"] == "review-ready":
-                        key = row["source_event_id"] + ":review"
-                        with self.store.connection() as db:
-                            displayed = db.execute("SELECT remote_id FROM runtime_messages WHERE id=? AND state='SENT'", (key,)).fetchone()
-                        if displayed:
-                            self.store.mark_outbox_sent(row["id"], displayed[0])
-                        continue
-                    body, speaker = self._notice(row)
-                    remote = await self._send_once(row["id"], row["destination_room_id"], body, speaker)
-                    self.store.mark_outbox_sent(row["id"], remote)
-                except Exception as exc:
-                    self.store.mark_outbox_failed(row["id"], type(exc).__name__)
-            with self.store.connection() as db:
-                rows = [dict(r) for r in db.execute("SELECT * FROM runtime_messages WHERE state='PENDING' ORDER BY rowid")]
-            for row in rows:
-                try:
-                    remote = await self._send_once(row["id"], row["room_id"], row["body"], row["speaker"], row.get("thread_id"))
-                    with self.store.transaction() as db:
-                        db.execute("UPDATE runtime_messages SET state='SENT',remote_id=? WHERE id=?", (remote, row["id"]))
-                except Exception as exc:
-                    # Keep pending. The next attempt reconciles the trusted marker.
-                    print(f"Showcase delivery pending ({type(exc).__name__}).", flush=True)
-            await asyncio.sleep(0.4)
+        await self._delivery_loop(render_notice=self._notice, review_cards=True, poll_seconds=0.4)
 
     async def run_forever(self):
         print("FindBack showcase is live: 12 campus voices, four private cases, and one staff review desk.", flush=True)

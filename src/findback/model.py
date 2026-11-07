@@ -7,6 +7,7 @@ and an empty working directory. Model outputs are proposals, never commands.
 from __future__ import annotations
 
 import asyncio
+import contextlib
 import json
 import os
 from pathlib import Path
@@ -99,10 +100,18 @@ class CodexModel:
             )
             try:
                 stdout, stderr = await asyncio.wait_for(proc.communicate(prompt.encode()), self.timeout)
-            except (TimeoutError, asyncio.CancelledError):
-                proc.kill()
+            except asyncio.CancelledError:
+                with contextlib.suppress(ProcessLookupError):
+                    proc.kill()
                 await proc.wait()
-                raise ModelError("Model call timed out or was cancelled; no domain action was authorized.")
+                # Preserve runtime shutdown: unfinished inbox work stays pending
+                # and can be replayed after restart, rather than marked failed.
+                raise
+            except TimeoutError:
+                with contextlib.suppress(ProcessLookupError):
+                    proc.kill()
+                await proc.wait()
+                raise ModelError("Model call timed out; no domain action was authorized.") from None
         if proc.returncode:
             # Never relay arbitrary provider stderr into a claimant room.
             raise ModelError(f"Codex exited with status {proc.returncode}; check local authentication.")

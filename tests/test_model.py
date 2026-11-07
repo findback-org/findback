@@ -202,3 +202,33 @@ def test_model_timeout_kills_process_and_returns_no_proposal(monkeypatch):
     with pytest.raises(ModelError, match="timed out"):
         asyncio.run(CodexModel(executable="test-codex", timeout=0.001).draft("A report"))
     assert process.killed
+
+
+@pytest.mark.parametrize("child_already_exited", [False, True])
+def test_model_cancellation_kills_child_and_preserves_runtime_cancellation(monkeypatch, child_already_exited):
+    async def check():
+        started = asyncio.Event()
+
+        class BlockingProcess(FakeProcess):
+            async def communicate(self, data):
+                started.set()
+                await asyncio.Event().wait()
+
+            def kill(self):
+                self.killed = True
+                if child_already_exited:
+                    raise ProcessLookupError("Child exited at the cancellation boundary")
+                super().kill()
+
+        process = BlockingProcess(b"")
+        install_process(monkeypatch, process)
+        model = CodexModel(executable="test-codex")
+        task = asyncio.create_task(model.draft("A fictional report"))
+        await asyncio.wait_for(started.wait(), 1)
+        task.cancel()
+        with pytest.raises(asyncio.CancelledError):
+            await task
+        assert process.killed
+        assert model.measurements == []
+
+    asyncio.run(check())

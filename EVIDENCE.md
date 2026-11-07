@@ -1,12 +1,27 @@
 # FindBack implementation evidence
 
-Verified locally on November 7, 2026. Source and fixtures are included; no public deployment or hackathon submission is implied.
+Source and fixtures are included; no hosted agent deployment or hackathon submission is implied.
 
-## Current demo: actual Mattermost campus
+## November 8 technical hardening
+
+The final local automated suite passed **247/247** checks. [Machine-readable verification](evidence/hardening-verification.json) records source hashes, test counts and verification boundaries; the published commit's CI is the reproducible check.
+
+The [current 3:09 film](https://youtu.be/CwU4WdZB-Sk) is the Miles narration of the recorded interactive run. It shows real Switch/Mattermost messages and live agent responses with fictional participants and objects; its endpoint is approved and reserved, before handover and receipt. The film was recorded **before** the reliability changes below. The new failure/recovery evidence is automated and uses controlled providers, rather than claiming a newly recorded live recovery.
+
+- [Per-room scheduling checks](tests/test_scheduling.py) block inference in one room, verify an authenticated second claimant still receives a status reply through the real handler, preserve FIFO within a room, enforce a four-room concurrency bound, exercise a 205-event backlog, and replay cancelled work from SQLite.
+- [Model cancellation checks](tests/test_model.py) verify the child process is stopped and `CancelledError` survives even if that child already exited. Interrupted work remains eligible for replay rather than being marked successfully completed.
+- [Delivery recovery checks](tests/test_delivery.py) exercise both real SQLite queues with controlled providers: persistent backoff across restart, older failures not starving new deliveries, bounded retries and permanent refusal, reconciliation after an unacknowledged successful POST, migration rollback, read-only health privacy, and explicit operator requeue. The conversational showcase uses the same delivery pass. See [the exact operational contract](docs/OPERATIONS.md); strict output order and network-wide exactly-once delivery are not claimed.
+- [Source-history recovery checks](tests/test_provenance.py) process an older authenticated approval and community report through the real handlers, beyond the first 200 posts. Cursor overlap handles Mattermost's timestamp-boundary behavior. Missing, unavailable, incomplete, nonprogressing or over-bound history leaves a fixed safe failed-inbox diagnostic rather than silently completing the event. Search is bounded; raw Mattermost-to-Switch thread conversion remains trusted transport context, as documented in the operations guide.
+- [CI](.github/workflows/ci.yml) installs locked runtime/test dependencies, exercises the offline domain workflow and builds and installs a wheel outside the source tree on Linux and macOS. The same clean-wheel smoke check passed locally: one fictional return, one reservation, and `passed: true`. The build backend itself is not locked, and bit-identical wheel builds are not claimed.
+- [Fresh live access checks](evidence/hardening-access-checks.json) passed **28/28** against the existing local Switch/Mattermost stack. This was read-only: it did not claim a WebSocket connection, post messages, run models or change case progress. It verifies token/account/room boundaries, not the new retry behavior or a fresh full live scenario.
+
+The dated campus runs below remain historical evidence with their original counts. The repository's current automated checks are available in [GitHub Actions](https://github.com/Krishna3451/findback/actions/workflows/ci.yml).
+
+## Earlier campus run: actual Mattermost campus
 
 The primary demonstration is [Campus • Lost & Found](http://localhost:57898/switch/channels/findback-campus-4f73ef6b), with linked private conversations and staff review. It is an actual messaging-app history, not a slide reconstruction. [Showcase run](evidence/live-campus/showcase-run.json), [verification](evidence/live-campus/verification.json), and [94 actual access checks](evidence/live-campus/access-checks.json) record 12 distinct fictional human accounts, 46 human posts, four actual claims, 12 live model proposals and three saved returns. Alex remains NEEDS_INFO. All 49 public messages at story completion were checked for the identifying answers; none leaked them. All three receipts were checked against the exact handover threads.
 
-The current full automated suite has **154 passing tests**, including public-source intake isolation, exact draft/review/handover-card replies and bounded book-category aliases. Leo's word “paperback” initially yielded no coarse candidate; the alias was corrected and Mira sent a real new review request. The preserved run resumed without resetting cases or fabricating a review. Its recorded elapsed time includes the debugging pause; it is not presented as a clean timed benchmark. The earlier rehearsal completed in 143.5 seconds and has its own evidence files.
+The earlier publication suite had **154 passing tests**, including public-source intake isolation, exact draft/review/handover-card replies and bounded book-category aliases. Leo's word “paperback” initially yielded no coarse candidate; the alias was corrected and Mira sent a real new review request. The preserved run resumed without resetting cases or fabricating a review. Its recorded elapsed time includes the debugging pause; it is not presented as a clean timed benchmark. The earlier rehearsal completed in 143.5 seconds and has its own evidence files.
 
 The actual browser received a new message without reloading after aligning the browser with Mattermost's existing canonical localhost address. No server/CORS/Origin checks were weakened. The current local team's capacity was increased from 50 to 100 to accommodate the explicitly fictional cohorts; that was the only server configuration field changed. See [capacity proof](evidence/live-campus/setup-capacity.json) and [browser check](evidence/showcase-browser-check.json).
 

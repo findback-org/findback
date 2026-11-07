@@ -17,6 +17,7 @@ import httpx
 from .domain import ActorContext, DomainService
 from .fixtures import load_fixtures
 from .storage import SQLiteStore
+from .delivery import health as delivery_health, retry_delivery
 
 
 def load_config(state: Path) -> dict:
@@ -96,10 +97,15 @@ def main():
     status = sub.add_parser("status", help="Inspect a case locally as the configured operator")
     status.add_argument("claim_id", choices=["C001", "C002"])
     sub.add_parser("retry-failed", help="Requeue interrupted inbox work without deleting domain history")
+    sub.add_parser("health", help="Read payload-free durable queue health; does not probe network/process liveness")
+    retry = sub.add_parser("retry-delivery", help="Explicitly reset failed/blocked delivery retry budgets; retain history and reconcile markers")
+    retry.add_argument("--queue", choices=["all", "outbox", "runtime"], default="all")
+    retry.add_argument("--id", dest="message_id", help="Retry only this exact delivery ID")
     args = parser.parse_args()
     state = args.state_dir.resolve()
-    state.mkdir(parents=True, exist_ok=True, mode=0o700)
-    state.chmod(0o700)
+    if args.command != "health":
+        state.mkdir(parents=True, exist_ok=True, mode=0o700)
+        state.chmod(0o700)
     if args.command == "doctor":
         info = {"python": __import__("sys").version.split()[0], "codex": shutil.which("codex"), "behavior": "local environment check"}
         config = json.loads((state / "config.json").read_text()) if (state / "config.json").exists() else {}
@@ -126,6 +132,18 @@ def main():
         store = SQLiteStore(state / "findback.db")
         ctx = ActorContext(config["staff"]["actor_id"], "human", config["staff_room"]["id"], "local-inspection", origin="fixture")
         print(json.dumps(DomainService(store).case_view(ctx, claim_id=args.claim_id), indent=2))
+    elif args.command == "health":
+        print(json.dumps(delivery_health(state / "findback.db"), indent=2))
+    elif args.command == "retry-delivery":
+        if not (state / "findback.db").exists():
+            raise SystemExit("No saved delivery queue found. Bootstrap a session first.")
+        store = SQLiteStore(state / "findback.db")
+        try:
+            with store.transaction() as db:
+                counts = retry_delivery(db, "runtime_messages" if args.queue == "runtime" else args.queue, args.message_id)
+            print(json.dumps({"requeued": counts, "history_preserved": True, "next_attempt_reconciles_markers": True}, indent=2))
+        finally:
+            store.close()
     elif args.command == "retry-failed":
         store = SQLiteStore(state / "findback.db")
         with store.transaction() as db:

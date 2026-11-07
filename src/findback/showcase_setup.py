@@ -149,7 +149,7 @@ def _extend_cases(config: dict, core: dict, state: dict, state_dir: Path) -> Non
         admin.close()
 
 
-def setup_showcase(state_dir: Path, *, viewer_username: str = "krishna") -> dict:
+def setup_showcase(state_dir: Path, *, viewer_username: str = "krishna", send_notice: bool = True) -> dict:
     """Create/reuse a separate showcase; only fictional notice/membership changes.
 
     Returns the standard FindBack config plus ``showcase``. Twelve simulated
@@ -254,13 +254,14 @@ def setup_showcase(state_dir: Path, *, viewer_username: str = "krishna") -> dict
                 current = mm.call("GET", f"/api/v4/channels/{channel_id}/members/{user_id}", allow=(404,))
                 if current.status_code == 404:
                     mm.json("POST", f"/api/v4/channels/{channel_id}/members", {"user_id": user_id})
-        if "notice_post_id" not in state:
-            post = mm.json("POST", "/api/v4/posts", {"channel_id": room["external_channel_id"], "message": NOTICE})
-            state["notice_post_id"] = post["id"]
-            _save(checkpoint, state)
-        else:
-            mm.json("PUT", f"/api/v4/posts/{state['notice_post_id']}/patch", {"message": NOTICE})
-        mm.call("POST", f"/api/v4/posts/{state['notice_post_id']}/pin")
+        if send_notice:
+            if "notice_post_id" not in state:
+                post = mm.json("POST", "/api/v4/posts", {"channel_id": room["external_channel_id"], "message": NOTICE})
+                state["notice_post_id"] = post["id"]
+                _save(checkpoint, state)
+            else:
+                mm.json("PUT", f"/api/v4/posts/{state['notice_post_id']}/patch", {"message": NOTICE})
+            mm.call("POST", f"/api/v4/posts/{state['notice_post_id']}/pin")
         human_ids = [human["id"] for human in state["people"].values()] + [observer["id"], state["viewer"]["id"]]
         for _ in range(40):
             identities = _metadata("identities", bridge_id=config["bridge_id"], human_ids=human_ids, agent_ids=[])
@@ -311,7 +312,7 @@ def setup_showcase(state_dir: Path, *, viewer_username: str = "krishna") -> dict
         config["showcase"] = {"fictional": True, "browser_origin": browser_origin,
             "community_room": {"id": room["id"], "channel_id": channel["id"],
             "url": community_url, "display_name": "Campus • Lost & Found"}, "people": state["people"],
-            "observer": observer, "viewer": state["viewer"], "notice_post_id": state["notice_post_id"],
+            "observer": observer, "viewer": state["viewer"], "notice_post_id": state.get("notice_post_id"),
             "background_items": BACKGROUND_ITEMS, "simulated_people_count": len(state["people"]),
             "setup_verified_at": datetime.now(timezone.utc).isoformat(),
             "observer_boundary": "The two designated observers can read all fictional rooms but have no claimant/staff command authority."}

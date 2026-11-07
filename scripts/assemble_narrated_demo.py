@@ -12,6 +12,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
+import re
 import subprocess
 import tempfile
 import wave
@@ -32,6 +33,35 @@ def probe(path):
 
 def sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def normalize_speech(source, output):
+    """Two-pass loudness control; retain exact PCM duration and original audio."""
+    first = run(["ffmpeg", "-hide_banner", "-nostats", "-i", str(source), "-af",
+                 "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"])
+    measured = json.loads(re.search(r'\{\s*"input_i".*?\}', first.stderr, re.S).group())
+    with wave.open(str(source), "rb") as stream:
+        frames = stream.getnframes()
+        rate = stream.getframerate()
+    effect = ("loudnorm=I=-16:TP=-1.5:LRA=11:linear=true:print_format=json:"
+              f"measured_I={measured['input_i']}:measured_TP={measured['input_tp']}:"
+              f"measured_LRA={measured['input_lra']}:measured_thresh={measured['input_thresh']}:"
+              f"offset={measured['target_offset']},aresample={rate},"
+              f"apad=whole_len={frames},atrim=end_sample={frames},volume=-0.2dB")
+    second = run(["ffmpeg", "-hide_banner", "-nostats", "-y", "-i", str(source), "-af", effect,
+                  "-ar", str(rate), "-ac", "1", "-c:a", "pcm_s16le", str(output)])
+    applied = json.loads(re.search(r'\{\s*"input_i".*?\}', second.stderr, re.S).group())
+    with wave.open(str(output), "rb") as stream:
+        if stream.getnframes() != frames or stream.getframerate() != rate:
+            raise ValueError("Loudness normalization changed the exact narration duration.")
+    return {"method": "Two-pass ffmpeg loudnorm", "target_integrated_lufs": -16,
+            "true_peak_ceiling_dbtp": -1.5, "target_lra_lu": 11,
+            "post_normalization_headroom_db": -0.2,
+            "original_file": source.name, "original_sha256": sha256(source),
+            "normalized_file": output.name, "normalized_sha256": sha256(output),
+            "sample_frames": frames, "sample_rate_hz": rate,
+            "duration_unchanged": True, "speech_tempo_unchanged": True,
+            "analysis": measured, "applied": applied}
 
 
 def concat_videos(paths, output):
@@ -177,9 +207,14 @@ def assemble(args):
                 output.writeframes(stream.readframes(stream.getnframes()))
     silent = root / "voice-aligned-silent.mp4"
     concat_videos([root / row["chapter_video_file"] for row in chapters], silent)
+    audio_for_mux = narration
+    loudness = None
+    if args.normalize_loudness:
+        audio_for_mux = root / "narration-normalized.wav"
+        loudness = normalize_speech(narration, audio_for_mux)
     final = root / "findback-narrated-demo.mp4"
     run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(silent),
-         "-i", str(narration), "-c:v", "copy", "-c:a", "aac", "-b:a", "160k",
+         "-i", str(audio_for_mux), "-c:v", "copy", "-c:a", "aac", "-b:a", "160k",
          "-movflags", "+faststart", "-shortest", "-metadata",
          "title=FindBack — actual Mattermost demo with synthetic English narration",
          "-metadata", "comment=Actual browser screenshots; cuts, compressed waiting gaps and final-frame holds. Fictional people/objects/handovers. Authorized synthetic voice narration via ElevenLabs.", str(final)])
@@ -195,6 +230,8 @@ def assemble(args):
         "voice_tempo_factor": args.tempo,
         "alignment": "Exact normalized PCM sample durations; cumulative video boundaries quantized to 24fps. No extra interchapter silence. A tempo factor other than 1 uses pitch-preserving ffmpeg atempo; original TTS files are unchanged.",
         "chapters": chapters}
+    if loudness:
+        report["loudness_normalization"] = loudness
     if args.tts_manifest:
         tts = json.loads(args.tts_manifest.read_text())
         report["tts_manifest_sha256"] = sha256(args.tts_manifest)
@@ -222,6 +259,7 @@ def main():
     parser.add_argument("--audio", action="append", required=True, metavar="CHAPTER=FILE")
     parser.add_argument("--max-seconds", type=float, default=180)
     parser.add_argument("--tempo", type=float, default=1)
+    parser.add_argument("--normalize-loudness", action="store_true")
     args = parser.parse_args()
     if not .5 <= args.tempo <= 2:
         parser.error("Tempo must be between 0.5 and 2.")

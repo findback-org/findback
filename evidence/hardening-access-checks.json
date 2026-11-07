@@ -1,0 +1,177 @@
+{
+  "verified_at": "2026-11-07T20:45:29.832346+00:00",
+  "behavior": "Live HTTP read-only credential checks; no WebSocket claims, messages, models or case mutations.",
+  "gateway_owner_checks_requested": false,
+  "passed": true,
+  "checks": [
+    {
+      "name": "service_reads_staff",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "matcher_reads_staff",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "service_reads_C001",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "own_intake_reads_C001",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "intake_C001_denied_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "matcher_denied_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C001_denied_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "service_reads_C002",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "own_intake_reads_C002",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "intake_C002_denied_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "matcher_denied_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "intake_C002_denied_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "changed_url_path_does_not_grant_matcher_scope",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_staff_immutable_account",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_staff_nonadmin",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_staff_reads_staff",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "human_staff_reads_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_staff_reads_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C001_immutable_account",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C001_nonadmin",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C001_reads_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C001_reads_C001",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "name": "human_C001_reads_C002",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C002_immutable_account",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C002_nonadmin",
+      "status": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "human_C002_reads_staff",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C002_reads_C001",
+      "status": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "human_C002_reads_C002",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    }
+  ],
+  "limitations": "This measures configured token/room access, not physical returns, user demand, deployment security or addressing behavior."
+}

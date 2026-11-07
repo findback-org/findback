@@ -9,6 +9,8 @@ import sqlite3
 from typing import Any, Iterator
 from uuid import uuid4
 
+from .delivery import ensure_columns, now_ms, record_failure
+
 
 def utcnow() -> str:
     return datetime.now(timezone.utc).isoformat()
@@ -96,8 +98,9 @@ CREATE TABLE IF NOT EXISTS outbox (
 
 
 class SQLiteStore:
-    def __init__(self, db_path: str | Path):
+    def __init__(self, db_path: str | Path, *, delivery_clock=None):
         self.db_path = str(db_path)
+        self._delivery_clock = delivery_clock or now_ms
         self._anchor: sqlite3.Connection | None = None
         self._uri = self.db_path == ":memory:"
         if self._uri:
@@ -107,6 +110,10 @@ class SQLiteStore:
             Path(self.db_path).parent.mkdir(parents=True, exist_ok=True)
         with self.connection() as db:
             db.executescript(SCHEMA)
+            ensure_columns(db, "outbox")
+
+    def delivery_now_ms(self) -> int:
+        return self._delivery_clock()
 
     def connect(self) -> sqlite3.Connection:
         db = sqlite3.connect(self.db_path, timeout=15, isolation_level=None, uri=self._uri)
@@ -199,17 +206,24 @@ class SQLiteStore:
         with self.transaction() as db:
             self.ingest_in(db, ctx)
 
-    def pending_outbox(self, limit: int = 100) -> list[dict]:
+    def pending_outbox(self, limit: int = 100, *, due_only: bool = False) -> list[dict]:
         with self.connection() as db:
-            rows = db.execute("SELECT * FROM outbox WHERE delivery_state IN ('PENDING','FAILED') ORDER BY created_at,id LIMIT ?", (limit,)).fetchall()
+            clause = " AND next_attempt_at_ms<=?" if due_only else ""
+            values = (self.delivery_now_ms(), limit) if due_only else (limit,)
+            rows = db.execute("SELECT * FROM outbox WHERE delivery_state IN ('PENDING','FAILED')" + clause + " ORDER BY created_at,id LIMIT ?", values).fetchall()
             return [{**dict(row), "payload": loads(row["payload_json"])} for row in rows]
 
     def mark_outbox_sent(self, outbox_id: str, remote_event_id: str) -> None:
         with self.transaction() as db:
-            db.execute("UPDATE outbox SET delivery_state='SENT',remote_event_id=?,sent_at=?,attempts=attempts+1,last_error=NULL WHERE id=?",
-                       (remote_event_id, utcnow(), outbox_id))
+            db.execute("UPDATE outbox SET delivery_state='SENT',remote_event_id=?,sent_at=?,attempts=attempts+1,last_error=NULL,"
+                       "consecutive_failures=0,next_attempt_at_ms=0,blocked_reason=NULL,last_attempt_at_ms=? WHERE id=? AND delivery_state!='SENT'",
+                       (remote_event_id, utcnow(), self.delivery_now_ms(), outbox_id))
 
-    def mark_outbox_failed(self, outbox_id: str, error: str) -> None:
+    def mark_outbox_failed(self, outbox_id: str, error: Exception | str) -> None:
         with self.transaction() as db:
-            db.execute("UPDATE outbox SET delivery_state='FAILED',attempts=attempts+1,last_error=? WHERE id=?",
-                       (str(error)[:500], outbox_id))
+            record_failure(db, "outbox", outbox_id, error, self.delivery_now_ms())
+
+    def defer_outbox(self, outbox_id: str, delay_ms: int = 1000) -> None:
+        with self.transaction() as db:
+            db.execute("UPDATE outbox SET next_attempt_at_ms=? WHERE id=? AND delivery_state IN ('PENDING','FAILED')",
+                       (self.delivery_now_ms() + delay_ms, outbox_id))

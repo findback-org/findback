@@ -22,6 +22,8 @@ from .domain import ActorContext, DomainService
 from .model import CodexModel, ModelError
 from .storage import SQLiteStore, dumps, loads
 from .switch_client import SwitchClient
+from .delivery import ensure_columns, record_failure
+from .provenance import verify_human_post
 
 
 PREFIX = re.compile(r"^(?:@findback-[a-z0-9-]+\s+)?findback\s+([a-z-]+)(?:\s+(.*))?$", re.DOTALL)
@@ -55,6 +57,7 @@ class RuntimeJournal:
             columns = {row[1] for row in db.execute("PRAGMA table_info(runtime_messages)")}
             if "thread_id" not in columns:
                 db.execute("ALTER TABLE runtime_messages ADD COLUMN thread_id TEXT")
+            ensure_columns(db, "runtime_messages")
 
     def capture(self, client_id: str, frame: dict, primary: bool) -> None:
         encoded = dumps(frame)
@@ -70,6 +73,21 @@ class RuntimeJournal:
         with self.store.connection() as db:
             return [loads(r[0]) for r in db.execute("SELECT frame_json FROM inbox WHERE state='PENDING' ORDER BY rowid LIMIT 100")]
 
+    def pending_room_heads(self, preferred_room: str | None = None) -> list[dict]:
+        """Only the oldest unfinished event in each room is eligible to run.
+
+        A busy room's first hundred events must not hide another room's work.
+        Keep events PENDING until completion so cancellation/restart replays them.
+        """
+        with self.store.connection() as db:
+            return [loads(row[0]) for row in db.execute("""
+                SELECT frame_json FROM inbox WHERE rowid IN (
+                    SELECT MIN(rowid) FROM inbox WHERE state='PENDING'
+                    GROUP BY json_extract(frame_json, '$.data.room_id')
+                ) ORDER BY CASE WHEN json_extract(frame_json, '$.data.room_id')=?
+                                THEN 0 ELSE 1 END, rowid LIMIT 100
+            """, (preferred_room,))]
+
     def finish(self, event_id: str, error: str | None = None) -> None:
         with self.store.transaction() as db:
             db.execute("UPDATE inbox SET state=?,error=?,updated_at=? WHERE event_id=?",
@@ -79,6 +97,22 @@ class RuntimeJournal:
         with self.store.transaction() as db:
             db.execute("INSERT OR IGNORE INTO runtime_messages(id,room_id,speaker,body,thread_id) VALUES (?,?,?,?,?)",
                        (key, room, speaker, body, thread_id))
+
+    def pending_deliveries(self, limit: int = 100) -> list[dict]:
+        with self.store.connection() as db:
+            return [dict(row) for row in db.execute(
+                "SELECT * FROM runtime_messages WHERE state IN ('PENDING','FAILED') AND next_attempt_at_ms<=? ORDER BY rowid LIMIT ?",
+                (self.store.delivery_now_ms(), limit))]
+
+    def mark_delivery_sent(self, key: str, remote_id: str) -> None:
+        with self.store.transaction() as db:
+            db.execute("UPDATE runtime_messages SET state='SENT',remote_id=?,attempts=attempts+1,consecutive_failures=0,"
+                       "next_attempt_at_ms=0,last_error=NULL,blocked_reason=NULL,last_attempt_at_ms=? WHERE id=? AND state!='SENT'",
+                       (remote_id, self.store.delivery_now_ms(), key))
+
+    def mark_delivery_failed(self, key: str, error: Exception | str) -> None:
+        with self.store.transaction() as db:
+            record_failure(db, "runtime_messages", key, error, self.store.delivery_now_ms())
 
 
 class FindBackRuntime:
@@ -165,24 +199,48 @@ class FindBackRuntime:
             task.result()
 
     async def _work(self):
-        while not self._stop.is_set():
-            for frame in self.journal.pending():
-                payload = frame["data"].get("payload", {})
-                eid = payload["message_id"]
-                try:
-                    await self.handle(frame)
-                except ModelError:
-                    self.journal.queue(eid + ":model-error", frame["data"]["room_id"],
-                                       "The model proposal could not be prepared. Your message is saved; no item was released. Use status, then send the command again.")
-                    self.journal.finish(eid, "MODEL_UNAVAILABLE")
-                    continue
-                except Exception as exc:
-                    # Safe diagnostic class only; payload/provider prose may contain private data.
-                    self.journal.finish(eid, type(exc).__name__)
-                    print(f"Message requires operator attention: {eid} ({type(exc).__name__})", flush=True)
-                    continue
-                self.journal.finish(eid)
-            await asyncio.sleep(0.15)
+        # Inference for one claimant must not stop another claimant or staff.
+        # Each room remains strictly ordered; the domain's revision checks also
+        # protect decisions that meet work arriving through a different room.
+        active: dict[str | None, asyncio.Task] = {}
+        try:
+            while not self._stop.is_set():
+                for room, task in list(active.items()):
+                    if task.done():
+                        task.result()
+                        del active[room]
+                for frame in self.journal.pending_room_heads(self.staff_room):
+                    room = frame["data"].get("room_id")
+                    if room in active:
+                        continue
+                    if len(active) >= 4:
+                        break
+                    # Keep the librarian responsive even when three claimant
+                    # or community rooms are waiting for slow model calls.
+                    if room != self.staff_room and sum(key != self.staff_room for key in active) >= 3:
+                        continue
+                    active[room] = asyncio.create_task(self._process_frame(frame))
+                await asyncio.sleep(0.05)
+        finally:
+            for task in active.values():
+                task.cancel()
+            await asyncio.gather(*active.values(), return_exceptions=True)
+
+    async def _process_frame(self, frame: dict):
+        payload = frame["data"].get("payload", {})
+        eid = payload["message_id"]
+        try:
+            await self.handle(frame)
+        except ModelError:
+            self.journal.queue(eid + ":model-error", frame["data"]["room_id"],
+                               "The model proposal could not be prepared. Your message is saved; no item was released. Use status, then send the command again.")
+            self.journal.finish(eid, "MODEL_UNAVAILABLE")
+        except Exception as exc:
+            # Safe diagnostic class only; payload/provider prose may contain private data.
+            self.journal.finish(eid, type(exc).__name__)
+            print(f"Message requires operator attention: {eid} ({type(exc).__name__})", flush=True)
+        else:
+            self.journal.finish(eid)
 
     async def _verified_context(self, frame: dict) -> ActorContext | None:
         data, payload = frame["data"], frame["data"].get("payload", {})
@@ -200,26 +258,9 @@ class FindBackRuntime:
                 (case["channel_id"] for case in self.cases.values() if case["room_id"] == room), None)
             if channel is None:
                 return None
-            response = await self.http.get(self.config["mattermost_url"] + f"/api/v4/channels/{channel}/posts",
-                                           params={"per_page": 200}, headers={"Authorization": "Bearer " + human["token"]})
-            if response.status_code != 200:
-                return None
-            for post in response.json().get("posts", {}).values():
-                source = "\x1f".join([self.config["bridge_id"], channel, post["id"]])
-                material = "\x1f".join([human["client_id"], source, "0"])
-                expected = "sw_" + hashlib.sha256(material.encode()).hexdigest()[:32]
-                if expected != payload["message_id"]:
-                    continue
-                if post["user_id"] != human["id"] or post["channel_id"] != channel or post["message"] != payload.get("body"):
-                    return None
-                if post.get("type") or post.get("props", {}).get("from_webhook") or post.get("props", {}).get("from_bot"):
-                    return None
-                return ActorContext(actor_id=actor_id, actor_kind="human", room_id=room,
-                                    source_event_id=payload["message_id"], source_text=payload.get("body", ""),
-                                    occurred_at=datetime.fromtimestamp(post["create_at"] / 1000, timezone.utc).isoformat(),
-                                    origin="switch", thread_id=payload.get("thread_id"))
-            # Fail closed if the relevant post is no longer in the first page.
-            return None
+            return await verify_human_post(self.http, base_url=self.config["mattermost_url"],
+                bridge_id=self.config["bridge_id"], channel_id=channel, human=human,
+                actor_id=actor_id, room_id=room, payload=payload)
         # Known agents remain agents even when their body imitates staff.
         for agent in [*self.config["agents"].values(), *(c["intake_agent"] for c in self.cases.values())]:
             if sender == agent.get("actor_id"):
@@ -432,26 +473,49 @@ class FindBackRuntime:
             result = await client.post_message(room, body + suffix, thread_id=thread_id)
         return str(result.get("event_id", result.get("message_id", result.get("id", "posted")))) if isinstance(result, dict) else "posted"
 
-    async def _deliver(self):
-        while not self._stop.is_set():
-            for row in self.store.pending_outbox():
-                try:
+    async def _delivery_pass(self, *, render_notice=None, review_cards: bool = False):
+        """One bounded due-work pass, shared by the fixture and real showcase.
+
+        _send_once still reconciles trusted markers before every POST, including
+        unknown outcomes. Cancellation propagates; it does not discard a row.
+        """
+        for row in self.store.pending_outbox(due_only=True):
+            try:
+                if review_cards and row["topic"] == "review-ready":
+                    key = row["source_event_id"] + ":review"
+                    with self.store.connection() as db:
+                        displayed = db.execute("SELECT state,remote_id FROM runtime_messages WHERE id=?", (key,)).fetchone()
+                    if displayed and displayed["state"] == "SENT":
+                        self.store.mark_outbox_sent(row["id"], displayed["remote_id"])
+                    elif displayed and displayed["state"] == "BLOCKED":
+                        self.store.mark_outbox_failed(row["id"], "DEPENDENCY_BLOCKED")
+                    else:
+                        self.store.defer_outbox(row["id"])
+                    continue
+                if render_notice:
+                    body, speaker = render_notice(row)
+                else:
                     payload = row["payload"]
                     body = payload.get("text") or payload.get("message") or payload.get("body") or json.dumps(payload, indent=2, ensure_ascii=False)
-                    remote = await self._send_once(row["id"], row["destination_room_id"], body, "service")
-                    self.store.mark_outbox_sent(row["id"], remote)
-                except Exception as exc:
-                    self.store.mark_outbox_failed(row["id"], type(exc).__name__)
-            with self.store.connection() as db:
-                rows = [dict(r) for r in db.execute("SELECT * FROM runtime_messages WHERE state='PENDING' ORDER BY rowid")]
-            for row in rows:
-                try:
-                    remote = await self._send_once(row["id"], row["room_id"], row["body"], row["speaker"], row.get("thread_id"))
-                    with self.store.transaction() as db:
-                        db.execute("UPDATE runtime_messages SET state='SENT',remote_id=? WHERE id=?", (remote, row["id"]))
-                except Exception:
-                    pass  # Unknown outcome remains pending; reconcile before retry.
-            await asyncio.sleep(1)
+                    speaker = "service"
+                remote = await self._send_once(row["id"], row["destination_room_id"], body, speaker)
+                self.store.mark_outbox_sent(row["id"], remote)
+            except Exception as exc:
+                self.store.mark_outbox_failed(row["id"], exc)
+        for row in self.journal.pending_deliveries():
+            try:
+                remote = await self._send_once(row["id"], row["room_id"], row["body"], row["speaker"], row.get("thread_id"))
+                self.journal.mark_delivery_sent(row["id"], remote)
+            except Exception as exc:
+                self.journal.mark_delivery_failed(row["id"], exc)
+
+    async def _delivery_loop(self, *, render_notice=None, review_cards=False, poll_seconds=1):
+        while not self._stop.is_set():
+            await self._delivery_pass(render_notice=render_notice, review_cards=review_cards)
+            await asyncio.sleep(poll_seconds)
+
+    async def _deliver(self):
+        await self._delivery_loop()
 
 
 def render_read(verb: str, data: dict) -> str:
