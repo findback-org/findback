@@ -1,0 +1,591 @@
+{
+  "started_at": "2026-11-07T22:29:16.141969+00:00",
+  "passed": true,
+  "stack": {
+    "kind": "fresh_isolated_docker",
+    "source_commit": "7e57cd433a922bc91a00150c106e6ef1f15b1057",
+    "images": {
+      "switch": "ghcr.io/sandbox-quantum/switch-core:0.31.0@sha256:03b2ea9caa38f235878f3d872ca99dee74c6bda7a731ea01a209edc739699c1d",
+      "setup": "ghcr.io/sandbox-quantum/setup:0.31.0@sha256:4e046b650cc79fb8a1d3495e3393278b3658ca538f4ece6eae89caf033f79e27",
+      "mattermost": "mattermost/mattermost-team-edition:11.9.0@sha256:1c538cf33c2144ba2c825571cd414aaaebf8d8c231d4b18081b811cd0ca0ef2a",
+      "postgres": "postgres:16-alpine@sha256:aa6cb33cf4c19c765cefcf48d96176258800870a9a1e930ad126200f9d825139"
+    },
+    "project": "findback-e2e-108c336d35d646b2",
+    "borrowed_native_resources": false,
+    "host_credentials_mounted": false,
+    "startup": {
+      "preexisting_project_resources": 0,
+      "official_setup_exit_code": 0,
+      "core_health_http_status": 200,
+      "mattermost_ping_http_status": 200,
+      "owned_resources": {
+        "containers": 5,
+        "volumes": 2,
+        "networks": 1
+      }
+    }
+  },
+  "model_mode": "codex",
+  "findback_source": {
+    "base_git_commit": "11e5befd8cd148036b744fff025ea6ea2a765416",
+    "files_sha256": {
+      "src/findback/__init__.py": "a270b88ba609f6b51c07caf7aa9bce376e5e922ae6f8e6751a0c70a7974afbf5",
+      "src/findback/bootstrap.py": "19dde6404c34eefa52e07abcf55b2c4ed85aad9d88c6f6913f2ba7b0dd2e6b77",
+      "src/findback/cli.py": "afe742688769304a0fcc59053495fdef6ba5331f7c1348a4f282c730acb603ae",
+      "src/findback/delivery.py": "dcc89c84b1e04de76e2c37aa6f1f9b111b5f46590368d398fe0ad3b86169a960",
+      "src/findback/domain.py": "ae250c07c2dc6d3b9b8ea9dfd1c9c619737d254f04ffc096edd8541c9da5bcca",
+      "src/findback/e2e_stack.py": "da7facbf4f387626e15959691f7f2952ea5c66bba7b26ecd7c8354eb86196744",
+      "src/findback/e2e_verify.py": "16feef3c8071d079941eef04ccc793c2f5b913081646640c38c17acc25eb7b3f",
+      "src/findback/evaluation.py": "6cfd314f9d1cbc7bf34a9859f34d244d82e775e59dd3ee1a7e1ecbba8b179492",
+      "src/findback/fixtures.py": "6c62b1b9feb266c1758a68db43dc1c18699d86a4b2279c9c7bceaa730d4bae6f",
+      "src/findback/focused_demo.py": "654d80f5cc3e824bcd7e8a0fe7fb9fb82c4ec215e41015906b23f088da9e25ad",
+      "src/findback/live_demo.py": "0a127de761024a9abcceeb4f51378ced157cc163797853aea2dfca4c4bed52bf",
+      "src/findback/live_take.py": "ca978f095c3af7d5eee6216311878eab14c5267a0f7862e8be44064c611acaaa",
+      "src/findback/matching.py": "177f00c404abce02ded3b1cce5925ca9bd33e528bbee0c0067fcfecf33c1c0bd",
+      "src/findback/model.py": "efbecf5585e0f6240cf3c9f5f91be05be74875af0e1fb908d2d4f651ed1c6d10",
+      "src/findback/provenance.py": "192199f213bfb5672a9c9b1c00911e21fa60db994c736321f7cec9ae3e3ab99c",
+      "src/findback/runtime.py": "7d72d95f39fa21bd94e2c05428f79c973f5072b92b7dfbcaae0a21b4de52c218",
+      "src/findback/showcase.py": "3df91f740ddd4b0d3bd79cc04a97dfc1a824cd868a41b9661a7abcf4b72f9903",
+      "src/findback/showcase_present.py": "d5083de7e6b50f9396b66b1e4c9a7bf5b86e675b461842465f24bdc39e1bf6fa",
+      "src/findback/showcase_runtime.py": "da1b98906fec46d6da53d607ede60a31a5f38f311f2ae5db6b90f396493d6abe",
+      "src/findback/showcase_setup.py": "0aff514d8c2fe779897481a0b9fbfe6a07c09315299b41da9dcdcd4197222ff1",
+      "src/findback/showcase_story.py": "414cde5f9d65fc14ad9aa007b2fdb7ebebbdd27c629ddf07d34e460a82e0369d",
+      "src/findback/storage.py": "8f2b62951a0a30fcf265dc2aa9fbe15eb988ebd92ee8e2ea89fc9e6afad48cca",
+      "src/findback/switch_client.py": "c6710a5873f7ecf0273af58a6fb3753177d98644e210d845a3544224b07a1f28",
+      "src/findback/verify_access.py": "0108d7e96d016d5028e723e432b2ecf43d20cb9bd63f3347c7658f9435c3252f",
+      "src/findback/verify_restart.py": "4fabe341bffa0bd792ff337a3cc9a6d17cb654fba6a3aca8e03034b25b39bfe0",
+      "src/findback/verify_roundtrip.py": "d3797348642809a24cf2429fa9f2450272e9ec4f99e99f7ad7afb85947e19f41",
+      "src/findback/verify_showcase_access.py": "cc9f5e142465fa62478ae4f5e2e2dbc535f669b30fd996da12c71811782c61f1",
+      "pyproject.toml": "74dcdba991708d6e726feca60b4fa600bd4ed183826565dfdfd25a45db6f5885",
+      "uv.lock": "3f8628701d69017e3e9ad4e47690ed2b458c09edb1cf33ebf013041680d0c371",
+      "infra/e2e/compose.e2e.yaml": "bfcb8bb70bf7512828f54a4ac47e376726d45de4d5303e67e977d06568aa74c9",
+      "infra/e2e/compose.upstream.yaml": "cba238878078cf3d77fd9e136ef432f1ce5fd1bfe597acd172b9faa6720f0121",
+      "infra/e2e/images.lock.json": "9cfd690474ab2d296f2f3a76d7306a51acd6b8d558e1dadc7425004937222096"
+    },
+    "manifest_sha256": "cc08e9d573e010c507b817335e0bb27fc1f1653dc4f9f8fac53f494b6116e8bf"
+  },
+  "scenario": {
+    "passed": true,
+    "started_at_utc": "2026-11-07T22:29:40.000334+00:00",
+    "behavior": {
+      "transport": "live isolated Switch Core and Mattermost",
+      "model": "real host Codex CLI",
+      "human_input": "scripted fictional accounts",
+      "physical_handover": "simulated; no property moved"
+    },
+    "model_mode": "codex",
+    "checks": [
+      {
+        "name": "fresh_domain",
+        "passed": true
+      },
+      {
+        "name": "actual_room_access_boundaries",
+        "passed": true,
+        "total": 28
+      },
+      {
+        "name": "failed_proposal_does_not_release",
+        "passed": true
+      },
+      {
+        "name": "explicit_inbox_recovery",
+        "passed": true
+      },
+      {
+        "name": "retried_input_produces_draft",
+        "passed": true
+      },
+      {
+        "name": "broad_description_retains_two_candidates",
+        "passed": true
+      },
+      {
+        "name": "claimant_cannot_approve",
+        "passed": true,
+        "expected": "FORBIDDEN",
+        "observed": "FORBIDDEN"
+      },
+      {
+        "name": "agent_cannot_approve",
+        "passed": true
+      },
+      {
+        "name": "stale_review_refused",
+        "passed": true,
+        "expected": "STALE_REVISION",
+        "observed": "STALE_REVISION"
+      },
+      {
+        "name": "staff_approves_exact_review",
+        "passed": true,
+        "expected": "RESERVED",
+        "observed": "RESERVED"
+      },
+      {
+        "name": "collection_is_not_return",
+        "passed": true
+      },
+      {
+        "name": "premature_receipt_refused",
+        "passed": true,
+        "expected": "HANDOVER_REQUIRED",
+        "observed": "HANDOVER_REQUIRED"
+      },
+      {
+        "name": "scripted_claimant_receipt",
+        "passed": true,
+        "expected": "RETURNED",
+        "observed": "RETURNED"
+      },
+      {
+        "name": "second_receipt_deduplicates",
+        "passed": true,
+        "expected": "RETURNED",
+        "observed": "RETURNED"
+      },
+      {
+        "name": "one_return_receipt",
+        "passed": true
+      },
+      {
+        "name": "other_claimant_does_not_receive_private_inventory",
+        "passed": true
+      },
+      {
+        "name": "other_claim_remains_unresolved",
+        "passed": true
+      },
+      {
+        "name": "replay_preserves_unique_prior_inputs",
+        "passed": true
+      },
+      {
+        "name": "replay_does_not_repeat_models_or_notices",
+        "passed": true
+      },
+      {
+        "name": "restart_and_transport_replay_preserve_domain",
+        "passed": true
+      },
+      {
+        "name": "one_actual_status_reply_after_restart",
+        "passed": true
+      },
+      {
+        "name": "restart_status_does_not_change_domain",
+        "passed": true
+      }
+    ],
+    "events": [
+      {
+        "label": "injected_model_failure",
+        "role": "C002",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "ya7homegyirmp8rzcy7b139aey",
+        "switch_event_id": "sw_c93e29f54c2c361bbd8e21a0c367383e",
+        "result_code": "MODEL_FAILURE_INJECTED"
+      },
+      {
+        "label": "claimant_report",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "w1bzzy3hhprezdwkfraxfgd8zo",
+        "switch_event_id": "sw_cee7c3df77bbafab0cd9ac19c1c4973d",
+        "result_code": "PROPOSAL_OR_READ"
+      },
+      {
+        "label": "claimant_confirms_draft",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "p1osgrqjj7gd38371nyfuh6fer",
+        "switch_event_id": "sw_3af2213a48a1b23b721dcac7bc4788d0",
+        "result_code": "REPORT_CONFIRMED"
+      },
+      {
+        "label": "second_claimant_report",
+        "role": "C002",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "58rxgknaw3yupyio8ee3ids7ko",
+        "switch_event_id": "sw_7dcc7cde9e8661f72099665508de4433",
+        "result_code": "PROPOSAL_OR_READ"
+      },
+      {
+        "label": "second_claimant_confirmation",
+        "role": "C002",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "creh1ntp87y8d879tcsyzzmfna",
+        "switch_event_id": "sw_00c87490a59538520ae9c5212a65169f",
+        "result_code": "REPORT_CONFIRMED"
+      },
+      {
+        "label": "staff_requests_missing_evidence",
+        "role": "staff",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "mbwntrzhr3nxpy3f4z7y34dhwy",
+        "switch_event_id": "sw_edb45893dbdbe12022d518548fd15695",
+        "result_code": "INFORMATION_REQUESTED"
+      },
+      {
+        "label": "claimant_cannot_approve",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "9qhoubwayfnyfyq7r5dp7prxqc",
+        "switch_event_id": "sw_3ad55ab110065f13c1b6de186262fafd",
+        "result_code": "FORBIDDEN"
+      },
+      {
+        "label": "claimant_identifying_assertion",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "iu3itq78hb8od8xs4tomu4ziho",
+        "switch_event_id": "sw_da04d68fb0d120069dba7e9642e12400",
+        "result_code": "EVIDENCE_RECORDED"
+      },
+      {
+        "label": "stale_review_refused",
+        "role": "staff",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "cogsy8skatbquehjej3r6en4ho",
+        "switch_event_id": "sw_5e7d6253b2cc911c58f6d9468765480f",
+        "result_code": "STALE_REVISION"
+      },
+      {
+        "label": "staff_approves_exact_review",
+        "role": "staff",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "xjj3hnymf3yb5xgrb458kwrjca",
+        "switch_event_id": "sw_fe49982afa21a9117994ad866de52f8c",
+        "result_code": "RESERVED"
+      },
+      {
+        "label": "private_collection_instructions",
+        "role": "staff",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "soug8zxkf3f59k3hictikakj7y",
+        "switch_event_id": "sw_0a6566e5416225e3c51c38dec8dfd9e3",
+        "result_code": "COLLECTION_ARRANGED"
+      },
+      {
+        "label": "premature_receipt_refused",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "gf1dnmqnufr17xeai3qfau5bkc",
+        "switch_event_id": "sw_8b5d037603d5add6c0b85f4a04576f44",
+        "result_code": "HANDOVER_REQUIRED"
+      },
+      {
+        "label": "scripted_staff_handover",
+        "role": "staff",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "97bkwpgxz7rstkp6c99zxbe7fh",
+        "switch_event_id": "sw_caefbb7f7b84d26ec86cb02ba397c15b",
+        "result_code": "HANDOVER_RECORDED"
+      },
+      {
+        "label": "scripted_claimant_receipt",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "qnshs8swkfgoi8a4io9wez4pxo",
+        "switch_event_id": "sw_36a3d1aba6fe5cbd064a5fb94d07b18a",
+        "result_code": "RETURNED"
+      },
+      {
+        "label": "second_receipt_deduplicates",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "t5gztuc3oprimkxob4x54qzrwc",
+        "switch_event_id": "sw_acba7b45305e637c95363f0622cbef17",
+        "result_code": "RETURNED"
+      },
+      {
+        "label": "status_after_restart",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "f8w3f447zj815y1oko8mhdskqe",
+        "switch_event_id": "sw_2b5aac148115d878522ebbe8507ec42c",
+        "result_code": "PROPOSAL_OR_READ"
+      }
+    ],
+    "fault_injection": "one intentional ModelError, explicit inbox retry, and a rewound owned resume cursor to represent a lost ACK",
+    "access_checks": {
+      "verified_at": "2026-11-07T22:29:40.272437+00:00",
+      "behavior": "Live HTTP read-only credential checks; no WebSocket claims, messages, models or case mutations.",
+      "gateway_owner_checks_requested": false,
+      "passed": true,
+      "checks": [
+        {
+          "name": "service_reads_staff",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "matcher_reads_staff",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "service_reads_C001",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "own_intake_reads_C001",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "intake_C001_denied_staff",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "matcher_denied_C001",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "intake_C001_denied_C002",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "service_reads_C002",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "own_intake_reads_C002",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "intake_C002_denied_staff",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "matcher_denied_C002",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "intake_C002_denied_C001",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "changed_url_path_does_not_grant_matcher_scope",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_staff_immutable_account",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_staff_nonadmin",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_staff_reads_staff",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "human_staff_reads_C001",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_staff_reads_C002",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_C001_immutable_account",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_C001_nonadmin",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_C001_reads_staff",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_C001_reads_C001",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "human_C001_reads_C002",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_C002_immutable_account",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_C002_nonadmin",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_C002_reads_staff",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_C002_reads_C001",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_C002_reads_C002",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        }
+      ],
+      "limitations": "This measures configured token/room access, not physical returns, user demand, deployment security or addressing behavior."
+    },
+    "totals": {
+      "claims": 2,
+      "reviews": 3,
+      "approvals": 1,
+      "reservations": 1,
+      "returns": 1,
+      "model_proposals": 6
+    },
+    "replay": {
+      "simulated_lost_ack": true,
+      "actual_server_replay": true,
+      "initial_connection_cursor": 0,
+      "requested_cursor": 9007194959773696,
+      "previous_ack_cursor": 9007194959773756,
+      "domain_digest_unchanged": true
+    },
+    "model_measurements": [
+      {
+        "role": "intake",
+        "seconds": 4.888,
+        "usage": {
+          "input_tokens": 10693,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 49,
+          "reasoning_output_tokens": 0
+        },
+        "startup_diagnostics": 1,
+        "behavior": "live Codex inference; no action authority"
+      },
+      {
+        "role": "intake",
+        "seconds": 4.662,
+        "usage": {
+          "input_tokens": 10693,
+          "cached_input_tokens": 10112,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 51,
+          "reasoning_output_tokens": 0
+        },
+        "startup_diagnostics": 1,
+        "behavior": "live Codex inference; no action authority"
+      },
+      {
+        "role": "matcher",
+        "seconds": 7.207,
+        "usage": {
+          "input_tokens": 11553,
+          "cached_input_tokens": 10112,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 182,
+          "reasoning_output_tokens": 0
+        },
+        "startup_diagnostics": 1,
+        "behavior": "live Codex inference; no action authority"
+      },
+      {
+        "role": "intake",
+        "seconds": 5.365,
+        "usage": {
+          "input_tokens": 10700,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 56,
+          "reasoning_output_tokens": 0
+        },
+        "startup_diagnostics": 1,
+        "behavior": "live Codex inference; no action authority"
+      },
+      {
+        "role": "matcher",
+        "seconds": 7.497,
+        "usage": {
+          "input_tokens": 11565,
+          "cached_input_tokens": 10112,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 204,
+          "reasoning_output_tokens": 0
+        },
+        "startup_diagnostics": 1,
+        "behavior": "live Codex inference; no action authority"
+      },
+      {
+        "role": "matcher",
+        "seconds": 8.374,
+        "usage": {
+          "input_tokens": 12531,
+          "cached_input_tokens": 10112,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 217,
+          "reasoning_output_tokens": 0
+        },
+        "startup_diagnostics": 1,
+        "behavior": "live Codex inference; no action authority"
+      }
+    ],
+    "successful_model_calls": 6,
+    "controlled_proposal_calls": 0,
+    "finished_at_utc": "2026-11-07T22:30:22.424424+00:00"
+  },
+  "source_unchanged_during_run": true,
+  "teardown": "owned_resources_removed",
+  "completed_at": "2026-11-07T22:30:24.703298+00:00"
+}

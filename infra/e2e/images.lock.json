@@ -1,0 +1,12 @@
+{
+  "switch_version": "0.31.0",
+  "switch_source_commit": "7e57cd433a922bc91a00150c106e6ef1f15b1057",
+  "upstream_compose_sha256": "cba238878078cf3d77fd9e136ef432f1ce5fd1bfe597acd172b9faa6720f0121",
+  "resolved_at": "2026-11-08",
+  "images": {
+    "switch": "ghcr.io/sandbox-quantum/switch-core:0.31.0@sha256:03b2ea9caa38f235878f3d872ca99dee74c6bda7a731ea01a209edc739699c1d",
+    "setup": "ghcr.io/sandbox-quantum/setup:0.31.0@sha256:4e046b650cc79fb8a1d3495e3393278b3658ca538f4ece6eae89caf033f79e27",
+    "mattermost": "mattermost/mattermost-team-edition:11.9.0@sha256:1c538cf33c2144ba2c825571cd414aaaebf8d8c231d4b18081b811cd0ca0ef2a",
+    "postgres": "postgres:16-alpine@sha256:aa6cb33cf4c19c765cefcf48d96176258800870a9a1e930ad126200f9d825139"
+  }
+}

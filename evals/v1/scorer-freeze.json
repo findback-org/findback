@@ -1,0 +1,14 @@
+{
+  "evaluation_version": "1.0.0",
+  "created_at_utc": "2026-11-07T22:22:13.856685+00:00",
+  "files_sha256": {
+    "src/findback/evaluation.py": "6cfd314f9d1cbc7bf34a9859f34d244d82e775e59dd3ee1a7e1ecbba8b179492",
+    "src/findback/model.py": "efbecf5585e0f6240cf3c9f5f91be05be74875af0e1fb908d2d4f651ed1c6d10",
+    "evals/CONTRACT.md": "4f3c4e189e1d26456866d775c31e3609a2029f06915eb60c685cac2b9d1ad220",
+    "evals/v1/development.jsonl": "c85fecc9248e57bb35e110a9a22def8c17b3583e9e848cad73da8dc043ca8d70",
+    "evals/v1/development-outputs.json": "255ed9a7352239954c1c03fe2749ec4437bec3fb795a917477a5c8c80b48e8ab"
+  },
+  "production_prompt_source": "src/findback/model.py",
+  "held_out_inspected_by_scorer_author": false,
+  "policy": "Freeze before independent held-out corpus release; preserve first results; no post-hoc scorer/prompt tuning."
+}

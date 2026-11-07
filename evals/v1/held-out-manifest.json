@@ -1,0 +1,42 @@
+{
+  "case_count": 18,
+  "check_count": 98,
+  "contract_sha256": "4f3c4e189e1d26456866d775c31e3609a2029f06915eb60c685cac2b9d1ad220",
+  "dataset_sha256": "f73159be1816ef7a55016ac8e9f1af465d718173cecbf534159d47be90b01c61",
+  "independent_author_statement": "Fictional cases and source-grounded expected checks were authored independently by /root/review_hardening from the public contract and production input schema, before seeing any scorer/model outputs. The scorer author /root/linux_verification was not sent case contents or labels before implementation freeze. Regex checks are bounded component conformance and tripwires, not semantic ownership or hallucination accuracy.",
+  "role_counts": {
+    "intake": 8,
+    "matcher": 10
+  },
+  "schema_version": "1.0.0",
+  "scorer_freeze_sha256": "a6be997f0dca6d74a2e6f9b9b90201db8db4c165b6d786cb58f8600a2de1c77f",
+  "tag_counts": {
+    "absolute_time": 1,
+    "accessibility": 1,
+    "ambiguity": 1,
+    "coarse_only": 3,
+    "community_hobby": 1,
+    "contradiction": 3,
+    "correction": 2,
+    "creative_work": 2,
+    "distinctive_agreement": 1,
+    "distinctive_features": 1,
+    "instruction_injection": 2,
+    "label_brand_confusion": 1,
+    "label_identity_confusion": 1,
+    "missing_attachment": 1,
+    "missing_details": 5,
+    "missing_observation": 2,
+    "numeric_transposition": 1,
+    "relative_time": 2,
+    "size_label": 1,
+    "source_fidelity": 13,
+    "superseded_evidence": 1,
+    "unknown_fields": 1,
+    "unknown_not_contradiction": 1,
+    "unsupported_confidence": 1,
+    "unsupported_identity": 2,
+    "unsupported_observation": 1,
+    "urgency": 1
+  }
+}

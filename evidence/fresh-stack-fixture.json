@@ -1,0 +1,425 @@
+{
+  "started_at": "2026-11-07T22:18:36.661011+00:00",
+  "passed": false,
+  "stack": {
+    "kind": "fresh_isolated_docker",
+    "source_commit": "7e57cd433a922bc91a00150c106e6ef1f15b1057",
+    "images": {
+      "switch": "ghcr.io/sandbox-quantum/switch-core:0.31.0@sha256:03b2ea9caa38f235878f3d872ca99dee74c6bda7a731ea01a209edc739699c1d",
+      "setup": "ghcr.io/sandbox-quantum/setup:0.31.0@sha256:4e046b650cc79fb8a1d3495e3393278b3658ca538f4ece6eae89caf033f79e27",
+      "mattermost": "mattermost/mattermost-team-edition:11.9.0@sha256:1c538cf33c2144ba2c825571cd414aaaebf8d8c231d4b18081b811cd0ca0ef2a",
+      "postgres": "postgres:16-alpine@sha256:aa6cb33cf4c19c765cefcf48d96176258800870a9a1e930ad126200f9d825139"
+    },
+    "project": "findback-e2e-016638c58ed745e2",
+    "borrowed_native_resources": false,
+    "host_credentials_mounted": false
+  },
+  "model_mode": "fixture",
+  "scenario": {
+    "passed": false,
+    "started_at_utc": "2026-11-07T22:19:41.210652+00:00",
+    "behavior": {
+      "transport": "live isolated Switch Core and Mattermost",
+      "model": "deterministic in-process proposals; no AI inference",
+      "human_input": "scripted fictional accounts",
+      "physical_handover": "simulated; no property moved"
+    },
+    "model_mode": "fixture",
+    "checks": [
+      {
+        "name": "fresh_domain",
+        "passed": true
+      },
+      {
+        "name": "actual_room_access_boundaries",
+        "passed": true,
+        "total": 28
+      },
+      {
+        "name": "failed_proposal_does_not_release",
+        "passed": true
+      },
+      {
+        "name": "explicit_inbox_recovery",
+        "passed": true
+      },
+      {
+        "name": "retried_input_produces_draft",
+        "passed": true
+      },
+      {
+        "name": "broad_description_retains_two_candidates",
+        "passed": true
+      },
+      {
+        "name": "claimant_cannot_approve",
+        "passed": true,
+        "expected": "FORBIDDEN",
+        "observed": "FORBIDDEN"
+      },
+      {
+        "name": "agent_cannot_approve",
+        "passed": true
+      },
+      {
+        "name": "stale_review_refused",
+        "passed": true,
+        "expected": "STALE_REVISION",
+        "observed": "STALE_REVISION"
+      },
+      {
+        "name": "staff_approves_exact_review",
+        "passed": true,
+        "expected": "RESERVED",
+        "observed": "RESERVED"
+      },
+      {
+        "name": "collection_is_not_return",
+        "passed": true
+      },
+      {
+        "name": "premature_receipt_refused",
+        "passed": true,
+        "expected": "HANDOVER_REQUIRED",
+        "observed": "HANDOVER_REQUIRED"
+      },
+      {
+        "name": "scripted_claimant_receipt",
+        "passed": true,
+        "expected": "RETURNED",
+        "observed": "RETURNED"
+      },
+      {
+        "name": "second_receipt_deduplicates",
+        "passed": true,
+        "expected": "RETURNED",
+        "observed": "RETURNED"
+      },
+      {
+        "name": "one_return_receipt",
+        "passed": true
+      },
+      {
+        "name": "other_claimant_does_not_receive_private_inventory",
+        "passed": true
+      },
+      {
+        "name": "other_claim_remains_unresolved",
+        "passed": true
+      }
+    ],
+    "events": [
+      {
+        "label": "injected_model_failure",
+        "role": "C002",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "af8a4ar1zbf8tyeyubuupym3uw",
+        "switch_event_id": "sw_a7a2cd4a33ca61d5e914148893d5dc56",
+        "result_code": "MODEL_FAILURE_INJECTED"
+      },
+      {
+        "label": "claimant_report",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "9b1j9ryzipnixehem3x5pn3pyo",
+        "switch_event_id": "sw_5efea8e4881e08034ca736ff6a67aaec",
+        "result_code": "PROPOSAL_OR_READ"
+      },
+      {
+        "label": "claimant_confirms_draft",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "pxftbe8qwjbeb8jwo5dz4483dh",
+        "switch_event_id": "sw_40ddf8f57cb701e95bad67a5d8f34e9f",
+        "result_code": "REPORT_CONFIRMED"
+      },
+      {
+        "label": "second_claimant_report",
+        "role": "C002",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "fqwhchz8ptfx9fzu9u97933mnr",
+        "switch_event_id": "sw_76adf2dbc38a2cdbbed17086782f6e1b",
+        "result_code": "PROPOSAL_OR_READ"
+      },
+      {
+        "label": "second_claimant_confirmation",
+        "role": "C002",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "3wkgimwqfjgatnn8ug4y8isf5a",
+        "switch_event_id": "sw_7b3abc7a05cda0f44a324be0907bbb57",
+        "result_code": "REPORT_CONFIRMED"
+      },
+      {
+        "label": "staff_requests_missing_evidence",
+        "role": "staff",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "6me7woqknj8c5dzs7rzki4g9iw",
+        "switch_event_id": "sw_b522885577c4c8119b62cd891990e2fd",
+        "result_code": "INFORMATION_REQUESTED"
+      },
+      {
+        "label": "claimant_cannot_approve",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "fej79bzbiinficwga46arqn67e",
+        "switch_event_id": "sw_2430e5f529d6a5b2d2f8f9e131df2c11",
+        "result_code": "FORBIDDEN"
+      },
+      {
+        "label": "claimant_identifying_assertion",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "ogxbpaiq6pbfupqp59zihkkqey",
+        "switch_event_id": "sw_e0cee58593d68cc7bd318e303b7d9383",
+        "result_code": "EVIDENCE_RECORDED"
+      },
+      {
+        "label": "stale_review_refused",
+        "role": "staff",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "yed1kcyfsjb8ppaj3wm6sucpjy",
+        "switch_event_id": "sw_0a62bf45a4e29f9ae59f265bb463b60d",
+        "result_code": "STALE_REVISION"
+      },
+      {
+        "label": "staff_approves_exact_review",
+        "role": "staff",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "z8ogcap9jt8c5jsb3uu9caa3ge",
+        "switch_event_id": "sw_6bd15e0607ee2d42445895dd314eb4d7",
+        "result_code": "RESERVED"
+      },
+      {
+        "label": "private_collection_instructions",
+        "role": "staff",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "yo43skdi4br68j68mhcrmdw64w",
+        "switch_event_id": "sw_29e878a780a54b8e5e059f00da0eeb98",
+        "result_code": "COLLECTION_ARRANGED"
+      },
+      {
+        "label": "premature_receipt_refused",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "dfqgmczisigg9k435wdzcqnpyo",
+        "switch_event_id": "sw_2409849665b92ea282e463ec1bcadbbc",
+        "result_code": "HANDOVER_REQUIRED"
+      },
+      {
+        "label": "scripted_staff_handover",
+        "role": "staff",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "jqpitrocr3ro58yxekwajd8qby",
+        "switch_event_id": "sw_753306935a0ed4e341b0e5411e054ef9",
+        "result_code": "HANDOVER_RECORDED"
+      },
+      {
+        "label": "scripted_claimant_receipt",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "7t6cxyeua3dcfmcg8w8ganfpkw",
+        "switch_event_id": "sw_b5ddd6ee00480466b59a021c502d2a3c",
+        "result_code": "RETURNED"
+      },
+      {
+        "label": "second_receipt_deduplicates",
+        "role": "C001",
+        "input": "scripted fictional authenticated Mattermost post",
+        "mattermost_post_id": "bnef6zqqtf8at84i5umhhokkyy",
+        "switch_event_id": "sw_9ed3c54a5c981a68ee58676abc6e1c00",
+        "result_code": "RETURNED"
+      }
+    ],
+    "fault_injection": "one intentional ModelError, explicit inbox retry, and a rewound owned resume cursor to represent a lost ACK",
+    "access_checks": {
+      "verified_at": "2026-11-07T22:19:41.531074+00:00",
+      "behavior": "Live HTTP read-only credential checks; no WebSocket claims, messages, models or case mutations.",
+      "gateway_owner_checks_requested": false,
+      "passed": true,
+      "checks": [
+        {
+          "name": "service_reads_staff",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "matcher_reads_staff",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "service_reads_C001",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "own_intake_reads_C001",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "intake_C001_denied_staff",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "matcher_denied_C001",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "intake_C001_denied_C002",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "service_reads_C002",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "own_intake_reads_C002",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "intake_C002_denied_staff",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "matcher_denied_C002",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "intake_C002_denied_C001",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "changed_url_path_does_not_grant_matcher_scope",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_staff_immutable_account",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_staff_nonadmin",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_staff_reads_staff",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "human_staff_reads_C001",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_staff_reads_C002",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_C001_immutable_account",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_C001_nonadmin",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_C001_reads_staff",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_C001_reads_C001",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        },
+        {
+          "name": "human_C001_reads_C002",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_C002_immutable_account",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_C002_nonadmin",
+          "status": true,
+          "expected": true,
+          "passed": true
+        },
+        {
+          "name": "human_C002_reads_staff",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_C002_reads_C001",
+          "status": 403,
+          "expected": 403,
+          "passed": true
+        },
+        {
+          "name": "human_C002_reads_C002",
+          "status": 200,
+          "expected": 200,
+          "passed": true
+        }
+      ],
+      "limitations": "This measures configured token/room access, not physical returns, user demand, deployment security or addressing behavior."
+    },
+    "totals": {
+      "claims": 2,
+      "reviews": 3,
+      "approvals": 1,
+      "reservations": 1,
+      "returns": 1,
+      "model_proposals": 6
+    },
+    "error_code": "E2EVerificationError",
+    "failed_step": "timeout_actual_switch_replay_ack",
+    "finished_at_utc": "2026-11-07T22:23:15.242257+00:00"
+  },
+  "teardown": "owned_resources_removed",
+  "completed_at": "2026-11-07T22:23:17.024842+00:00"
+}

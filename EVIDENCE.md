@@ -2,6 +2,21 @@
 
 Source and fixtures are included; no hosted agent deployment or hackathon submission is implied.
 
+## Fresh-stack and held-out verification extension
+
+The exact staged extension passed **318 tests in each clean environment**: macOS/Python 3.12 and local Linux arm64/Python 3.11 and 3.12. Each also passed frozen development-fixture evaluation, the offline workflow and isolated installed-wheel smoke. [Verification manifest](evidence/phase2-verification.json) and [Linux results](evidence/phase2-linux-checks.json) record hashes and limits. Its fresh-stack runner starts pinned official Core/Mattermost/PostgreSQL services with zero existing project resources, provisions new credentials/accounts/rooms, and uses actual chat HTTP/WebSocket traffic. Both runs passed **22 scenario checks and 28 live access checks**, recorded one fictional return, kept their recorded source unchanged and verified project-only teardown:
+
+| Run | Proposals | Result |
+| --- | --- | --- |
+| [Fresh controlled-model stack](evidence/fresh-stack-fixture-retry.json) | Six canned proposals, **zero model inference** | Full lifecycle, expected refusals, injected failure/recovery, actual server replay and deduplication passed. |
+| [Fresh actual-Codex stack](evidence/fresh-stack-codex.json) | Six real calls: three Intake, three Matcher | Same live scenario passed; recorded provider latency was 4.662–8.374 seconds. |
+
+The [independent review](evidence/fresh-stack-independent-review.json) verified the raw private SQLite records, source/report hashes, model-mode labels, cleanup and public-artifact credential exclusion. [Commands, pins and limits](docs/FRESH_STACK_E2E.md) are included. The [original failed fixture attempt](evidence/fresh-stack-fixture.json) is retained: its workflow checks passed but the replay harness used the initial zero cursor instead of an issued multi-room ticket. The corrected test then ran on another fresh stack. These are scripted fictional users and handovers; they do not establish physical custody or adoption. The existing native demonstration was untouched.
+
+The **first frozen evidence evaluation** used eight development cases and a separately authored, sealed 18-case held-out corpus. Its implementation author did not inspect the held-out cases before the first recorded run. The production adapter completed all 26 calls with no provider errors. Development passed **36/37 probes (7/8 cases)**; held out passed **97/98 probes (17/18 cases)**. Six deterministic authority checks are reported separately and do not inflate those model-quality counts. [First raw reports and review](evals/v1/RESULTS.md) retain both misses and explain their contradiction-category conventions without rewriting scores. These bounded component checks are not semantic or ownership accuracy; the resolved provider model is not exposed by the CLI, and future runs are replications of a now-public set.
+
+The [fresh-stack CI workflow](.github/workflows/fresh-stack-e2e.yml) uses real disposable services and controlled proposals. It uploads only a redacted JSON result. The unit/wheel workflow separately exercises the frozen development-fixture evaluator. Local evidence does not imply that GitHub-hosted runners executed; their actual status must be checked on the published commit.
+
 ## November 8 technical hardening
 
 The final local automated suite passed **247/247** checks. [Machine-readable verification](evidence/hardening-verification.json) records source hashes, test counts and verification boundaries. The exact staged source was exported and installed in a clean temporary checkout, then its wheel was installed and exercised outside that checkout. GitHub did not start the initial hosted runners, so these results are **local verification**, not a hosted CI pass.

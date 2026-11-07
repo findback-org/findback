@@ -1,0 +1,56 @@
+# Overrides the unmodified official Switch0.31 standalone deployment.
+# !override requires Docker Compose >=2.24.4. No host data/credential mounts.
+services:
+  postgres:
+    image: postgres:16-alpine@sha256:aa6cb33cf4c19c765cefcf48d96176258800870a9a1e930ad126200f9d825139
+    ports: !override []
+    labels:
+      findback.e2e.owner: ${FINDBACK_E2E_OWNER}
+  init-db:
+    image: postgres:16-alpine@sha256:aa6cb33cf4c19c765cefcf48d96176258800870a9a1e930ad126200f9d825139
+    labels:
+      findback.e2e.owner: ${FINDBACK_E2E_OWNER}
+  switch:
+    image: ghcr.io/sandbox-quantum/switch-core:0.31.0@sha256:03b2ea9caa38f235878f3d872ca99dee74c6bda7a731ea01a209edc739699c1d
+    ports: !override
+      - target: 8000
+        published: "0"
+        host_ip: 127.0.0.1
+    environment:
+      TELEMETRY_ENABLED: "false"
+      THIRD_PARTY_AVATARS_ENABLED: "false"
+    labels:
+      findback.e2e.owner: ${FINDBACK_E2E_OWNER}
+  mattermost:
+    image: mattermost/mattermost-team-edition:11.9.0@sha256:1c538cf33c2144ba2c825571cd414aaaebf8d8c231d4b18081b811cd0ca0ef2a
+    platform: linux/amd64
+    ports: !override
+      - target: 8065
+        published: "0"
+        host_ip: 127.0.0.1
+    environment:
+      MM_SERVICESETTINGS_SITEURL: http://127.0.0.1
+    labels:
+      findback.e2e.owner: ${FINDBACK_E2E_OWNER}
+  setup:
+    image: ghcr.io/sandbox-quantum/setup:0.31.0@sha256:4e046b650cc79fb8a1d3495e3393278b3658ca538f4ece6eae89caf033f79e27
+    restart: "no"
+    labels:
+      findback.e2e.owner: ${FINDBACK_E2E_OWNER}
+  gateway:
+    # This profile is never started; remove its upstream fixed host port too.
+    ports: !override []
+volumes:
+  pgdata:
+    labels:
+      findback.e2e.owner: ${FINDBACK_E2E_OWNER}
+  mmdata:
+    labels:
+      findback.e2e.owner: ${FINDBACK_E2E_OWNER}
+  tuwuneldata:
+    labels:
+      findback.e2e.owner: ${FINDBACK_E2E_OWNER}
+networks:
+  default:
+    labels:
+      findback.e2e.owner: ${FINDBACK_E2E_OWNER}

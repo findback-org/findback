@@ -80,6 +80,8 @@ Switch supplies the rooms, agent identity, memberships, message context and even
 | A slow claimant does not freeze every conversation | At most four rooms process concurrently, with one slot reserved for the librarian and input order preserved within each room; [blocked-model, backlog, saturation and shutdown/replay checks](tests/test_scheduling.py). |
 | Failed notifications cannot fill every delivery batch | [Persisted due times, bounded retries and blocked states](src/findback/delivery.py) apply to both queues and the real showcase; [restart, uncertain-POST reconciliation, migration and privacy checks](tests/test_delivery.py). |
 | Reconnect does not silently skip received events | [Persistent Switch generation and cursor handling](src/findback/switch_client.py); [unacknowledged frames, gaps, eviction and unknown HTTP outcomes](tests/test_switch_client.py). |
+| The workflow can run without the existing demo installation | [Fresh-stack runner](src/findback/e2e_stack.py) provisions pinned Core/Mattermost/PostgreSQL with new accounts and volumes; [fixture and actual Codex reports](docs/FRESH_STACK_E2E.md#recorded-runs) verify the complete lifecycle and server replay. |
+| Model quality is measured separately from authority | [Versioned evidence evaluation](docs/EVIDENCE_EVALUATION.md), an independently sealed held-out corpus and [unaltered first results](evals/v1/RESULTS.md), including misses and grading limits. |
 
 These automated checks use fictional data and controlled providers. [Live integration records](EVIDENCE.md) separately establish that the Switch identities, room access boundaries and Codex calls worked on the local stack. They do not establish real-world ownership accuracy.
 
@@ -89,11 +91,11 @@ Operators can inspect payload-free queue health with `findback health` and expli
 
 ### Requirements
 
-- Python 3.12 and [uv](https://docs.astral.sh/uv/).
-- The native macOS Switch Console installation, with its local server and bundled Mattermost running.
-- An authenticated `codex` CLI available on `PATH` for live model calls.
+- Python 3.11+ (3.12 recommended) and [uv](https://docs.astral.sh/uv/).
+- Docker Engine and Compose 2.24.4+ for the independent fresh-stack workflow.
+- An authenticated `codex` CLI on `PATH` only for real-model runs and evaluation.
 
-The bootstrap currently targets this native macOS setup. It is not a generic remote-server installer. The landing page itself is static and needs none of these services.
+The fresh-stack runner does not require Switch Console. The optional native bootstrap below targets an existing macOS Switch Console installation and its bundled server/Mattermost. The landing page itself is static.
 
 ```sh
 git clone https://github.com/Krishna3451/findback.git
@@ -107,7 +109,15 @@ Try the domain workflow without connecting to chat:
 uv run findback offline-demo
 ```
 
-Connect the developer fixture to the running local Switch server:
+Run the entire workflow on new disposable services, using real chat transport and controlled model proposals:
+
+```sh
+uv run python -m findback.e2e_stack --model fixture --output .findback/local-fresh-stack.json
+```
+
+Use `--model codex` and a new output filename for actual host-side Codex inference. Each invocation creates fresh accounts, rooms, databases and volumes, checks access refusals, drives the recovery lifecycle, verifies replay and tears down only its owned Docker project. The people, provider-failure injection and handover are scripted. [Fresh-stack guide and recorded results](docs/FRESH_STACK_E2E.md).
+
+To use the existing native macOS Switch Console server instead:
 
 ```sh
 uv run findback doctor
@@ -133,7 +143,19 @@ uv run pytest -q
 
 The [CI workflow](.github/workflows/ci.yml) is configured to install the locked dependencies on Linux (Python 3.11 and 3.12) and macOS (Python 3.12), run the behavioral suite and offline workflow, build a wheel, then install and exercise that wheel outside the source checkout. It needs no Switch server, model credentials or production secrets. The native macOS bootstrap and live integration checks are separate.
 
-At the November 8 publication check, GitHub did not start the hosted runners. **No hosted CI pass is claimed.** The exact staged source passed all **247 tests** in a clean macOS/Python 3.12 checkout. Isolated local Linux arm64 containers also passed **247 tests each** on Python 3.11 and 3.12; every environment passed its offline workflow and installed-wheel smoke check. [Linux evidence and pinned image digests](evidence/hardening-linux-checks.json) distinguish these Debian container checks from hosted Ubuntu runners. Check the Actions page for later hosted results.
+At the earlier November 8 publication check, GitHub did not start the hosted runners. **No hosted CI pass is claimed.** That earlier source passed all **247 tests** in clean macOS and Linux environments; [its dated evidence](evidence/hardening-linux-checks.json) is preserved. Check the Actions page for later hosted results.
+
+The verification extension passed **318 tests in each clean environment**: macOS/Python 3.12 and local Linux arm64/Python 3.11 and 3.12. Each also passed the offline workflow, installed-wheel smoke and frozen development-fixture evaluation. [Current Linux evidence](evidence/phase2-linux-checks.json) records exact image/source hashes and distinguishes these local Debian checks from hosted Ubuntu runners.
+
+Both fresh-stack runs passed **22 scenario checks plus 28 live access checks**: one with six explicitly controlled proposals, the other with **six actual Codex calls**. Each recorded exactly one fictional return and verified teardown. [Reports and the retained first harness failure](docs/FRESH_STACK_E2E.md#recorded-runs) preserve what happened. The [fresh-stack CI job](.github/workflows/fresh-stack-e2e.yml) uses actual isolated services with controlled proposals and uploads only its redacted report.
+
+The first independently held-out model evaluation completed **18/18 provider calls**, with **17/18 cases** satisfying every declared probe (**97/98 probes**). These are narrow fictional evidence checks, not ownership accuracy. [First results and the retained miss](evals/v1/RESULTS.md) explain the contradiction-category boundary. To rerun the frozen v1 evaluation without overwriting that baseline:
+
+```sh
+uv run python -m findback.evaluation run --dataset evals/v1/held-out.jsonl --freeze evals/v1/scorer-freeze.json --corpus-manifest evals/v1/held-out-manifest.json --mode live_codex --output .findback/local-held-out-evaluation.json
+```
+
+The set is now public; later runs are replications, not newly unseen trials. Prompt/scorer changes require a new evaluation version. The [evaluation guide](docs/EVIDENCE_EVALUATION.md) describes the split, seals, raw outputs and limits.
 
 Preserved campus evidence includes **94 live access checks**, **12 live Codex calls**, and four fictional claims. Those are local demonstration results, not campus adoption or accuracy measurements. Check the dated [evidence log](EVIDENCE.md) and Actions results for verification of a particular commit.
 
@@ -148,6 +170,8 @@ Tests cover authorization, stale reviews, double reservation, handover-before-re
 | [`docs/`](docs/) | Static landing page and embedded demo, ready for GitHub Pages. |
 | [`demo/`](demo/) | Submission video, subtitles, narration scripts, and edit manifests. |
 | [`evidence/`](evidence/) | Redacted run records, access checks, captures, and verification. |
+| [`evals/`](evals/) | Versioned development/held-out cases, frozen scoring contract, seals and first results. |
+| [`infra/e2e/`](infra/e2e/) | Pinned official deployment, isolated overrides, image digests and attribution. |
 | [`scripts/`](scripts/) | Reproducible capture, narration, and video assembly utilities. |
 
 ## GitHub Pages
@@ -163,5 +187,7 @@ Local credentials and account tokens live under `.findback/` and are excluded fr
 - [Developer guide and command reference](DEVELOPER_GUIDE.md)
 - [API and authorization contract](API_CONTRACT.md)
 - [Queue health, delivery recovery and restart](docs/OPERATIONS.md)
+- [Fresh live-stack verification](docs/FRESH_STACK_E2E.md)
+- [Evidence evaluation and first held-out results](docs/EVIDENCE_EVALUATION.md)
 - [Flip the Switch Hackathon](https://www.wemakedevs.org/hackathons/switch)
 - [Switch getting started](https://docs.switchagents.ai/switch-rooms/getting-started)

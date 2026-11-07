@@ -1,0 +1,100 @@
+{
+  "review_version": "1.0.0",
+  "scope": "Integrity verification of both complete first reports and human source review of their two retained failed probes only.",
+  "reviewer_role": "Independent corpus curator /root/review_hardening; same curator reviewing its own held-out annotation, not an external adjudication panel.",
+  "scorer_author_blind_until_first_results_recorded": true,
+  "no_report_score_corpus_scorer_or_prompt_changes": true,
+  "frozen_source_manifest": "evals/v1/scorer-freeze.json",
+  "frozen_source_manifest_sha256": "a6be997f0dca6d74a2e6f9b9b90201db8db4c165b6d786cb58f8600a2de1c77f",
+  "corpus_manifest": "evals/v1/held-out-manifest.json",
+  "corpus_manifest_sha256": "45883bc48a8257c6c3a27a48e13132a210d254f9078dbbc25f131e9b5af6b275",
+  "integrity_checks": {
+    "frozen_source_hashes_current": true,
+    "full_case_coverage_and_order": true,
+    "per_case_input_and_annotation_hashes": true,
+    "checkpoint_equals_final_rows": true,
+    "counts_independently_recomputed": true,
+    "no_provider_errors_in_these_runs": true
+  },
+  "reports": [
+    {
+      "report": "evidence/eval-v1-development-first.json",
+      "report_sha256": "52778dfab7b3f6d4e7f6e9fd1292c1081f0c5fc746da967bd6e3cca43cb266ee",
+      "checkpoint_sha256": "dc02c00a9d13c526ccdbd18fade8640cdbc33292e190be616347c6eb13459d0e",
+      "dataset": "evals/v1/development.jsonl",
+      "dataset_sha256": "c85fecc9248e57bb35e110a9a22def8c17b3583e9e848cad73da8dc043ca8d70",
+      "case_count": 8,
+      "case_order_matches_corpus": true,
+      "per_case_input_and_case_hashes_verified": true,
+      "checkpoint_matches_final_case_records": true,
+      "production_adapter_instance": true,
+      "manual_counts": {
+        "cases_total": 8,
+        "provider_completed": 8,
+        "provider_errors": 0,
+        "outputs_scored": 8,
+        "cases_all_checks_passed": 7,
+        "schema_valid_outputs": 8,
+        "checks_passed": 36,
+        "checks_evaluated": 37
+      },
+      "deterministic_authority_separate": true,
+      "deterministic_authority_passed": true,
+      "authority_check_count": 6
+    },
+    {
+      "report": "evidence/eval-v1-held-out-first.json",
+      "report_sha256": "5e785e2f9ec888b987b34183892a189d468e82526ae60ecc079aee70d1122773",
+      "checkpoint_sha256": "e73932f97296260faba85fd4db192384c8aa31c2a99d8f9cf81f901045201e0a",
+      "dataset": "evals/v1/held-out.jsonl",
+      "dataset_sha256": "f73159be1816ef7a55016ac8e9f1af465d718173cecbf534159d47be90b01c61",
+      "case_count": 18,
+      "case_order_matches_corpus": true,
+      "per_case_input_and_case_hashes_verified": true,
+      "checkpoint_matches_final_case_records": true,
+      "production_adapter_instance": true,
+      "manual_counts": {
+        "cases_total": 18,
+        "provider_completed": 18,
+        "provider_errors": 0,
+        "outputs_scored": 18,
+        "cases_all_checks_passed": 17,
+        "schema_valid_outputs": 18,
+        "checks_passed": 97,
+        "checks_evaluated": 98
+      },
+      "deterministic_authority_separate": true,
+      "deterministic_authority_passed": true,
+      "authority_check_count": 6
+    }
+  ],
+  "misses": [
+    {
+      "case_id": "dev-matcher-coarse",
+      "check_id": "no_factual_conflict",
+      "declared_check": "contradictions must be an empty list",
+      "original_passed": false,
+      "classification": "annotation_scope_limit",
+      "source_excerpt": "Mine is just a plain black headphone case.",
+      "output_excerpt": "The claimant's description of a 'plain' case may conflict with staff-recorded markings on either candidate, but its meaning is ambiguous: it may describe only the exterior or general appearance.",
+      "reason": "The model raises and qualifies a possible interpretation of supplied wording, recommends insufficient_information, and requests clarification. The declared empty-list convention is stricter than that cautious interpretation. This is not a regex synonym miss or evidence of an invented item fact.",
+      "score_changed": false
+    },
+    {
+      "case_id": "hold-matcher-09",
+      "check_id": "no-active-conflict",
+      "declared_check": "contradictions must be an empty list after an explicit superseding correction",
+      "original_passed": false,
+      "source_excerpt": "First assertion: amber ribbon. Second assertion explicitly supersedes it: Correction: the ribbon on my handle is black, not amber. Staff observation: Black ribbon tied to the handle.",
+      "output_excerpt": "The claimant initially described an amber ribbon in HM09-E1, then explicitly superseded that statement with a black ribbon in HM09-E2. The current assertion matches staff observations; the earlier discrepancy remains part of the evidence history.",
+      "reason": "The answer correctly distinguishes the current corrected assertion from historical evidence. It places a true historical discrepancy in the contradictions array, failing the predeclared current-conflict convention. This field choice could confuse a staff-card heading but is not an unsupported current fact.",
+      "score_changed": false
+    }
+  ],
+  "limits": [
+    "This review does not semantically certify every clause in passing outputs.",
+    "Regex/component conformance is not ownership accuracy or a universal hallucination metric.",
+    "No v1 tuning or rescoring was performed; future contract/prompt/annotation changes require a new version.",
+    "Resolved provider model is not exposed by the production adapter; source freeze does not make nondeterministic live outputs bit-reproducible."
+  ]
+}

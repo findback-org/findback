@@ -1,0 +1,127 @@
+{
+  "review_version": "1.0.0",
+  "reviewed_at_utc": "2026-11-07T22:32:56.261185+00:00",
+  "reviewer_role": "Independent review_hardening agent; code/CI review plus raw SQLite and read-only Docker-resource checks.",
+  "reports": [
+    {
+      "path": "evidence/fresh-stack-codex.json",
+      "sha256": "f2f966d49b502bbcbcbeb0b582be27c971bb0471cec5c576180cc2ab7d360caa",
+      "passed": true,
+      "model_mode": "codex",
+      "scenario_check_count": 22,
+      "access_check_count": 28,
+      "successful_live_model_calls": 6,
+      "controlled_proposal_calls": 0,
+      "owned_project": "findback-e2e-108c336d35d646b2",
+      "reported_teardown": "owned_resources_removed",
+      "independently_observed_remaining_owned_resources": {
+        "containers": 0,
+        "volumes": 0,
+        "networks": 0
+      }
+    },
+    {
+      "path": "evidence/fresh-stack-fixture-retry.json",
+      "sha256": "a9470fe9c0e5fc856674fb2c6c958380a0b21ca5074a0b89e6390b4a650bb724",
+      "passed": true,
+      "model_mode": "fixture",
+      "scenario_check_count": 22,
+      "access_check_count": 28,
+      "successful_live_model_calls": 0,
+      "controlled_proposal_calls": 6,
+      "owned_project": "findback-e2e-1cd2143bdc8d49d6",
+      "reported_teardown": "owned_resources_removed",
+      "independently_observed_remaining_owned_resources": {
+        "containers": 0,
+        "volumes": 0,
+        "networks": 0
+      }
+    },
+    {
+      "path": "evidence/fresh-stack-fixture.json",
+      "sha256": "de9bb716b26bb6c04763b50e352a4f9304d828c8d627194adf98fb16870c4aaa",
+      "passed": false,
+      "model_mode": "fixture",
+      "scenario_check_count": 17,
+      "access_check_count": 28,
+      "successful_live_model_calls": 0,
+      "controlled_proposal_calls": 0,
+      "owned_project": "findback-e2e-016638c58ed745e2",
+      "reported_teardown": "owned_resources_removed",
+      "independently_observed_remaining_owned_resources": {
+        "containers": 0,
+        "volumes": 0,
+        "networks": 0
+      }
+    }
+  ],
+  "live_codex_verification": {
+    "all_recorded_source_hashes_match_current_files": true,
+    "combined_source_manifest_hash_verified": true,
+    "source_unchanged_during_run": true,
+    "private_sqlite_model_proposal_metrics_equal_public_measurements": true,
+    "roles": {
+      "intake": 3,
+      "matcher": 3
+    },
+    "measured_latency_seconds": {
+      "minimum": 4.662,
+      "maximum": 8.374
+    },
+    "positive_provider_token_usage_in_every_measurement": true,
+    "claim_states": {
+      "C001": "RETURNED",
+      "C002": "NEEDS_INFO"
+    },
+    "one_approval_reservation_and_return": true,
+    "handover_and_receipt_are_distinct_correctly_enrolled_actors": true,
+    "claimant_and_agent_approval_refusals_stale_review_and_premature_receipt_persisted": true,
+    "all_notifications_saved_sent": true,
+    "scripted_humans_and_simulated_physical_handover": true
+  },
+  "cursor_review": {
+    "initial_zero_is_not_a_multiroom_replay_ticket": true,
+    "real_issued_ticket_used_for_successful_replay": true,
+    "reason": "Core protocol8/filter=all scalar cursors are position tickets. Numeric zero carries no room positions, so unplaced rooms begin at their current head. Rewinding a genuine captured ticket restores stored room positions.",
+    "pinned_core_commit": "7e57cd433a922bc91a00150c106e6ef1f15b1057",
+    "sources": [
+      "core/switch_core/bridges/agent/api/handlers.py::_resolve_start_position",
+      "core/switch_core/bridges/agent/protocol/stream.py::_place_in_conversation",
+      "core/switch_core/bridges/agent/protocol/agent_connections.py::AgentConnection.cursor",
+      "core/tests/switch_core/bridges/agent/api/test_event_stream_compat.py::test_an_old_client_resumes_from_the_ticket_it_was_handed"
+    ],
+    "original_failed_fixture_report_preserved": true,
+    "production_transport_changed_for_harness_fix": false
+  },
+  "isolation_review": {
+    "static_guards_reviewed": [
+      "digest-pinned official images and unchanged upstream Compose hash",
+      "fresh random project and private generated credentials",
+      "loopback dynamic service ports and no host database port",
+      "named project-scoped nonexternal volumes only, no host mounts",
+      "ownership-validated teardown and source hash assertions"
+    ],
+    "independent_postrun_docker_queries": "No containers, volumes or networks remain for any of the three exact recorded disposable project labels. No native resources were selected or modified."
+  },
+  "ci_review": {
+    "standard_workflow": ".github/workflows/ci.yml",
+    "fresh_stack_workflow": ".github/workflows/fresh-stack-e2e.yml",
+    "development_evaluation_uses_only_explicit_fixture_replay": true,
+    "fresh_stack_job_uses_real_transport_but_controlled_model_no_live_ai": true,
+    "artifact_upload_scope": "Only runner.temp/findback-fresh-stack.json; no private state/config/compose logs uploaded.",
+    "no_private_model_credentials_required_by_fresh_ci": true
+  },
+  "credential_scan": {
+    "method": "Exact private credential-value byte scan against all fresh-stack reports and three evaluation/review reports. Values and paths are not included.",
+    "distinct_private_values_tested": 52,
+    "public_files_tested": 6,
+    "matches": 0
+  },
+  "limits": [
+    "The successful fresh reports exercise scripted fictional humans and a simulated handover, not a physical recovery.",
+    "The lost-ACK condition is deliberately injected; resulting server replay is real.",
+    "The first fixture attempt failed at its cursor-zero harness expectation and remains preserved.",
+    "Static isolation guards and current empty project-resource queries do not constitute an independent historical container forensic capture.",
+    "CI workflow execution status must be checked separately after publication; local success is not a claim of GitHub-hosted green checks."
+  ]
+}

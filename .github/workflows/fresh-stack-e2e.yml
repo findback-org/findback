@@ -1,0 +1,43 @@
+name: Fresh Switch stack E2E
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fresh-stack-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  live-transport:
+    name: Fresh Core and Mattermost / controlled model
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: '0.12.1'
+          python-version: '3.12'
+          enable-cache: true
+      - name: Install locked dependencies
+        run: uv sync --locked --extra dev
+      - name: Exercise actual isolated chat services and failure recovery
+        # Actual Core/MM/Postgres, fresh accounts/volumes and real HTTP/WS.
+        # Proposals are controlled fixtures; this job does not call an AI model.
+        run: uv run --no-sync python -m findback.e2e_stack --model fixture --output "$RUNNER_TEMP/findback-fresh-stack.json"
+      - name: Save only the redacted verification report
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: fresh-stack-verification
+          path: ${{ runner.temp }}/findback-fresh-stack.json
+          if-no-files-found: warn
+          retention-days: 14

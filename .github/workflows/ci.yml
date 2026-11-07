@@ -42,6 +42,10 @@ jobs:
         run: uv sync --locked --extra dev
       - name: Run behavioral, authorization, transport and recovery tests
         run: uv run --no-sync pytest -q
+      - name: Verify frozen evaluation plumbing on development fixtures only
+        run: |
+          uv run --no-sync python -m findback.evaluation run --dataset evals/v1/development.jsonl --freeze evals/v1/scorer-freeze.json --mode fixture_replay --replay evals/v1/development-outputs.json --output "$RUNNER_TEMP/findback-development-fixture-evaluation.json"
+          uv run --no-sync python -c 'import json, os; from pathlib import Path; r=json.loads((Path(os.environ["RUNNER_TEMP"])/"findback-development-fixture-evaluation.json").read_text()); q=r["model_quality"]; assert r["mode"]=="fixture_replay" and q["provider_completed"]==0 and q["outputs_scored"]==8 and q["cases_all_checks_passed"]==8 and r["deterministic_authority"]["passed"], r'
       - name: Exercise the domain workflow without Switch or model credentials
         run: |
           uv run --no-sync findback --state-dir "$RUNNER_TEMP/findback-offline" offline-demo > "$RUNNER_TEMP/findback-offline.json"
