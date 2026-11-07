@@ -1,0 +1,170 @@
+{
+  "artifact": "recorded text playback, not a UI/screen recording",
+  "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+  "physical_handover": "none; scripted fictional roleplay only",
+  "source_capture_time": "2026-11-07T13:25:39.034347+00:00",
+  "duration_seconds": 152.021333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "render_backend": "macOS system AppKit via Swift (ffmpeg drawtext absent)",
+  "font": "/System/Library/Fonts/Supplemental/Arial.ttf",
+  "audio": "offline macOS say (Samantha)",
+  "source_live_run_sha256": "eb57bc5dd999ceacfb069107bd92afa4cbeec2daee260307477214e687e9518d",
+  "consistent_database_snapshot_sha256": "99bbfedc5d88fcadec53101e8879deb0ebaf2df32e29edb84d17741247c8bb99",
+  "video_sha256": "16a89fadb1076e3049a66437a7ff97005c9fa2b46aafd5961e516c08f43a5730",
+  "scenes": [
+    {
+      "duration": 10,
+      "stage": "CAPTURED EVIDENCE",
+      "title": "FindBack",
+      "body": "A lost possession.\nA possible match.\nA custodian's decision.\nA confirmed return record.\n\nRECORDED PLAYBACK of captured live Switch run — scripted fictional inputs.\nNo physical object moved.",
+      "source": "Captured full run: 07 Nov 2026 · 13:25 UTC",
+      "narration": "Recorded playback of a captured live Switch run. Scripted fictional inputs. No physical handover.",
+      "index": 1,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    },
+    {
+      "duration": 12,
+      "stage": "01 / FICTIONAL INVENTORY",
+      "title": "Two similar cases",
+      "body": "I-001  •  Black headphone case\nLibrary Desk A\n\nI-002  •  Black headphone case\nLibrary Study Room 2\n\nThe broad description fits both.",
+      "source": "Source: captured database item records I-001 and I-002",
+      "narration": "Fictional inventory. Two black headphone cases, found at different library locations.",
+      "index": 2,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    },
+    {
+      "duration": 16,
+      "stage": "02 / PRIYA'S CASE ROOM",
+      "title": "A report, then a question",
+      "body": "I lost my black headphone case at the library this afternoon.\n\nLive Intake output:\ncategory: headphone case  •  color: black\nexact date/time: unknown\n\nWhat marks, contents, or accessories would help staff identify yours? Please describe them in your own words.",
+      "source": "Source: sw_7304be46fc328ab0384253b0e75551b4",
+      "narration": "I lost my black headphone case at the library this afternoon. What marks, contents, or accessories would help staff identify yours? Please describe them in your own words.",
+      "index": 3,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    },
+    {
+      "duration": 14,
+      "stage": "03 / STAFF ROOM · LIVE MATCHER",
+      "title": "Ambiguity stays visible",
+      "body": "The claimant's description fits both I-001 and I-002 only at a coarse level. No claimant evidence distinguishes them or corroborates staff-recorded identifying details.\n\nRecorded recommendation:\ninsufficient_information",
+      "source": "Source: sw_a46e3f67f772a3a3a4f9c68510f99f4e",
+      "narration": "The claimant's description fits both I-001 and I-002 only at a coarse level.",
+      "index": 4,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    },
+    {
+      "duration": 12,
+      "stage": "04 / ALEX'S SEPARATE CASE",
+      "title": "More information needed",
+      "body": "Claimant assertions match only coarse staff observations for I-001 and I-002. Neither item can be distinguished as the claimant's from the supplied evidence.\n\nAlex's captured final status: NEEDS_INFO\nNo reservation for Alex was recorded.",
+      "source": "Source: sw_7af5344af5f3bcb359a911e38bd58c62",
+      "narration": "Claimant assertions match only coarse staff observations for I-001 and I-002. More information is needed.",
+      "index": 5,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    },
+    {
+      "duration": 17,
+      "stage": "05 / CLAIMANT ASSERTION → STAFF REVIEW",
+      "title": "Claimant details enter the record",
+      "body": "Mine has a green triangle sticker under the lid and a short blue charging cable inside.\n\nStaff-only observations for I-001:\n• Green triangle sticker under lid\n• Short blue charging cable inside\n\nThe claimant assertion and staff observations remain separate sources.",
+      "source": "Source: sw_e47f1d133395dd4973efda2b5921e756",
+      "narration": "Mine has a green triangle sticker under the lid and a short blue charging cable inside.",
+      "index": 6,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    },
+    {
+      "duration": 15,
+      "stage": "06 / STAFF ROOM · REFRESHED MATCHER",
+      "title": "A possible match, not ownership",
+      "body": "Current claimant evidence specifically matches staff-recorded identifying details for I-001, supporting staff review. I-002 has only coarse similarities. The earlier review was invalidated when claimant evidence changed; ownership remains undetermined.",
+      "source": "Source: sw_e47f1d133395dd4973efda2b5921e756",
+      "narration": "Current claimant evidence specifically matches staff-recorded identifying details for I-001, supporting staff review.",
+      "index": 7,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    },
+    {
+      "duration": 14,
+      "stage": "07 / AUTHORITY AND REVISION CHECKS",
+      "title": "Two requests refused",
+      "body": "FORBIDDEN\nThis action is not authorized from this account and room.\n\nSTALE_REVISION\nThe reviewed facts changed. Prepare a fresh review before deciding.",
+      "source": "Sources: captured unauthorized-approval and old-review outcomes",
+      "narration": "This action is not authorized from this account and room. The reviewed facts changed. Prepare a fresh review before deciding.",
+      "index": 8,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    },
+    {
+      "duration": 16,
+      "stage": "08 / ENROLLED CUSTODIAN DECISION",
+      "title": "Reserved is not returned",
+      "body": "Recorded staff reason:\nPriya independently described both the hidden sticker and cable; I reviewed the source assertion against I-001 observations.\n\nRESERVED  •  I-001\nRS-a55adeaae88e44d3\nCollection was arranged privately; closure was still pending.",
+      "source": "Source: sw_76997be7ffa1446ac48256dc358ba7f5",
+      "narration": "Priya independently described both the hidden sticker and cable; I reviewed the source assertion against I-001 observations.",
+      "index": 9,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    },
+    {
+      "duration": 18,
+      "stage": "09 / TWO CONFIRMATIONS",
+      "title": "Handover, then receipt",
+      "body": "Premature receipt: HANDOVER_REQUIRED\nStaff records: HANDOVER_RECORDED\nClaimant confirms: RETURNED\n\nReceipt: RET-97d5810b131d4b92\n\nThese were authenticated fictional roleplay messages.\nNo physical handover occurred.",
+      "source": "Source: sw_aebbebced4cbc6e7ea7318b7fcfaccc8",
+      "narration": "Staff must record handover for this reservation before you can confirm receipt. The captured fictional staff handover was followed by claimant receipt confirmation.",
+      "index": 10,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    },
+    {
+      "duration": 8,
+      "stage": "CAPTURED FULL-RUN OUTCOME",
+      "title": "One return record",
+      "body": "2 claims  •  5 live model proposals\n1 recorded return\nPriya: RETURNED  •  Alex: NEEDS_INFO\n\nInspect evidence/live-run.json and the source generator.\nLocal Switch + Mattermost + signed-in Codex.",
+      "source": "Recorded full-run snapshot: 07 Nov 2026 · 13:25 UTC",
+      "narration": "Two claims. Five live model proposals. One recorded return. Alex still needs information.",
+      "index": 11,
+      "total": 11,
+      "disclosure": "RECORDED PLAYBACK of captured live Switch run — scripted fictional inputs",
+      "footer": "No physical handover • Text reconstruction, not a screen recording"
+    }
+  ],
+  "totals_scope": "Only the captured full-run totals from evidence/live-run.json; later diagnostics are excluded.",
+  "runtime_mutations": false,
+  "network_calls": false,
+  "new_model_calls": false,
+  "official_video_limit": "Not verified; under three minutes is this project's conservative target.",
+  "source_generator_sha256": "7f25fa63963dafdde827201fb9ea282f8e77ae15a87f6f88b67d4094ced42d7b",
+  "verified_streams": [
+    {
+      "codec_name": "h264",
+      "codec_type": "video",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "24/1"
+    },
+    {
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "r_frame_rate": "0/0"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "verified_at": "2026-11-07T13:31:32.000676+00:00",
+  "behavior": "Live local Switch diagnostic posts from actual Matcher identity; scripted negative approval and threaded read/post.",
+  "agent_approval_result": "FORBIDDEN",
+  "recorded_actor_kind": "agent",
+  "source_event_id": "sw_1706f07605cd4487acb3b27c96606dd2",
+  "threaded_reply_read_back": true,
+  "return_count_unchanged": true,
+  "limitations": "No model inference or physical handover is exercised by these diagnostics."
+}

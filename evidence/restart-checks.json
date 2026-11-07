@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "verified_at": "2026-11-07T13:37:33.445317+00:00",
+  "behavior": "Actual local runtime stopped/restarted; authenticated fictional claimant status command delivered live afterward.",
+  "before": {
+    "domain_digest": "63440fc69f87d5cf9b4e944ef22e98f872084b29f4e2ada2af1f2f368c7d8cb6",
+    "counts": {
+      "items": 3,
+      "claims": 2,
+      "reviews": 3,
+      "approvals": 1,
+      "reservations": 1,
+      "returns": 1
+    },
+    "cases": [
+      {
+        "id": "C001",
+        "status": "RETURNED",
+        "revision": 2,
+        "evidence_revision": 1
+      },
+      {
+        "id": "C002",
+        "status": "NEEDS_INFO",
+        "revision": 1,
+        "evidence_revision": 0
+      }
+    ],
+    "notices_pending": 0
+  },
+  "after": {
+    "domain_digest": "63440fc69f87d5cf9b4e944ef22e98f872084b29f4e2ada2af1f2f368c7d8cb6",
+    "counts": {
+      "items": 3,
+      "claims": 2,
+      "reviews": 3,
+      "approvals": 1,
+      "reservations": 1,
+      "returns": 1
+    },
+    "cases": [
+      {
+        "id": "C001",
+        "status": "RETURNED",
+        "revision": 2,
+        "evidence_revision": 1
+      },
+      {
+        "id": "C002",
+        "status": "NEEDS_INFO",
+        "revision": 1,
+        "evidence_revision": 0
+      }
+    ],
+    "notices_pending": 0
+  },
+  "status_reply_count": 1,
+  "status_reports_returned": true,
+  "limitations": "Live restart checked final state. Restart during active reservation is covered by domain tests."
+}

@@ -1,0 +1,41 @@
+{
+  "verified_at": "2026-11-07T13:39:31.500184+00:00",
+  "automated_tests_passed": 122,
+  "clean_copy_install": "uv sync --locked --extra dev; succeeded with no live credentials/configuration present",
+  "clean_copy_tests_passed": 122,
+  "clean_copy_offline_demo_passed": true,
+  "public_files_credential_scan_passed": true,
+  "private_state_ignored_by_git": true,
+  "runtime_state": {
+    "cases": [
+      {
+        "id": "C001",
+        "status": "RETURNED"
+      },
+      {
+        "id": "C002",
+        "status": "NEEDS_INFO"
+      }
+    ],
+    "returns": 1,
+    "inbox_failed": 0,
+    "domain_notifications_pending": 0,
+    "runtime_notifications_pending": 0
+  },
+  "source_sha256": {
+    "src/findback/__init__.py": "a270b88ba609f6b51c07caf7aa9bce376e5e922ae6f8e6751a0c70a7974afbf5",
+    "src/findback/bootstrap.py": "19dde6404c34eefa52e07abcf55b2c4ed85aad9d88c6f6913f2ba7b0dd2e6b77",
+    "src/findback/cli.py": "44a8b6097211171369f1b1065777feb41a3fc1cf8ae4ef4733223b2348c5bbef",
+    "src/findback/domain.py": "2289a2287bf369cb8a1597ac7350b137fb3a72db7b342413e0cf63d3180c10f6",
+    "src/findback/fixtures.py": "6c62b1b9feb266c1758a68db43dc1c18699d86a4b2279c9c7bceaa730d4bae6f",
+    "src/findback/live_demo.py": "0a127de761024a9abcceeb4f51378ced157cc163797853aea2dfca4c4bed52bf",
+    "src/findback/matching.py": "8851d546d2d65df63118404c8915dc977bce3b635f80f1305e776c77f15edf3d",
+    "src/findback/model.py": "8bfb0d704c158513d6a38efc3e9e2209175174abcf639e2ccb40e422f35f48b6",
+    "src/findback/runtime.py": "5abaa542706d3ccb98d10f6f0c2c2ceb860994e317a49967a91598c1aa3b5c1f",
+    "src/findback/storage.py": "ed0516d8c0ab5416f37f7a80279f51394bb80c9096df296a347464169dac28bd",
+    "src/findback/switch_client.py": "c6710a5873f7ecf0273af58a6fb3753177d98644e210d845a3544224b07a1f28",
+    "src/findback/verify_access.py": "0108d7e96d016d5028e723e432b2ecf43d20cb9bd63f3347c7658f9435c3252f",
+    "src/findback/verify_restart.py": "4fabe341bffa0bd792ff337a3cc9a6d17cb654fba6a3aca8e03034b25b39bfe0",
+    "src/findback/verify_roundtrip.py": "d3797348642809a24cf2429fa9f2450272e9ec4f99e99f7ad7afb85947e19f41"
+  }
+}

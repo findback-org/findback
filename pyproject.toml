@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "findback-switch"
+version = "0.1.0"
+description = "Evidence-led lost-property recovery in private Switch rooms"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.28,<0.29", "websockets>=14,<18"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+findback = "findback.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/findback"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

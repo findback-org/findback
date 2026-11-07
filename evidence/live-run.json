@@ -1,0 +1,211 @@
+{
+  "passed": true,
+  "recorded_at": "2026-11-07T13:25:39.034347+00:00",
+  "behavior": {
+    "transport": "live local Switch + Mattermost",
+    "models": "live signed-in Codex CLI",
+    "human_input": "scripted authenticated fictional roleplay",
+    "physical_handover": "simulated; no real property moved"
+  },
+  "events": [
+    {
+      "label": "Priya report / live Intake model",
+      "role": "C001",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "e1juuynxhjrk9dh1ji6utf94da",
+      "switch_event_id": "sw_7304be46fc328ab0384253b0e75551b4",
+      "command": "findback report I lost my black headphone case at the library this afternoon.",
+      "result_code": "PROPOSAL_OR_READ"
+    },
+    {
+      "label": "Priya confirms exact draft / live Matcher model",
+      "role": "C001",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "rrp67fx7qtyf5gbiupwqnmdy7c",
+      "switch_event_id": "sw_a46e3f67f772a3a3a4f9c68510f99f4e",
+      "command": "findback confirm D-ed03896d162841ee",
+      "result_code": "REPORT_CONFIRMED"
+    },
+    {
+      "label": "Alex report / separate live Intake model",
+      "role": "C002",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "q4j1uskh3fr5fc578fftoz4dpc",
+      "switch_event_id": "sw_c99cfdac31fb4d72f350197e8855da2a",
+      "command": "findback report I lost a black headphone case in the library. I do not remember any identifying marks.",
+      "result_code": "PROPOSAL_OR_READ"
+    },
+    {
+      "label": "Alex confirms / insufficient evidence comparison",
+      "role": "C002",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "n6ybu7uxapf6ikrcudt4zys3ee",
+      "switch_event_id": "sw_7af5344af5f3bcb359a911e38bd58c62",
+      "command": "findback confirm D-7512fa05f0794073",
+      "result_code": "REPORT_CONFIRMED"
+    },
+    {
+      "label": "Mira requests more information for Alex",
+      "role": "staff",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "fudp4dsbspb9xm7gx4topdxdrc",
+      "switch_event_id": "sw_4f3a500c58303d9ead3024f2cf4310ba",
+      "command": "findback ask C002 Both black cases fit only the coarse description; no independently identifying evidence yet.",
+      "result_code": "INFORMATION_REQUESTED"
+    },
+    {
+      "label": "Claimant authorization attempt",
+      "role": "C001",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "uj8uebyqu3yhmd7xhwmnuf446e",
+      "switch_event_id": "sw_8132da2f632fa919e828d2fe9df084f4",
+      "command": "findback approve C001 I-001 R-5232d8e6ff4944dc I approve myself.",
+      "result_code": "FORBIDDEN"
+    },
+    {
+      "label": "Priya independent assertion / refreshed live Matcher model",
+      "role": "C001",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "upwbbs1c63njpfgag4qfz3npma",
+      "switch_event_id": "sw_e47f1d133395dd4973efda2b5921e756",
+      "command": "findback evidence Mine has a green triangle sticker under the lid and a short blue charging cable inside.",
+      "result_code": "EVIDENCE_RECORDED"
+    },
+    {
+      "label": "Old review is refused",
+      "role": "staff",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "yah5r9epfinqdqtximji4w7wpc",
+      "switch_event_id": "sw_72a608deb36a403138ca3ef37c648961",
+      "command": "findback approve C001 I-001 R-5232d8e6ff4944dc Attempt old comparison after new evidence.",
+      "result_code": "STALE_REVISION"
+    },
+    {
+      "label": "Mira approves exact evidence and reserves",
+      "role": "staff",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "krf5bjs93jnyu841gfzonixm1o",
+      "switch_event_id": "sw_76997be7ffa1446ac48256dc358ba7f5",
+      "command": "findback approve C001 I-001 R-27b5b67ffc4049c8 Priya independently described both the hidden sticker and cable; I reviewed the source assertion against I-001 observations.",
+      "result_code": "RESERVED"
+    },
+    {
+      "label": "Private collection instructions",
+      "role": "staff",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "srf5ga95xt89pr1hriwfhduzfo",
+      "switch_event_id": "sw_6879a4397ddd01b3b2c6c0b9704a43e2",
+      "command": "findback collect C001 RS-a55adeaae88e44d3 Fictional collection at Library Desk A, 17:00. Ask the custodian for your reserved case.",
+      "result_code": "COLLECTION_ARRANGED"
+    },
+    {
+      "label": "Premature receipt refused",
+      "role": "C001",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "d9m4gjainbbrzj5t4684pq4cao",
+      "switch_event_id": "sw_2737b0ac8a87fafea47dbdfd80c842d4",
+      "command": "findback receipt RS-a55adeaae88e44d3",
+      "result_code": "HANDOVER_REQUIRED"
+    },
+    {
+      "label": "Enrolled custodian records fictional handover",
+      "role": "staff",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "rnjspid73bdwxjai5814z4pbcc",
+      "switch_event_id": "sw_c3a69884abb8f9e528585affc522561b",
+      "command": "findback handover C001 RS-a55adeaae88e44d3 Scripted fictional handover for the integration demo; no physical object moved.",
+      "result_code": "HANDOVER_RECORDED"
+    },
+    {
+      "label": "Enrolled claimant confirms fictional receipt",
+      "role": "C001",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "hpskkycrh7rbudy4auzqoh614a",
+      "switch_event_id": "sw_aebbebced4cbc6e7ea7318b7fcfaccc8",
+      "command": "findback receipt RS-a55adeaae88e44d3",
+      "result_code": "RETURNED"
+    },
+    {
+      "label": "Second receipt message reuses one return",
+      "role": "C001",
+      "behavior": "scripted fictional input through an authenticated Mattermost account",
+      "mattermost_post_id": "x9thz5np13nh8r6yjfi5abt6ja",
+      "switch_event_id": "sw_958648b6e432e27d2e03717443de35e1",
+      "command": "findback receipt RS-a55adeaae88e44d3",
+      "result_code": "RETURNED"
+    }
+  ],
+  "totals": {
+    "claims": 2,
+    "reviews": 3,
+    "reservations": 1,
+    "returns": 1,
+    "audit_events": 17,
+    "model_proposals": 5
+  },
+  "alex_status": "NEEDS_INFO",
+  "priya_status": "RETURNED",
+  "receipt_id": "RET-97d5810b131d4b92",
+  "model_measurements": [
+    {
+      "behavior": "live Codex inference; no action authority",
+      "role": "intake",
+      "seconds": 7.446,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 12069,
+        "output_tokens": 51,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "behavior": "live Codex inference; no action authority",
+      "role": "matcher",
+      "seconds": 11.793,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 12915,
+        "output_tokens": 225,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "behavior": "live Codex inference; no action authority",
+      "role": "intake",
+      "seconds": 7.129,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 12075,
+        "output_tokens": 57,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "behavior": "live Codex inference; no action authority",
+      "role": "matcher",
+      "seconds": 11.749,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 12939,
+        "output_tokens": 196,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "behavior": "live Codex inference; no action authority",
+      "role": "matcher",
+      "seconds": 11.374,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13936,
+        "output_tokens": 245,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ]
+}

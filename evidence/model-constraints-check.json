@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "disabled_features": [
+    "shell_tool",
+    "unified_exec",
+    "skill_search",
+    "tool_suggest",
+    "enable_mcp_apps",
+    "apps",
+    "plugins",
+    "remote_plugin",
+    "computer_use",
+    "browser_use",
+    "browser_use_external",
+    "browser_use_full_cdp_access",
+    "browser_annotation_api",
+    "in_app_browser",
+    "in_app_chat",
+    "in_app_local_automation",
+    "in_app_dictation",
+    "in_app_voice",
+    "image_generation",
+    "view_image",
+    "multi_agent",
+    "hooks",
+    "code_mode_host",
+    "goals",
+    "worktrees",
+    "workspace_dependencies",
+    "auth_elicitation",
+    "skill_mcp_dependency_install",
+    "plugin_sharing",
+    "realtime_conversation",
+    "sleep_tool",
+    "shell_snapshot"
+  ],
+  "behavior": "Live harmless Codex inference; no tool/action events accepted. A pre-turn CLI diagnostic was counted without relaying its text. This is not an OS sandbox penetration test.",
+  "measurement": {
+    "role": "intake",
+    "seconds": 10.838,
+    "usage": {
+      "input_tokens": 10693,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 51,
+      "reasoning_output_tokens": 0
+    },
+    "startup_diagnostics": 1,
+    "behavior": "live Codex inference; no action authority"
+  }
+}
