@@ -114,5 +114,25 @@
     "exact_private_value_matches": 0,
     "credential_pattern_matches": 0,
     "private_state_and_account_UI": "excluded"
+  },
+  "hosted_ci_verification": {
+    "status": "runners_not_started",
+    "run_url": "https://github.com/Krishna3451/findback/actions/runs/42413753169",
+    "test_results": null,
+    "limitation": "No hosted execution or hosted CI pass is claimed; initial jobs did not start."
+  },
+  "verified_source_commit": "50f2d018c5ac9280ddfea0428289e66fd509c682",
+  "local_linux_verification": {
+    "passed": true,
+    "artifact": "hardening-linux-checks.json",
+    "artifact_sha256": "85aa0735e8c6d4b9b44ac88fecabec17afe6522bd0f518bcde7f38a859ab75e7",
+    "platform": "Debian 13 Linux arm64 in isolated official Python containers",
+    "python_versions": [
+      "3.11.18",
+      "3.12.16"
+    ],
+    "tests_per_version": 247,
+    "offline_and_installed_wheel_smokes": "passed",
+    "hosted_runner_result": false
   }
 }

@@ -19,4 +19,5 @@ demo/**/*.m4a
 demo/**/*.zip
 # Local account-interface proofs are not submission assets.
 demo/**/elevenlabs-*-proof.png
-demo/**/youtube-upload-proof.png
+demo/**/youtube-*-proof.png
+demo/**/youtube-upload.json

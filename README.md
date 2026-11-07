@@ -1,6 +1,6 @@
 # FindBack
 
-[![Verify FindBack](https://github.com/Krishna3451/findback/actions/workflows/ci.yml/badge.svg)](https://github.com/Krishna3451/findback/actions/workflows/ci.yml)
+[Technical verification](EVIDENCE.md) · [CI workflow and current status](https://github.com/Krishna3451/findback/actions/workflows/ci.yml)
 
 ### Lost something? Start a conversation.
 
@@ -131,9 +131,11 @@ Use your existing local Mattermost username. The command prints the actual room 
 uv run pytest -q
 ```
 
-The [CI workflow](.github/workflows/ci.yml) installs the locked dependencies on Linux (Python 3.11 and 3.12) and macOS (Python 3.12), runs the behavioral suite and offline workflow, builds a wheel, then installs and exercises that wheel outside the source checkout. It needs no Switch server, model credentials or production secrets. The native macOS bootstrap and live integration checks are separate.
+The [CI workflow](.github/workflows/ci.yml) is configured to install the locked dependencies on Linux (Python 3.11 and 3.12) and macOS (Python 3.12), run the behavioral suite and offline workflow, build a wheel, then install and exercise that wheel outside the source checkout. It needs no Switch server, model credentials or production secrets. The native macOS bootstrap and live integration checks are separate.
 
-Preserved campus evidence includes **94 live access checks**, **12 live Codex calls**, and four fictional claims. Those are local demonstration results, not campus adoption or accuracy measurements. The [evidence log](EVIDENCE.md) records dated local test counts; the CI result establishes the state of each published commit.
+At the November 8 publication check, GitHub did not start the hosted runners. **No hosted CI pass is claimed.** The exact staged source passed all **247 tests** in a clean macOS/Python 3.12 checkout. Isolated local Linux arm64 containers also passed **247 tests each** on Python 3.11 and 3.12; every environment passed its offline workflow and installed-wheel smoke check. [Linux evidence and pinned image digests](evidence/hardening-linux-checks.json) distinguish these Debian container checks from hosted Ubuntu runners. Check the Actions page for later hosted results.
+
+Preserved campus evidence includes **94 live access checks**, **12 live Codex calls**, and four fictional claims. Those are local demonstration results, not campus adoption or accuracy measurements. Check the dated [evidence log](EVIDENCE.md) and Actions results for verification of a particular commit.
 
 Tests cover authorization, stale reviews, double reservation, handover-before-receipt, duplicate events, restart behavior, and private output routing. [EVIDENCE.md](EVIDENCE.md) distinguishes automated tests, live integration checks, and scripted inputs.
 
