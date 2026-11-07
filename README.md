@@ -6,7 +6,7 @@ A black headphone case arrives at the campus library. Two students think it migh
 
 FindBack helps carry that conversation through: private identifying questions, a clear comparison for the librarian, and a return recorded only after handover and receipt. Built with **Switch, Codex, and Mattermost** for the **Flip the Switch Hackathon · Best Personal or Creative Workflow**.
 
-**[Watch the 2:50 demo](demo/FindBack-submission-demo.mp4)** · **[Visit the landing page](https://mohit-1710.github.io/findback/)** · **[Implementation evidence](EVIDENCE.md)** · **[Developer guide](DEVELOPER_GUIDE.md)**
+**[Watch the 2:50 demo](demo/FindBack-submission-demo.mp4)** · **[Visit the landing page](https://krishna3451.github.io/findback/)** · **[Implementation evidence](EVIDENCE.md)** · **[Developer guide](DEVELOPER_GUIDE.md)**
 
 ![The actual Campus Lost and Found conversation in Mattermost](docs/assets/campus-chat.jpg)
 
@@ -61,7 +61,7 @@ Intake receives its claimant’s report. Matcher receives the staff-side compari
 The bootstrap currently targets this native macOS setup. It is not a generic remote-server installer. The landing page itself is static and needs none of these services.
 
 ```sh
-git clone https://github.com/mohit-1710/findback.git
+git clone https://github.com/Krishna3451/findback.git
 cd findback
 uv sync --locked --extra dev --python 3.12
 ```
