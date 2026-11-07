@@ -26,6 +26,8 @@ MODEL = 'eleven_v3'
 LABELS = ['The lost case', 'The usual group post', 'Where the handoff stalls', 'FindBack connects the next step',
           'Alex gives private evidence', 'Mira makes the decision', 'An approved collection', 'The value of Switch']
 DIRECTIONS = ['[warm]', '', '[thoughtful]', '[confident]', '[reassuring]', '', '[relieved]', '[confident]']
+SPOKEN_TEXTS = None
+VOICE_SETTINGS = {'stability':0.5,'similarity_boost':0.75,'style':0.1,'use_speaker_boost':True}
 
 
 def duration(path):
@@ -74,7 +76,8 @@ def main():
     signature=hashlib.sha256('\n\n'.join(paragraphs).encode()).hexdigest()
     manifest={'provider':'ElevenLabs','model_id':MODEL,'voice_name':VOICE_NAME,'voice_id':VOICE_ID,
               'ai_generated_narration':True,'script_sha256':signature,'sample_rate_hz':48000,'channels':1,
-              'official_api':'https://api.elevenlabs.io','chapters':[]}
+              'official_api':'https://api.elevenlabs.io','voice_settings':VOICE_SETTINGS,
+              'native_tempo_factor':1.0,'chapters':[]}
     manifest_path=OUT/'narration-manifest.json';lock=threading.Lock()
     old=json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
     same_generation = (old.get('script_sha256') == signature and old.get('model_id') == MODEL
@@ -83,9 +86,9 @@ def main():
     def generate(i):
         chapter=i+1;base=OUT/f'chapter-{chapter:02d}';mp3=base.with_suffix('.mp3');wav=base.with_suffix('.wav')
         if chapter in completed and mp3.exists() and wav.exists():return completed[chapter]
-        spoken=(DIRECTIONS[i]+' '+paragraphs[i]).strip()
+        spoken=SPOKEN_TEXTS[i] if SPOKEN_TEXTS is not None else (DIRECTIONS[i]+' '+paragraphs[i]).strip()
         body={'text':spoken,'model_id':MODEL,'language_code':'en',
-              'voice_settings':{'stability':0.5,'similarity_boost':0.75,'style':0.1,'use_speaker_boost':True},
+              'voice_settings':VOICE_SETTINGS,
               'seed':1946+i,'apply_text_normalization':'auto'}
         # The live official API explicitly rejects neighboring text for v3.
         # Consistency comes from one stock voice and identical voice settings.
@@ -105,7 +108,7 @@ def main():
         alignment=result.get('normalized_alignment') or result.get('alignment')
         write_json(base.with_suffix('.alignment.json'),{'alignment':result.get('alignment'),'normalized_alignment':result.get('normalized_alignment')})
         subprocess.run(['ffmpeg','-v','error','-y','-i',str(mp3),'-ar','48000','-ac','1','-c:a','pcm_s16le',str(wav)],check=True)
-        item={'chapter':chapter,'label':LABELS[i],'text':paragraphs[i],'direction':DIRECTIONS[i],
+        item={'chapter':chapter,'label':LABELS[i],'text':paragraphs[i],'direction':DIRECTIONS[i],'spoken_input':spoken,
               'mp3_path':str(mp3),'wav_path':str(wav),'alignment_path':str(base.with_suffix('.alignment.json')),
               'duration_seconds':duration(wav),'sentences':sentence_cues(alignment)}
         with lock:
@@ -118,6 +121,10 @@ def main():
     for item in manifest['chapters']:
         item['start_seconds']=offset;item['end_seconds']=offset+item['duration_seconds']
         for cue in item['sentences']:
+            # Provider alignment can exceed decoded MP3 duration by a few ms.
+            # Preserve the raw alignment; keep derived captions inside PCM.
+            cue['start']=max(0,min(cue['start'],item['duration_seconds']))
+            cue['end']=max(cue['start'],min(cue['end'],item['duration_seconds']))
             srt.extend([str(cue_id),stamp(offset+cue['start'])+' --> '+stamp(offset+cue['end']),cue['text'],'']);cue_id+=1
         offset=item['end_seconds']
     manifest['duration_seconds']=offset

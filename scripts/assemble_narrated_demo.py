@@ -89,7 +89,7 @@ def encode_cue_holds(plan, args, broll_path, source_audio, duration, frames, out
         listing.write_text("\n".join(lines) + "\n")
         run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-safe", "0",
              "-f", "concat", "-i", str(listing), "-an", "-vf",
-             "pad=ceil(iw/2)*2:ceil(ih/2)*2:0:0:black,setsar=1,fps=24",
+             "pad=ceil(iw/2)*2:ceil(ih/2)*2:0:0:black,setsar=1,fps=24,tpad=stop_mode=clone:stop_duration=1",
              "-frames:v", str(frames), "-c:v", "libx264", "-preset", "medium",
              "-crf", "18", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(output)])
     for cut in cuts:
@@ -195,6 +195,11 @@ def assemble(args):
         "voice_tempo_factor": args.tempo,
         "alignment": "Exact normalized PCM sample durations; cumulative video boundaries quantized to 24fps. No extra interchapter silence. A tempo factor other than 1 uses pitch-preserving ffmpeg atempo; original TTS files are unchanged.",
         "chapters": chapters}
+    if args.tts_manifest:
+        tts = json.loads(args.tts_manifest.read_text())
+        report["tts_manifest_sha256"] = sha256(args.tts_manifest)
+        report["tts_voice"] = {key: tts[key] for key in (
+            "provider", "model_id", "voice_name", "voice_id", "ai_generated_narration") if key in tts}
     (root / "narrated-manifest.json").write_text(json.dumps(report, indent=2) + "\n")
     lines = ["# Narrated actual UI demo", "",
         "[Play the narrated demo](findback-narrated-demo.mp4). English narration is an authorized ElevenLabs synthetic voice. The visuals are actual Mattermost browser screenshots of the scripted fictional campus demonstration, with real FindBack/Switch messages and AI calls. There are cuts, compressed waiting gaps and holds of selected actual screenshots; this is not continuous footage of every event. Key visual transitions follow real character-level narration alignment. No UI or message content is generated for the video. The featured case ends at approved collection, before handover and receipt.", "",
@@ -213,6 +218,7 @@ def main():
     parser.add_argument("--output-root", type=Path, default=Path("demo/narrated"))
     parser.add_argument("--capture-root", type=Path, default=Path(".findback/focused-capture"))
     parser.add_argument("--cue-plan", type=Path)
+    parser.add_argument("--tts-manifest", type=Path)
     parser.add_argument("--audio", action="append", required=True, metavar="CHAPTER=FILE")
     parser.add_argument("--max-seconds", type=float, default=180)
     parser.add_argument("--tempo", type=float, default=1)

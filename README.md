@@ -6,7 +6,7 @@ A black headphone case arrives at the campus library. Two students think it migh
 
 FindBack helps carry that conversation through: private identifying questions, a clear comparison for the librarian, and a return recorded only after handover and receipt. Built with **Switch, Codex, and Mattermost** for the **Flip the Switch Hackathon · Best Personal or Creative Workflow**.
 
-**[Watch the 2:50 demo](demo/FindBack-submission-demo.mp4)** · **[Visit the landing page](https://krishna3451.github.io/findback/)** · **[Implementation evidence](EVIDENCE.md)** · **[Developer guide](DEVELOPER_GUIDE.md)**
+**[Watch the 1:59 demo](demo/FindBack-submission-demo-male.mp4)** · **[Visit the landing page](https://krishna3451.github.io/findback/)** · **[Implementation evidence](EVIDENCE.md)** · **[Developer guide](DEVELOPER_GUIDE.md)**
 
 ![The actual Campus Lost and Found conversation in Mattermost](docs/assets/campus-chat.jpg)
 
@@ -31,11 +31,11 @@ An appointment is not a return. The case closes only when staff record the hando
 
 ## Watch the demo
 
-**[FindBack submission demo · 2 minutes 50 seconds](demo/FindBack-submission-demo.mp4)**
+**[FindBack submission demo · 1 minute 59 seconds](demo/FindBack-submission-demo-male.mp4)**
 
 The narrated walkthrough follows Alex’s claim through private evidence, librarian review, and approved collection. Its endpoint is **approved and reserved**, before handover or receipt. The [earlier campus demonstration](evidence/live-campus/verification.json) separately records three completed simulated returns and one unresolved claim.
 
-The people and objects are fictional. Switch transport, Mattermost messages, and model calls are real. The finished video uses edited captures of the actual browser, including cuts and frame holds, with synthetic English narration. It is not continuous footage or evidence that a physical object changed hands. [Subtitles](demo/FindBack-submission-demo.srt) and [capture details](demo/START-HERE.txt) are included.
+The people and objects are fictional. Switch transport, Mattermost messages, and model calls are real. The finished video uses edited captures of the actual browser, including cuts and frame holds, with synthetic English narration. It is not continuous footage or evidence that a physical object changed hands. [Subtitles](demo/FindBack-submission-demo-male.srt) and [capture details](demo/START-HERE.txt) are included.
 
 ## How Switch is used
 
