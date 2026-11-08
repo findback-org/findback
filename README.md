@@ -108,7 +108,7 @@ Operators can inspect payload-free queue health with `findback health` and expli
 The fresh-stack runner does not require Switch Console. The optional native bootstrap below targets an existing macOS Switch Console installation and its bundled server/Mattermost. The landing page itself is static.
 
 ```sh
-git clone https://github.com/Krishna3451/findback.git
+git clone https://github.com/findback-org/findback.git
 cd findback
 uv sync --locked --extra dev --python 3.12
 ```
@@ -162,7 +162,7 @@ Two workflows are configured:
 - [Unit, evaluation-fixture and installed-wheel checks](.github/workflows/ci.yml) on Linux/Python 3.11 and 3.12 and macOS/Python 3.12. No model credentials or running Switch instance are needed.
 - [Fresh-stack E2E](.github/workflows/fresh-stack-e2e.yml) on actual disposable Core/Mattermost/PostgreSQL services, with controlled proposals and only a redacted JSON artifact.
 
-GitHub did not start the hosted runners at the November 8 publication check. **No hosted CI pass is claimed.** The table above links the completed clean local runs; [GitHub Actions](https://github.com/Krishna3451/findback/actions) shows current hosted status. Earlier run counts remain dated in [EVIDENCE.md](EVIDENCE.md).
+GitHub did not start the hosted runners at the November 8 publication check. **No hosted CI pass is claimed.** The table above links the completed clean local runs. Earlier run counts remain dated in [EVIDENCE.md](EVIDENCE.md).
 
 The [fresh-stack reports](docs/FRESH_STACK_E2E.md#recorded-runs) retain the first replay-harness failure as well as both passing runs. The [evaluation results](evals/v1/RESULTS.md) retain the original misses and their reviewed contradiction-category boundary. To check the frozen scorer using handwritten development outputs, without calling a provider:
 
