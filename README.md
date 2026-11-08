@@ -1,6 +1,6 @@
 # FindBack
 
-[Watch the demo](https://youtu.be/CwU4WdZB-Sk) · [Run locally](#run-locally) · [Fresh-stack verification](docs/FRESH_STACK_E2E.md) · [Evaluation results](evals/v1/RESULTS.md)
+[Watch the demo](https://youtu.be/lj0zuQWdPd8) · [Run locally](#run-locally) · [Fresh-stack verification](docs/FRESH_STACK_E2E.md) · [Evaluation results](evals/v1/RESULTS.md)
 
 ### Lost something? Start a conversation.
 
@@ -8,7 +8,7 @@ A black headphone case arrives at the campus library. Two students think it migh
 
 FindBack helps carry that conversation through: private identifying questions, a clear comparison for the librarian, and a return recorded only after handover and receipt. Built with **Switch, Codex, and Mattermost** for the **Flip the Switch Hackathon · Best Personal or Creative Workflow**.
 
-**[Watch the demo · 3:09](https://youtu.be/CwU4WdZB-Sk)** · **[Visit the landing page](https://krishna3451.github.io/findback/)** · **[Implementation evidence](EVIDENCE.md)** · **[Developer guide](DEVELOPER_GUIDE.md)**
+**[Watch the demo · 2:58](https://youtu.be/lj0zuQWdPd8)** · **[Implementation evidence](EVIDENCE.md)** · **[Developer guide](DEVELOPER_GUIDE.md)**
 
 ## Verified implementation
 
@@ -20,7 +20,7 @@ FindBack helps carry that conversation through: private identifying questions, a
 
 These are local verification results with fictional people, items and handovers. Chat transport, access checks and the labelled Codex calls ran for real. Evidence probes do not establish ownership accuracy. Hosted CI is [reported separately](#verification); no hosted pass is claimed.
 
-[![Latest FindBack demo: Ava reports a found case, Alex and Noah reply, and FindBack opens a private recovery chat](docs/assets/findback-chat-landscape.jpg)](https://youtu.be/CwU4WdZB-Sk)
+[![Latest FindBack demo: Ava reports a found case, Alex and Noah reply, and FindBack opens a private recovery chat](docs/assets/findback-chat-landscape.jpg)](https://youtu.be/lj0zuQWdPd8)
 
 ## The story
 
@@ -43,11 +43,13 @@ An appointment is not a return. The case closes only when staff record the hando
 
 ## Watch the demo
 
-**[FindBack on YouTube · 3 minutes 9 seconds](https://youtu.be/CwU4WdZB-Sk)** · [Download MP4](demo/FindBack-submission-demo.mp4)
+**[FindBack on YouTube · 2 minutes 58 seconds](https://youtu.be/lj0zuQWdPd8)** · [Download MP4](demo/FindBack-submission-under-3-minutes.mp4)
 
 The narrated walkthrough follows Alex’s claim through private evidence, librarian review, and approved collection. Its endpoint is **approved and reserved**, before handover or receipt. The [earlier campus demonstration](evidence/live-campus/verification.json) separately records three completed simulated returns and one unresolved claim.
 
-The people and objects are fictional. Switch transport, Mattermost messages, and model calls are real. The finished video uses edited captures of the actual browser, including reading holds and smooth transitions, with synthetic narration by Miles. It is not continuous footage or evidence that a physical object changed hands. [Subtitles](demo/FindBack-submission-demo.srt) and [capture details](demo/START-HERE.txt) are included.
+The people and objects are fictional. Switch transport, Mattermost messages, and model calls are real. The finished video uses edited captures of the actual browser, including reading holds and smooth transitions, with synthetic narration by Miles. It is not continuous footage or evidence that a physical object changed hands. [Subtitles](demo/FindBack-submission-under-3-minutes.srt) and [capture details](demo/START-HERE.txt) are included.
+
+The submission cut is 2:58.167 at the original playback speed. It ends after the collection instructions and the explicit handover/receipt caveat, omitting only the final public thanks and recap. The [original full recording · 3:09](demo/FindBack-submission-demo.mp4) and its production manifests remain preserved.
 
 ## How Switch is used
 
@@ -204,7 +206,7 @@ Tests cover authorization, stale reviews, double reservation, handover-before-re
 
 ## GitHub Pages
 
-The landing page is served from this same repository: **Settings → Pages → Deploy from a branch → `main` → `/docs`**. There is no build step. GitHub Pages hosts the explanation and recorded demo; the live agent workflow runs locally with Switch.
+The static project overview and recorded demonstration are included in `docs/`. The live agent workflow runs locally with Switch.
 
 ## Private state
 

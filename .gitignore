@@ -13,6 +13,7 @@ __pycache__/
 !.env.example
 # Keep the final submission film; omit duplicate rendered working media.
 demo/**/*.mp4
+!demo/FindBack-submission-under-3-minutes.mp4
 demo/**/*.wav
 demo/**/*.mp3
 demo/**/*.m4a

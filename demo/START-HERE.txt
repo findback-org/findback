@@ -1,3 +1,10 @@
-FINDBACK — RECORDED DEMONSTRATION
+FINDBACK — DEMONSTRATION
 
-The walkthrough uses real Mattermost screens, Switch messages and model calls with fictional participants and items. Screen captures are edited with reading holds, shortened waits and smooth transitions, with synthetic narration. The featured case ends at approval and reservation; staff handover and claimant receipt remain pending.
+Watch: https://youtu.be/lj0zuQWdPd8
+Video: FindBack-submission-under-3-minutes.mp4
+Captions: FindBack-submission-under-3-minutes.srt
+Duration: 178.166667 seconds (2:58), 1920×1080, 24 fps.
+
+The video shows real Mattermost screens, Switch messages and Codex calls with fictional participants and items. It uses edited screen captures, reading holds, shortened waits, smooth transitions and synthetic Miles narration at original playback speed. It ends at approval, reservation and collection instructions; staff handover and claimant receipt remain pending.
+
+capture-manifest.json records the 188.917563-second source edit. The submission video retains its first 178.166667 seconds and subtitle cues 1–42, omitting the final thanks and recap.

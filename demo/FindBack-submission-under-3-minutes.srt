@@ -1,0 +1,190 @@
+1
+00:00:00,000 --> 00:00:02,148
+Alex has checked the library twice.
+
+2
+00:00:02,659 --> 00:00:05,898
+His headphone case is missing, and his bus leaves soon.
+
+3
+00:00:06,223 --> 00:00:07,616
+He tells the campus group.
+
+4
+00:00:07,732 --> 00:00:12,934
+Elena replies that she is still nearby and suggests
+checking whether someone has handed it in.
+
+5
+00:00:13,630 --> 00:00:18,216
+Ava then posts that she found a black headphone case in
+Library Study Room Two.
+
+6
+00:00:18,913 --> 00:00:22,419
+She says she has already brought it to Mira at the
+library desk.
+
+7
+00:00:22,802 --> 00:00:24,416
+Could it belong to someone here?
+
+8
+00:00:24,625 --> 00:00:26,564
+FindBack is monitoring the channel.
+
+9
+00:00:26,807 --> 00:00:35,422
+It automatically answers inside Ava’s thread, thanking
+her and reminding everyone to keep identifying marks
+and contents out of the public conversation.
+
+10
+00:00:36,119 --> 00:00:38,545
+Alex answers, “That might be mine.”
+
+11
+00:00:39,358 --> 00:00:42,806
+He was studying in that room, and his case is plain
+black.
+
+12
+00:00:43,619 --> 00:00:47,590
+He has a possible connection, but no distinguishing
+detail yet.
+
+13
+00:00:48,194 --> 00:00:51,352
+Then Noah adds that his own case is plain black too.
+
+14
+00:00:52,652 --> 00:00:54,544
+“We should check more than the color.”
+
+15
+00:00:55,241 --> 00:01:00,999
+His comment makes the problem concrete: a common
+appearance cannot establish whose item this is.
+
+16
+00:01:02,114 --> 00:01:04,169
+Alex follows with a fuller report.
+
+17
+00:01:04,447 --> 00:01:09,080
+He lost a black headphone case in the library that
+afternoon and wants help checking it.
+
+18
+00:01:10,032 --> 00:01:14,142
+FindBack responds in the same thread with a link to his
+private recovery chat.
+
+19
+00:01:14,954 --> 00:01:19,355
+In the private chat, Intake says it is reading his
+report and preparing a draft.
+
+20
+00:01:19,865 --> 00:01:24,196
+The draft records the item, color, location, and his
+description.
+
+21
+00:01:25,148 --> 00:01:27,691
+Alex is asked to check what the agent understood.
+
+22
+00:01:28,201 --> 00:01:30,918
+Alex confirms, “Yes, that’s right.”
+
+23
+00:01:31,615 --> 00:01:36,677
+Intake asks what marks, contents, or accessories would
+help identify his case.
+
+24
+00:01:37,280 --> 00:01:39,835
+The desk also gets an initial comparison.
+
+25
+00:01:40,438 --> 00:01:44,119
+His report is confirmed; ownership still needs
+evidence.
+
+26
+00:01:44,560 --> 00:01:46,929
+But Alex is worried about missing his bus.
+
+27
+00:01:47,370 --> 00:01:48,693
+“Can you just release it?”
+
+28
+00:01:49,018 --> 00:01:52,002
+he asks, admitting he cannot remember the marks.
+
+29
+00:01:52,815 --> 00:01:56,983
+Intake explains that color alone is not enough for Mira
+to release a case.
+
+30
+00:01:57,308 --> 00:01:59,131
+His request stays open.
+
+31
+00:01:59,943 --> 00:02:06,062
+Now Alex remembers: a red thread on the zipper, and the
+initials R K on the inside label.
+
+32
+00:02:07,176 --> 00:02:12,911
+Intake saves his exact words as his assertion and tells
+him a fresh comparison is being prepared.
+
+33
+00:02:13,515 --> 00:02:18,321
+The Matcher announces it is comparing Alex’s
+description with the desk’s two black cases.
+
+34
+00:02:18,925 --> 00:02:21,119
+Then the updated comparison arrives.
+
+35
+00:02:21,816 --> 00:02:26,088
+His red thread and initials match the staff
+observations for case B.
+
+36
+00:02:27,203 --> 00:02:29,420
+It’s a possible match for Mira to judge.
+
+37
+00:02:29,664 --> 00:02:35,318
+Mira approves case B for Alex, saying she checked both
+details against the desk’s observations.
+
+38
+00:02:35,702 --> 00:02:38,569
+Her decision stays in that exact comparison thread.
+
+39
+00:02:39,266 --> 00:02:43,248
+FindBack reserves the case and privately tells Alex
+that Mira approved it.
+
+40
+00:02:44,363 --> 00:02:50,446
+Next, Mira sends collection instructions: ask for her
+at the library desk and show the private recovery chat.
+
+41
+00:02:51,050 --> 00:02:53,685
+FindBack delivers those instructions to Alex.
+
+42
+00:02:54,196 --> 00:02:57,853
+Collection is arranged; handover and receipt are still
+pending.
