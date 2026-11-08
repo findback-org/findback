@@ -20,7 +20,7 @@ FindBack helps carry that conversation through: private identifying questions, a
 
 These are local verification results with fictional people, items and handovers. Chat transport, access checks and the labelled Codex calls ran for real. Evidence probes do not establish ownership accuracy. Hosted CI is [reported separately](#verification); no hosted pass is claimed.
 
-![The actual Campus Lost and Found conversation in Mattermost](docs/assets/campus-chat.jpg)
+[![Latest FindBack demo: Ava reports a found case, Alex and Noah reply, and FindBack opens a private recovery chat](docs/assets/findback-chat-landscape.jpg)](https://youtu.be/CwU4WdZB-Sk)
 
 ## The story
 
