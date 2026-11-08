@@ -14,7 +14,7 @@ Implemented domain contract for `src/findback/domain.py`, `storage.py`, `matchin
 
 ## IDs and result shape
 
-Fixture cases are `C001` (Priya) and `C002` (Alex). Item IDs retain the fixture `I-001`, `I-002`, `I-003`. Runtime drafts/reviews/reservations/audit/receipt IDs are generated opaque identifiers with readable prefixes (`D-`, `R-`, `RS-`, `A-`, `RET-`); clients must not derive meaning from them.
+Fixture cases are `C001` (Priya) and `C002` (Alex). Fixture item IDs are `I-001`, `I-002`, `I-003`. Runtime drafts/reviews/reservations/audit/receipt IDs are generated opaque identifiers with readable prefixes (`D-`, `R-`, `RS-`, `A-`, `RET-`); clients must not derive meaning from them.
 
 Every public method returns a JSON-safe dictionary, never raw sqlite rows:
 
