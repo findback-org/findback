@@ -8,7 +8,7 @@
 ![Codex](https://img.shields.io/badge/Codex-Intake%20%2B%20Matcher-195b46?style=flat-square)
 ![SQLite](https://img.shields.io/badge/SQLite-case%20records-195b46?style=flat-square&logo=sqlite&logoColor=white)
 
-**[Watch the 2:58 demo](https://youtu.be/lj0zuQWdPd8)** · **[Run locally](#run-locally)** · **[Inspect the evidence](#recorded-verification)**
+**[Watch the 2:58 demo](https://youtu.be/lj0zuQWdPd8)** · **[Read the build story](https://medium.com/@mohitkumar001700/findback-a-clearer-path-from-lost-item-report-to-collection-640e6957e15e)** · **[Run locally](#run-locally)** · **[Inspect the evidence](#recorded-verification)**
 
 A black headphone case arrives at the campus library. Two students think it is theirs. Sharing the distinguishing marks in the group chat would give both claimants the answers.
 
